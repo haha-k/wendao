@@ -1,0 +1,11 @@
+django == 2.1.4
+pymysql
+
+djangorestframework
+
+# django跨域
+
+django-cors-headers
+
+djangorestframework-jwt
+
