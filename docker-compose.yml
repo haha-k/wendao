@@ -15,19 +15,14 @@ services:
           volumes:
             - ./mysql/conf.d:/etc/mysql/conf.d
             - ./mysql/data:/var/lib/mysql
-              # command: /mysql/setup.sh
-          # external_links:
-          #   - mmysql
           restart: always  # 若容器运行出现问题，会自动重启容器
 
      web:
-           build: 
+           build:
                 context: .
                 dockerfile: ./compose/django/Dockerfile
            ports:
            - "8000:8000"
-             #volumes:
-               #- ./mysite:/mysite
            command: /gunicorn.sh  # 执行命令，有多种格式
            links:
            - db

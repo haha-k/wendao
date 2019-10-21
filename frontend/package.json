@@ -4,11 +4,15 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "build-admin": "vue-cli-service build admin",
+    "build-index": "vue-cli-service build index",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "new:comp": "node ./scripts/generateComponent.js",
-    "new:view": "node ./scripts/generateView.js"
+    "new:comp": "node ./conf/scripts/generateComponent.js",
+    "new:view": "node ./conf/scripts/generateView.js",
+    "serves": "",
+    "builds": ""
   },
   "dependencies": {
     "@vue/cli": "^3.8.2",
@@ -16,6 +20,8 @@
     "core-js": "^2.6.8",
     "element-ui": "^2.8.2",
     "http-proxy-middleware": "^0.19.1",
+    "js-cookie": "^2.2.1",
+    "normalize.css": "^8.0.1",
     "vue": "^2.6.6",
     "vue-router": "^3.0.6",
     "vuex": "^3.1.1",

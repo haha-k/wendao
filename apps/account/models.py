@@ -29,6 +29,9 @@ class AccountManager(BaseUserManager):
 
         return self._create_user(username,password,**extra_fields)
 
+class Account(AbstractBaseUser):
+
+
 class Account(AbstractUser):
     username = models.CharField(
         max_length=40,

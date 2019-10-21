@@ -30,7 +30,9 @@ PREREQ_APPS = [
 PROJECT_APPS = [
     'question',
     'answer',
-    'account'
+    'account',
+    'article',
+    'favorites'
 ]
 
 INSTALLED_APPS = PREREQ_APPS + PROJECT_APPS
