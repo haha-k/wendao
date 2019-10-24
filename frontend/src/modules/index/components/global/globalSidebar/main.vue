@@ -1,27 +1,35 @@
 
 <template>
-<div class="globalSidebar">globalSidebar</div>
+  <div class="globalSidebar">
+    <writeCard></writeCard>
+    <creator-entrance v-if="isCreator"></creator-entrance>
+    <navList></navList>
+  </div>
 </template>
 <script>
+import creatorEntrance from "./components/creatorEntrance";
+import navList from "./components/navList";
+import writeCard from "./components/writeCard";
 export default {
-  name: 'globalSidebar',
-  data(){
-    return{
-
-    }
+  name: "globalSidebar",
+  data() {
+    return {
+      isCreator:false,
+    };
   },
-  methods:{
-
-  },
-  mounted(){
-
-  },
+  methods: {},
+  mounted() {},
   components: {
-
+    creatorEntrance: creatorEntrance,
+    writeCard: writeCard,
+    navList: navList
   }
-}
+};
 </script>
 <style lang="scss" scoped>
-.globalSidebar {
+.globalSidebar-container {
+  flex: 1 1;
+  font-size: 14px;
+  width: 296px;
 }
 </style>

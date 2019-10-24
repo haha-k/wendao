@@ -4,9 +4,8 @@
       <el-tabs v-model="activeName" @tab-click="handleClick">
         <el-tab-pane label="推荐" name="first">
           <div class="Topstorycontent">
-            <div class="Topstoryitem">
-              <feedContent></feedContent>
-              <feedFooter></feedFooter>
+            <div class="Topstoryitem" v-for="(item,index) in recommendList" :key="index">
+              <feedCard :item="item"></feedCard>
             </div>
           </div>
         </el-tab-pane>
@@ -17,21 +16,54 @@
   </div>
 </template>
 <script>
-import feedContent from '@/components/global/feedContent'
-import feedFooter from '@/components/global/feedFooter'
+import feedCard from "@/components/global/feedCard";
+import { getRecommend } from "#/api/home";
+
 export default {
   name: "topStory",
   data() {
-    return {};
+    return {
+      recommendList: [],
+      activeName: "first"
+    };
   },
-  methods: {},
-  mounted() {},
+  computed: {},
+  methods: {
+    getRecommendList() {
+      getRecommend()
+        .then(result => {
+          let { data } = result;
+          this.recommendList = data.data;
+          console.log(this.recommendList);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    },
+    handleClick(tab, event) {
+      console.log(tab, event);
+    }
+  },
+  mounted() {
+    this.getRecommendList();
+  },
   components: {
-
+    // feedContent: feedContent,
+    // feedFooter: feedFooter,
+    feedCard: feedCard
   }
 };
 </script>
 <style lang="scss" scoped>
 .topStory {
+  flex-shrink: 0;
+  margin-right: 10px;
+  margin-bottom: 0;
+  width: 694px;
+
+  .el-tabs {
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
 </style>

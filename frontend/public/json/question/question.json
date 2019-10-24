@@ -1,0 +1,40 @@
+{
+  "id": 344204972,
+  "type": "question",
+  "url": "https://api.zhihu.com/questions/344204972",
+  "author": {
+    "id": "36f0a1446eedf83779d1fe6d018e39ee",
+    "type": "people",
+    "url": "https://api.zhihu.com/people/36f0a1446eedf83779d1fe6d018e39ee",
+    "user_type": "people",
+    "url_token": "er-shi-san-nian-chan-35",
+    "name": "我才是旭旭冉",
+    "headline": "在下旭旭冉",
+    "avatar_url": "https://pic1.zhimg.com/50/v2-12988b1770497a8143000ddd010f4e1d_m.jpg",
+    "is_org": false,
+    "gender": 1,
+    "badge": [],
+    "followers_count": 1580,
+    "is_following": false,
+    "is_followed": false
+  },
+  "title": "一毕业就能进阿里的人有多厉害？",
+  "created": 1567504238,
+  "answer_count": 347,
+  "follower_count": 6726,
+  "comment_count": 12,
+  "bound_topic_ids": [454, 2029, 2611, 9500],
+  "topics": [
+    { "name": "阿里巴巴集团", "id": "19551577" },
+    { "name": "大学", "id": "19556353" },
+    { "name": "应届毕业生", "id": "19558008" },
+    { "name": "招聘", "id": "19578758" }
+  ],
+  "is_following": false,
+  "excerpt": "应届生毕业，刚投完阿里的简历，听往届的师兄说，应届生能进阿里，那都是很厉害的人了，好奇的问一下，一毕业就进阿里的人一般是哪些人",
+  "relationship": {
+    "is_author": false
+  },
+  "detail": "应届生毕业，刚投完阿里的简历，听往届的师兄说，应届生能进阿里，那都是很厉害的人了，好奇的问一下，一毕业就进阿里的人一般是哪些人",
+  "question_type": "normal"
+}

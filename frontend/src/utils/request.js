@@ -6,6 +6,7 @@ import { getToken } from '#/utils/auth';
 
 const service = axios.create({
     baseURL: '/api/v1',
+    // baseURL: '',
     timeout: 5000
 });
 
@@ -20,7 +21,7 @@ service.interceptors.request.use(config => {
 
 service.interceptors.response.use(response => {
     console.log(response);
-    const responseCode = request.status;
+    const responseCode = response.status;
     if(responseCode === 200) {
         return Promise.resolve(response);
     }else {

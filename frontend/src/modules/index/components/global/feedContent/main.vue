@@ -1,6 +1,8 @@
 
 <template>
-<div class="feedContent">feedContent</div>
+<div class="feedContent">
+
+</div>
 </template>
 <script>
 export default {

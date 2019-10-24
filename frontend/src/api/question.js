@@ -1,8 +1,13 @@
 import request from '#/utils/request';
 
-export function getQuestion(){
+export function getQuestionDetail(qid){
+    // return request({
+    //     url: '/question/:qid',
+    //     method: "get",
+    // });
     return request({
-        url: '/question/',
+        baseURL: '',
+        url: 'json/question/question.json',
         method: "get",
     });
 }

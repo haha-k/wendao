@@ -52,7 +52,7 @@ module.exports = {
         host: '127.0.0.1',
         port: port,
         https: false,
-        hotOnly: true,
+        // hotOnly: true,
         open: true, //配置自动启动浏览器
         overlay:{
             warnings:false,

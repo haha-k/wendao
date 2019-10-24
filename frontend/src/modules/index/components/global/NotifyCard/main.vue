@@ -1,13 +1,13 @@
 <template>
   <div class="NotifyCard">
-    <el-tabs stretch>
-      <el-tab-pane>
+    <el-tabs stretch v-model="activeName">
+      <el-tab-pane label="默认" name="first">
         <svg-icon slot="label" icon-class="list-index"></svg-icon>
-        <el-table :data="notifyData" style="width: 100%" :show-header="false" max-height="350px">
-          <el-table-column>
+        <el-table :data="notifyData" style="width: 100%" :show-header="true" max-height="350">
+          <el-table-column >
             <template slot-scope="scope">
               <span>
-                <span class="actors" v-for="i in scope.row.content.actors" :key="i">
+                <span class="actors" v-for="i in scope.row.content.actors" :key="i.name">
                   <router-link :to="scope.row.content.target.link">{{i.name}}</router-link>
                 </span>
                 &nbsp;{{scope.row.content.verb}}&nbsp;
@@ -23,23 +23,22 @@
           </el-table-column>
         </el-table>
       </el-tab-pane>
-      <el-tab-pane>
+      <el-tab-pane label="关注" name="second">
         <svg-icon slot="label" icon-class="friend-index"></svg-icon>
-        <el-table :data="notifyData" style="width: 100%" :show-header="false">
-        </el-table>
+        <el-table :data="notifyData" style="width: 100%" :show-header="true"  max-height="350"></el-table>
       </el-tab-pane>
-      <el-tab-pane>
+      <el-tab-pane label="赞" name="third">
         <svg-icon slot="label" icon-class="like-index"></svg-icon>
         <el-table
           :data="vote_thank_data"
           style="width: 100%"
-          :show-header="false"
-          max-height="350px"
+          :show-header="true"
+          max-height="350"
         >
           <el-table-column>
             <template slot-scope="scope">
               <span>
-                <span class="actors" v-for="i in scope.row.content.actors" :key="i">
+                <span class="actors" v-for="i in scope.row.content.actors" :key="i.name">
                   <router-link :to="scope.row.content.target.link">{{i.name}}</router-link>
                 </span>
                 &nbsp;{{scope.row.content.verb}}&nbsp;
@@ -63,7 +62,7 @@
   </div>
 </template>
 <script>
-import { notification, vote_thank } from "#/api/mock";
+import { getDefault, getVote_thank } from "#/api/home";
 
 export default {
   name: "NotifyCard",
@@ -71,16 +70,34 @@ export default {
     return {
       notifyData: [],
       data: {},
-      vote_thank_data: {},
-      follow_data: {}
+      vote_thank_data: [],
+      follow_data: {},
+      activeName: 'first'
     };
   },
-  methods: {},
+  methods: {
+    getNotify() {
+      getDefault()
+        .then(result => {
+          let {data} = result.data;
+          this.notifyData = data;
+        })
+        .catch(err => {
+          console.log(err);
+        });
+
+      getVote_thank()
+        .then(result => {
+          let {data} = result.data;
+          this.vote_thank_data = data;
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    }
+  },
   mounted() {
-    this.data = notification;
-    this.notifyData = notification.data;
-    this.vote_thank_data = vote_thank.data;
-    console.log(this.vote_thank_data);
+    this.getNotify();
   },
   components: {}
 };
@@ -139,5 +156,9 @@ export default {
 .NotifyCard >>> .el-card__body {
   padding: 0 !important;
   display: flex;
+}
+
+.NotifyCard >>> .el-table__header-wrapper{
+  display: none !important;
 }
 </style>

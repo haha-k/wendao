@@ -1,0 +1,28 @@
+
+{
+  "paging": {
+    "is_end": true,
+    "is_start": true,
+    "next": "https://www.zhihu.com/answers/816698264/concerned_upvoters?limit=10\u0026offset=10",
+    "previous": "https://www.zhihu.com/answers/816698264/concerned_upvoters?limit=10\u0026offset=0",
+    "totals": 1
+  },
+  "data": [
+    {
+      "id": "28750f3acb09c38d0706655d2d83ca8e",
+      "url_token": "ai-mei-ai-ni-mei-40",
+      "name": "暧昧爱你妹",
+      "avatar_url": "https://pic4.zhimg.com/da8e974dc_is.jpg",
+      "avatar_url_template": "https://pic4.zhimg.com/da8e974dc_{size}.jpg",
+      "is_org": false,
+      "type": "people",
+      "url": "https://www.zhihu.com/people/28750f3acb09c38d0706655d2d83ca8e",
+      "user_type": "people",
+      "headline": "",
+      "badge": [],
+      "gender": -1,
+      "is_advertiser": false,
+      "is_privacy": false
+    }
+  ]
+}

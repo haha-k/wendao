@@ -1,4 +1,3 @@
-
 <template>
   <div class="Search-container">
     <transition>
@@ -8,11 +7,11 @@
         placeholder="我想知道"
         @select="handleSelect"
         popper-class="my-autocomplete"
-        highlight-first-item="true"
+        :highlight-first-item="true"
       >
         <!-- @focus="show=false;isFocus=true"
         @blur="show=true;isFocus=false"
-        :class="{focus:isFocus}" -->
+        :class="{focus:isFocus}"-->
         <!-- <template #default="{ item }">
         <div class="name">{{item.question_content}}</div>
         <div class="addr">{{item.question_describe}}</div>
@@ -36,15 +35,53 @@ export default {
       item: {
         question_content: "x",
         question_describe: "x"
-      }
+      },
+      restaurants: []
     };
   },
   methods: {
     handleSearch: function() {
       // this.show=!show;
+    },
+    ask(){},
+    loadAll() {
+      return [
+        {
+          value: "(小杨生煎)西郊百联餐厅",
+          address: "长宁区仙霞西路88号百联2楼"
+        },
+        { value: "阳阳麻辣烫", address: "天山西路389号" },
+        {
+          value: "南拳妈妈龙虾盖浇饭",
+          address: "普陀区金沙江路1699号鑫乐惠美食广场A13"
+        }
+      ];
+    },
+    querySearchAsync(queryString, cb) {
+      var restaurants = this.restaurants;
+      var results = queryString
+        ? restaurants.filter(this.createStateFilter(queryString))
+        : restaurants;
+
+      clearTimeout(this.timeout);
+      this.timeout = setTimeout(() => {
+        cb(results);
+      }, 3000 * Math.random());
+    },
+    createStateFilter(queryString) {
+      return state => {
+        return (
+          state.value.toLowerCase().indexOf(queryString.toLowerCase()) === 0
+        );
+      };
+    },
+    handleSelect(item) {
+      console.log(item);
     }
   },
-  mounted() {},
+  mounted() {
+    this.restaurants = this.loadAll();
+  },
   components: {}
 };
 </script>
@@ -87,9 +124,7 @@ export default {
       width: 100%;
       background-color: rgb(133, 25, 25);
       transition: width 1s ease-in-out;
-
     }
-
   }
 
   .ask-button {
@@ -98,12 +133,12 @@ export default {
   }
 }
 
-      .my-autocomplete {
-        div {
-          width: 400px;
-          transition: width 1s ease-in-out;
-        }
-      }
+.my-autocomplete {
+  div {
+    width: 400px;
+    transition: width 1s ease-in-out;
+  }
+}
 </style>
 <style scoped>
 .Search-container >>> .el-input .el-input__inner {

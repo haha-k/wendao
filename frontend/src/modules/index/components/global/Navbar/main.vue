@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <div class="left-container">
-      <el-menu :default-active="activeIndex" mode="horizontal" @select="handleSelect" router="true">
+      <el-menu :default-active="activeIndex" mode="horizontal" @select="handleSelect" :router="true">
         <el-menu-item index="home">
           <el-image class="image" style="width: 95px; height: 45px" src="img/2.png" fit="fill"></el-image>
         </el-menu-item>
@@ -20,11 +20,6 @@
       </el-popover>
       <el-popover placement="bottom" width="360" trigger="click">
         <MessageCard></MessageCard>
-        <!-- <el-table :data="gridData">
-          <el-table-column width="150" property="date" label="日期"></el-table-column>
-          <el-table-column width="100" property="name" label="姓名"></el-table-column>
-          <el-table-column width="300" property="address" label="地址"></el-table-column>
-        </el-table> -->
         <el-badge slot="reference" :value="200" :max="99" class="item" size="mini">
           <svg-icon class-name="icon" icon-class="message-index" @click.stop="click"></svg-icon>
         </el-badge>
@@ -82,7 +77,15 @@ export default {
       ]
     };
   },
-  methods: {},
+  methods: {
+    logout(){
+
+    },
+    handleSelect(){
+
+    }
+
+  },
   mounted() {},
   components: {
     Search,

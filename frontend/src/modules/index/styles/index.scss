@@ -3,7 +3,7 @@
 
 html {
   height: 100%;
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 
 body {
@@ -14,7 +14,6 @@ body {
     Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei,
     sans-serif;
     font-size: 15px;
-
 }
 
 #app {
@@ -45,4 +44,70 @@ a:hover {
   cursor: pointer;
   color: inherit;
   text-decoration: none;
+}
+
+
+//globalSidebar
+
+  .GlobalSideBar-navLink {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 40px;
+    overflow: hidden;
+
+    &:hover {
+      background-color: #f6f6f6;
+    }
+  }
+
+  .GlobalSideBar-navText {
+    flex: 1 1;
+    margin: 0 10px;
+    text-align: left;
+  }
+
+  .GlobalSideBar-navNumber {
+    padding: 6px 10px;
+    border-radius: 2px;
+    background: #f6f6f6;
+    color: #8590a6;
+    font-size: 12px;
+  }
+
+
+.el-header {
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  z-index: 100;
+  min-width: 100%;
+  background-color: #fff;
+}
+.Topstory-container{
+  width: 1000px;
+}
+
+.el-main {
+  margin: 0px;
+  padding: 10px;
+  // background-color: #B3C0D1;
+  color: #333;
+  display: flex;
+  align-items: flex-start;
+  width: 1000px;
+  padding: 0 16px;
+  margin: 10px auto;
+  // overflow: visible;
+  box-sizing: content-box;
+  // flex-basis:0 0 1000px;
+  .el-backtop {
+    div {
+      height: 40px;
+      width: 40px;
+      background-color: #f2f5f6;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+      text-align: center;
+      line-height: 40px;
+      color: #1989fa;
+    }
+  }
 }
