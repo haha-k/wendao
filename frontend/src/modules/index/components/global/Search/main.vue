@@ -22,6 +22,11 @@
     <transition name="fade">
       <el-button v-if="show" type="primary" class="ask-button" @click="ask">提问</el-button>
     </transition>
+    <ask-dialog :dialogAskVisible="visible" @listen="getStatus"></ask-dialog>
+
+    <comment-dialog :dialogCommentVisible="true" :aid="111" @listen="getStatus"></comment-dialog>
+    <!-- <favlists-dialog :dialogFavlistsVisible="true" @listen="getStatus"></favlists-dialog> -->
+    <a href=""></a>
   </div>
 </template>
 <script>
@@ -31,6 +36,7 @@ export default {
     return {
       data: "",
       show: true,
+      visible: false,
       isFocus: false,
       item: {
         question_content: "x",
@@ -40,10 +46,15 @@ export default {
     };
   },
   methods: {
+    getStatus(status) {
+      this.visible = status;
+    },
     handleSearch: function() {
       // this.show=!show;
     },
-    ask(){},
+    ask() {
+      this.visible = true;
+    },
     loadAll() {
       return [
         {

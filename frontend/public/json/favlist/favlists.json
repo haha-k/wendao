@@ -1,0 +1,137 @@
+{
+
+  "paging": {
+    "is_end": true,
+    "totals": 5,
+    "previous": "http://www.zhihu.com/api/v4/members/haha-11-7-20/favlists?include=data%5B%2A%5D.updated_time%2Canswer_count%2Cfollower_count%2Ccreator%2Cis_public&limit=10&offset=0",
+    "is_start": true,
+    "next": "http://www.zhihu.com/api/v4/members/haha-11-7-20/favlists?include=data%5B%2A%5D.updated_time%2Canswer_count%2Cfollower_count%2Ccreator%2Cis_public&limit=10&offset=10"
+  },
+  "data": [
+    {
+      "title": "s",
+      "url": "http://www.zhihu.com/api/v4/collections/431865594",
+      "creator": {
+        "avatar_url_template": "https://pic4.zhimg.com/da8e974dc_{size}.jpg",
+        "type": "people",
+        "name": "haha",
+        "url": "http://www.zhihu.com/api/v4/people/a381e4a964f27e3ebc0921f77ab127fc",
+        "gender": -1,
+        "user_type": "people",
+        "url_token": "haha-11-7-20",
+        "is_advertiser": false,
+        "avatar_url": "https://pic4.zhimg.com/da8e974dc_is.jpg",
+        "is_org": false,
+        "headline": "",
+        "badge": [],
+        "id": "a381e4a964f27e3ebc0921f77ab127fc"
+      },
+      "answer_count": 2,
+      "updated_time": 1571714312,
+      "follower_count": 0,
+      "is_public": true,
+      "type": "collection",
+      "id": 431865594
+    },
+    {
+      "title": "xx",
+      "url": "http://www.zhihu.com/api/v4/collections/431540302",
+      "creator": {
+        "avatar_url_template": "https://pic4.zhimg.com/da8e974dc_{size}.jpg",
+        "type": "people",
+        "name": "haha",
+        "url": "http://www.zhihu.com/api/v4/people/a381e4a964f27e3ebc0921f77ab127fc",
+        "gender": -1,
+        "user_type": "people",
+        "url_token": "haha-11-7-20",
+        "is_advertiser": false,
+        "avatar_url": "https://pic4.zhimg.com/da8e974dc_is.jpg",
+        "is_org": false,
+        "headline": "",
+        "badge": [],
+        "id": "a381e4a964f27e3ebc0921f77ab127fc"
+      },
+      "answer_count": 5,
+      "updated_time": 1570800430,
+      "follower_count": 0,
+      "is_public": true,
+      "type": "collection",
+      "id": 431540302
+    },
+    {
+      "title": "s's",
+      "url": "http://www.zhihu.com/api/v4/collections/431557096",
+      "creator": {
+        "avatar_url_template": "https://pic4.zhimg.com/da8e974dc_{size}.jpg",
+        "type": "people",
+        "name": "haha",
+        "url": "http://www.zhihu.com/api/v4/people/a381e4a964f27e3ebc0921f77ab127fc",
+        "gender": -1,
+        "user_type": "people",
+        "url_token": "haha-11-7-20",
+        "is_advertiser": false,
+        "avatar_url": "https://pic4.zhimg.com/da8e974dc_is.jpg",
+        "is_org": false,
+        "headline": "",
+        "badge": [],
+        "id": "a381e4a964f27e3ebc0921f77ab127fc"
+      },
+      "answer_count": 2,
+      "updated_time": 1570756173,
+      "follower_count": 0,
+      "is_public": true,
+      "type": "collection",
+      "id": 431557096
+    },
+    {
+      "title": "q",
+      "url": "http://www.zhihu.com/api/v4/collections/431740462",
+      "creator": {
+        "avatar_url_template": "https://pic4.zhimg.com/da8e974dc_{size}.jpg",
+        "type": "people",
+        "name": "haha",
+        "url": "http://www.zhihu.com/api/v4/people/a381e4a964f27e3ebc0921f77ab127fc",
+        "gender": -1,
+        "user_type": "people",
+        "url_token": "haha-11-7-20",
+        "is_advertiser": false,
+        "avatar_url": "https://pic4.zhimg.com/da8e974dc_is.jpg",
+        "is_org": false,
+        "headline": "",
+        "badge": [],
+        "id": "a381e4a964f27e3ebc0921f77ab127fc"
+      },
+      "answer_count": 0,
+      "updated_time": 1570720447,
+      "follower_count": 0,
+      "is_public": false,
+      "type": "collection",
+      "id": 431740462
+    },
+    {
+      "title": "x",
+      "url": "http://www.zhihu.com/api/v4/collections/423084808",
+      "creator": {
+        "avatar_url_template": "https://pic4.zhimg.com/da8e974dc_{size}.jpg",
+        "type": "people",
+        "name": "haha",
+        "url": "http://www.zhihu.com/api/v4/people/a381e4a964f27e3ebc0921f77ab127fc",
+        "gender": -1,
+        "user_type": "people",
+        "url_token": "haha-11-7-20",
+        "is_advertiser": false,
+        "avatar_url": "https://pic4.zhimg.com/da8e974dc_is.jpg",
+        "is_org": false,
+        "headline": "",
+        "badge": [],
+        "id": "a381e4a964f27e3ebc0921f77ab127fc"
+      },
+      "answer_count": 0,
+      "updated_time": 1570719614,
+      "follower_count": 0,
+      "is_public": false,
+      "type": "collection",
+      "id": 423084808
+    }
+  ]
+}

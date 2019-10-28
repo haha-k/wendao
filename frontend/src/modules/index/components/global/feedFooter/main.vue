@@ -27,13 +27,20 @@
       icon="el-icon-thirdcomment"
       size="medium"
     >{{(comments == 0?"":comments+"条")+"评论"}}</el-button>
+
     <el-dropdown placement="bottom" trigger="click">
       <el-button class="ContentItem-action" icon="el-icon-thirdfenxiang" size="medium">分享</el-button>
       <el-dropdown-menu slot="dropdown">
         <el-dropdown-item icon="el-icon-thirdlianjie1">分享链接</el-dropdown-item>
       </el-dropdown-menu>
     </el-dropdown>
-    <el-button class="ContentItem-action" icon="el-icon-thirdshoucang1" size="small">收藏</el-button>
+    <el-button
+      class="ContentItem-action"
+      icon="el-icon-thirdshoucang1"
+      size="small"
+      @click="visible=true"
+    >收藏</el-button>
+    <favlists-dialog :dialogFavlistsVisible="visible" @listen="getStatus"></favlists-dialog>
     <el-button v-if="isAns" class="ContentItem-action" icon="el-icon-thirdshoucang">感谢</el-button>
     <el-button class="ContentItem-action" icon="el-icon-s-flag" v-if="!isAns" size="medium">举报</el-button>
     <el-dropdown placement="bottom" trigger="click">
@@ -53,14 +60,15 @@ export default {
     return {
       votes: 0,
       statusText: "赞同",
-      comments: 0
+      comments: 0,
+      visible: false,
     };
   },
   methods: {
-    like(){
-
-    },
-
+    like() {},
+    getStatus(status) {
+      this.visible = status;
+    }
   },
   mounted() {},
   components: {},
@@ -137,6 +145,6 @@ export default {
 
 .el-dropdown-menu__item:hover {
   background: #f6f6f6 !important;
-  color:#768396 !important;
+  color: #768396 !important;
 }
 </style>

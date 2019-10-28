@@ -8,6 +8,13 @@
         <view-all-card :answerCount="answerCount"></view-all-card>
       </div>
     </div>
+    <div class="side-column">
+      <div class="Sticky">
+        <author-card :uid="author.id" :name="author.name"></author-card>
+        <answer-favlisat-card></answer-favlisat-card>
+        <related-question-card></related-question-card>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -19,6 +26,7 @@ export default {
       answer: {},
       loadding: false,
       otherAnswer:[],
+      author:{},
     };
   },
   methods: {},
@@ -40,6 +48,7 @@ export default {
     mainAnswer: {
       handler(newVal, oldVal) {
         this.answer = newVal;
+        this.author = this.answer.author;
         // console.log("xxxxx");
         // console.log(this.answer);
       },
@@ -69,6 +78,10 @@ export default {
   .question-mainColumn {
     width: 694px;
     padding-bottom: 20px;
+  }
+
+  .side-column{
+    width: 296px;
   }
 }
 </style>
