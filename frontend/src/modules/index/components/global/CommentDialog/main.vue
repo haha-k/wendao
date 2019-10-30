@@ -4,8 +4,8 @@
       :visible.sync="dialogCommentVisible"
       :before-close="handleClose"
       :modal-append-to-body="false"
-      width="688"
-      top="12vh"
+      width="688px"
+      top="24px"
       custom-class="CommentDialog"
     >
       <div class="CommentV2">
@@ -77,8 +77,9 @@ ul {
     display: list-item;
   }
 }
+
 .CommentDialog-container {
-  height: 100%;
+  // height: 100%;
   .el-dialog.CommentDialog {
     .CommentV2 {
       display: flex;
@@ -134,5 +135,7 @@ ul {
 }
 .CommentDialog-container >>> .el-dialog__body {
   padding: 0 !important;
+  height: calc(100vh - 48px);
+  max-height: calc(100vh - 48px);
 }
 </style>
