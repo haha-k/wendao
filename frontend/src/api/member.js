@@ -12,3 +12,15 @@ export function getMember(uid) {
         method: "get",
     });
 }
+
+export function getMe(uid) {
+    // return request({
+    //     url: '/me/:uid',
+    //     method: "get",
+    // });
+    return request({
+        baseURL: '',
+        url: 'json/member/me.json',
+        method: "get",
+    });
+}

@@ -24,7 +24,7 @@
     </transition>
     <ask-dialog :dialogAskVisible="visible" @listen="getStatus"></ask-dialog>
 
-    <comment-dialog :dialogCommentVisible="true" :aid="111" @listen="getStatus"></comment-dialog>
+    <!-- <comment-dialog :dialogCommentVisible="true" :aid="111" @listen="getStatus"></comment-dialog> -->
     <!-- <favlists-dialog :dialogFavlistsVisible="true" @listen="getStatus"></favlists-dialog> -->
     <a href=""></a>
   </div>

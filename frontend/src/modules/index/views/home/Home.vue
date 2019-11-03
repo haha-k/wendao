@@ -2,7 +2,7 @@
   <div class="home">
     <el-container>
       <el-header style="height:52px">
-        <Navbar></Navbar>
+        <Navbar :active="'home'"></Navbar>
       </el-header>
       <el-main class="Topstory-container">
         <topStory></topStory>
@@ -10,7 +10,6 @@
       </el-main>
       <div></div>
     </el-container>
-    <!-- <img alt="Vue logo" src="../../assets/logo.png" /> -->
 
   </div>
 </template>

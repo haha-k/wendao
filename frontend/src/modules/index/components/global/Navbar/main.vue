@@ -1,13 +1,24 @@
 <template>
   <div class="navbar">
     <div class="left-container">
-      <el-menu :default-active="activeIndex" mode="horizontal" @select="handleSelect" :router="true">
-        <el-menu-item index="home">
+      <el-menu
+        :default-active="activeIndex"
+        mode="horizontal"
+        @select="handleSelect"
+        :router="true"
+      >
+        <el-menu-item>
           <el-image class="image" style="width: 95px; height: 45px" src="img/2.png" fit="fill"></el-image>
         </el-menu-item>
-        <el-menu-item index="/home">首页</el-menu-item>
-        <el-menu-item class="login" index="/login">发现</el-menu-item>
-        <el-menu-item index="/register">等你来答</el-menu-item>
+        <el-menu-item index="home">
+          <router-link to="/home">首页</router-link>
+        </el-menu-item>
+        <el-menu-item class="login" index="explore">
+          <router-link to="/explore">发现</router-link>
+        </el-menu-item>
+        <el-menu-item index="waiting">
+          <router-link to="/question/waiting">等你来答</router-link>
+        </el-menu-item>
       </el-menu>
     </div>
     <Search></Search>
@@ -67,7 +78,7 @@ export default {
   name: "navbar",
   data() {
     return {
-      activeIndex: "/home",
+      activeIndex: this.active,
       gridData: [
         {
           date: "2016-05-02",
@@ -78,19 +89,27 @@ export default {
     };
   },
   methods: {
-    logout(){
-
-    },
-    handleSelect(){
-
-    }
-
+    logout() {},
+    handleSelect() {}
   },
-  mounted() {},
+  watch: {
+    active: {
+      handler:function(newVal, oldVal) {
+        this.activeIndex = this.newVal;
+      },
+      deep: true
+    }
+  },
+  mounted() {
+    console.log(this.active);
+  },
   components: {
     Search,
     MessageCard,
-    NotifyCard,
+    NotifyCard
+  },
+  props: {
+    active: String
   }
 };
 </script>
@@ -191,7 +210,7 @@ export default {
 }
 </style>
 <style>
-.el-popover{
-  padding:0 !important;
+.el-popover {
+  padding: 0 !important;
 }
 </style>

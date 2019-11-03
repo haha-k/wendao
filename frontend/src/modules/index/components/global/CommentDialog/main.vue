@@ -22,12 +22,14 @@
             <root-no-child :item="i"></root-no-child>
           </ul>
         </div>
+        <comment-footer></comment-footer>
       </div>
     </el-dialog>
   </div>
 </template>
 <script>
 import rootNoChild from "./components/rootNoChild";
+import commentFooter from "./components/footer";
 import { getAnswerComments } from "#/api/comments";
 export default {
   name: "CommentDialog",
@@ -60,7 +62,8 @@ export default {
     this.getComments(this.aid);
   },
   components: {
-    rootNoChild: rootNoChild
+    rootNoChild: rootNoChild,
+    commentFooter: commentFooter,
   },
   props: {
     dialogCommentVisible: Boolean,

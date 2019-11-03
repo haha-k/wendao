@@ -1,10 +1,9 @@
-
 <template>
-<div class="answers">answghjers</div>
+<div class="article">article</div>
 </template>
 <script>
 export default {
-  name: 'answers',
+  name: 'article',
   data(){
     return{
 
@@ -22,6 +21,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.answers {
+.article {
 }
 </style>

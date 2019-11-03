@@ -26,7 +26,9 @@
       class="ContentItem-action"
       icon="el-icon-thirdcomment"
       size="medium"
+      @click="handlerComment"
     >{{(comments == 0?"":comments+"条")+"评论"}}</el-button>
+    <comment-dialog :dialogCommentVisible="commentVisible" :aid="111" @listen="getCommentStatus"></comment-dialog>
 
     <el-dropdown placement="bottom" trigger="click">
       <el-button class="ContentItem-action" icon="el-icon-thirdfenxiang" size="medium">分享</el-button>
@@ -38,9 +40,9 @@
       class="ContentItem-action"
       icon="el-icon-thirdshoucang1"
       size="small"
-      @click="visible=true"
+      @click="handlerCollect"
     >收藏</el-button>
-    <favlists-dialog :dialogFavlistsVisible="visible" @listen="getStatus"></favlists-dialog>
+    <favlists-dialog :dialogFavlistsVisible="collectVisible" @listen="getCollectStatus"></favlists-dialog>
     <el-button v-if="isAns" class="ContentItem-action" icon="el-icon-thirdshoucang">感谢</el-button>
     <el-button class="ContentItem-action" icon="el-icon-s-flag" v-if="!isAns" size="medium">举报</el-button>
     <el-dropdown placement="bottom" trigger="click">
@@ -61,13 +63,23 @@ export default {
       votes: 0,
       statusText: "赞同",
       comments: 0,
-      visible: false,
+      collectVisible: false,
+      commentVisible: false,
     };
   },
   methods: {
     like() {},
-    getStatus(status) {
-      this.visible = status;
+    handlerCollect(){
+      this.collectVisible = true;
+    },
+    handlerComment(){
+      this.commentVisible = true;
+    },
+    getCollectStatus(status) {
+      this.collectVisible = status;
+    },
+    getCommentStatus(status) {
+      this.commentVisible = status;
     }
   },
   mounted() {},
