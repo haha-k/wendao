@@ -3,6 +3,8 @@ import App from "./App.vue";
 import router from "./router/index";
 import global from "./components";
 import store from "#/store";
+import mavonEditor from 'mavon-editor';
+import 'mavon-editor/dist/css/index.css'
 import './plugins/index'
 import '#/icons';
 import axios from 'axios';
@@ -13,6 +15,7 @@ import "./assets/icon/iconfont.css";
 Vue.prototype.$axios = axios;
 
 Vue.config.productionTip = false;
+Vue.use(mavonEditor);
 
 new Vue({
   router,

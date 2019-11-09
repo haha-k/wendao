@@ -1,24 +1,39 @@
 from django.db import models
-
-# Create your models here.
 from backend.choice import follow_choice
+from account.models import Account
 
 class Question(models.Model):
-    qid = models.CharField(max_length = 10,unique=True)
-    question_content = models.CharField(max_length = 40)
-    add_time = models.DateTimeField(auto_now_add = True)
-    question_describe = models.CharField(max_length = 200,blank=True,null=True)
-    cid = models.CharField(max_length = 10)
-    uid = models.CharField(max_length = 10)
-    attend_count = models.IntegerField(blank=True,default=0)
-    browse_count = models.IntegerField(blank=True,default=0)
+    qid = models.AutoField(primary_key=True)
+    title = models.CharField(max_length = 40)
+    desc = models.TextField(max_length = 4000)
+    photos = models.CharField(max_length = 1024)
+    topics = models.CharField(max_length = 1024)
+    pageviews = models.IntegerField(max_length = 20)
+    crt_time = models.DateTimeField(verbose_name='创建日期', auto_now_add=True)
+    upd_time = models.DateTimeField(verbose_name='更新日期', auto_now=True)
+    avatar = models.ForeignKey(Account, on_delete=models.SET_NULL, null=True,verbose_name='发布者')
 
-class Follow(models.Model):
-    qid = models.CharField(max_length = 10,unique=True)
-    uid = models.CharField(max_length = 10,unique=True)
-    # FOLLOW_CHOICES = [()]
-    status = models.IntegerField(choices = follow_choice)
-    create_at = models.DateTimeField(auto_now_add = True)
-    update_at = models.DateTimeField(auto_now_add = True)
+    class Meta:
+        db_table = "question"
 
+class follow(models.Model):
+    follow_id = models.AutoField(primary_key=True)
+    people = models.ForeignKey(Account, on_delete=models.SET_NULL, null=True,verbose_name='关注者')
+    resource_id = models.IntegerField(max_length = 11,unique=True)
+    resource_type = models.CharField(max_length = 2)
+    crt_time = models.DateTimeField(auto_now_add = True)
+    upd_time = models.DateTimeField(auto_now_add = True)
 
+    class Meta:
+        db_table = "follow"
+
+class Topic(models.Model):
+    topic_id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length = 40)
+    desc = models.TextField(max_length = 1024)
+    crt_time = models.DateTimeField(auto_now_add = True)
+    upd_time = models.DateTimeField(auto_now_add = True)
+    creator = models.ForeignKey(Account, on_delete=models.SET_NULL, null=True,verbose_name='创建者')
+
+    class Meta:
+        db_table = "topic"

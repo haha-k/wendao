@@ -1,36 +1,16 @@
 from django.db import models
-
-# Create your models here.
 from backend.choice import like_choice
+from account.models import Account
+from question.models import Question
 
 class Answer(models.Model):
-    aid = models.CharField(max_length = 10,unique=True)
-    qid = models.CharField(max_length = 10)
-    answer_content = models.CharField(max_length = 10000)
-    add_time = models.DateTimeField(auto_now_add = True)
-    uid = models.CharField(max_length = 10)
-    browse_count = models.IntegerField(blank=True,default=0)
-    like_count = models.IntegerField(default = 0)
-    collect_count = models.IntegerField(default = 0)
-    comment_count = models.IntegerField(default = 0)
+    aid = models.AutoField(verbose_name='关注id',primary_key=True)
+    content = models.TextField(max_length = 65536)
+    photos = models.CharField(max_length = 1024)
+    avatar = models.ForeignKey(Account, on_delete=models.SET_NULL, null=True,verbose_name='发布者')
+    qid = models.ForeignKey(Question, on_delete=models.SET_NULL, null=True,verbose_name='问题id')
+    cre_time = models.DateTimeField(verbose_name='创建日期', auto_now_add=True)
+    upd_time = models.DateTimeField(verbose_name='更新日期', auto_now=True)
 
-class Comment(models.Model):
-    aid = models.CharField(max_length = 10,unique=True)
-    add_time = models.DateTimeField(auto_now_add = True)
-    content = models.CharField(max_length = 40)
-    like_count = models.IntegerField(default = 0)
-    unlike_count = models.IntegerField(default = 0)
-    from_uid = models.CharField(max_length = 10)
-    to_uid = models.CharField(max_length = 10)
-
-# class parent_child(models.Model):
-#     parent_id = models.CharField(max_length = 10);
-#     child_id = models.CharField(max_length = 10);
-
-class like(models.Model):
-    aid = models.CharField(max_length = 10,unique=True)
-    uid = models.CharField(max_length = 10,unique=True)
-    # FOLLOW_CHOICES = [()]
-    status = models.IntegerField(choices = like_choice)
-    create_at = models.DateTimeField(auto_now_add = True)
-    update_at = models.DateTimeField(auto_now_add = True)
+    class Meta:
+        db_table = "answer"
