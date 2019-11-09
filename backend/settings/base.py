@@ -36,6 +36,7 @@ PROJECT_APPS = [
     'feed',
     'column',
     'report',
+    'imgs',
 ]
 
 INSTALLED_APPS = PREREQ_APPS + PROJECT_APPS

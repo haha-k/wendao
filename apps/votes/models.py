@@ -1,4 +1,5 @@
 from django.db import models
+from account.models import Account
 
 class votes(models.Model):
     vote_id = models.AutoField(verbose_name='投票id',primary_key=True)

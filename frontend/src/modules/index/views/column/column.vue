@@ -6,6 +6,7 @@
       </el-header>
       <el-main class="App-main">
         <column-header></column-header>
+        <article-list></article-list>
       </el-main>
       <div></div>
     </el-container>
@@ -35,7 +36,9 @@ export default {
 .column {
   .App-main {
     margin: 0;
+    padding: 0;
     width: 100%;
+    flex-direction: column;
   }
 }
 </style>

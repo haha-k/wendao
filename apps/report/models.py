@@ -10,3 +10,6 @@ class Report(models.Model):
     resource_type = models.CharField(max_length = 2,verbose_name='举报资源类型')
     crt_time = models.DateTimeField(auto_now_add = True,verbose_name='创建时间')
     upd_time = models.DateTimeField(auto_now = True,verbose_name='更新时间')
+
+    class Meta:
+        db_table = "report"

@@ -12,6 +12,9 @@ class Comment(models.Model):
     cre_time = models.DateTimeField(verbose_name='创建日期', auto_now_add=True)
     upd_time = models.DateTimeField(verbose_name='更新日期', auto_now=True)
 
+    class Meta:
+        db_table = "comment"
+
 
 class Reply(models.Model):
     reply_id = models.IntegerField(unique=True,verbose_name='回复id')
@@ -22,3 +25,6 @@ class Reply(models.Model):
     comment_id = models.ForeignKey(Comment, on_delete=models.SET_NULL, null=True,verbose_name='评论id')
     cre_time = models.DateTimeField(verbose_name='创建日期', auto_now_add=True)
     upd_time = models.DateTimeField(verbose_name='更新日期', auto_now=True)
+
+    class Meta:
+        db_table = "reply"

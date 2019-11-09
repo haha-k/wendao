@@ -12,3 +12,6 @@ class Column(models.Model):
     creator = models.ForeignKey(Account, on_delete=models.SET_NULL, null=True,verbose_name='创建者')
     topics = models.CharField(max_length = 1024,verbose_name='专栏相关话题')
     cover = models.CharField(max_length = 1024,verbose_name='专栏封面')
+
+    class Meta:
+        db_table = "column"

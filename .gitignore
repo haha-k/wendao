@@ -4,3 +4,5 @@
 /data
 /compose/mysql/data
 /backend/settings/prod.py
+/__pycache__/
+/migrations/
