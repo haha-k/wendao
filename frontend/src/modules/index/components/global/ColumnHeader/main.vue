@@ -1,7 +1,7 @@
 <template>
 <el-card class="column-header" :body-style="{ padding: '0px' }">
   <div class="inner">
-    <h1 class="title"></h1>
+    <h1 class="title">fdjsklfjkkkkkkkkkkkkkkkkk</h1>
     <p class="desc"></p>
     <div class="about"></div>
     <span class="voters"></span>

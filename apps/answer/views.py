@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-from answer.models import Answer,Comment,like
+from answer.models import Answer
 from rest_framework import serializers
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
@@ -14,10 +14,10 @@ class AnswerSerializer(serializers.ModelSerializer):
         model = Answer
         fields = '__all__'
 
-class CommentSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Comment
-        fields = '__all__'
+# class CommentSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Comment
+#         fields = '__all__'
 
 
 @api_view(['GET'])

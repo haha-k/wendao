@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
 from account.models import Account
+from rest_framework.serializers import *
 
 class RegisterUserSerializer(serializers.ModelSerializer):
     token = serializers.CharField(read_only=True)

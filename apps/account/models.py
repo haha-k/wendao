@@ -62,11 +62,11 @@ class Account(AbstractUser):
 
 class Attention(models.Model):
     attention_id = models.AutoField(verbose_name='关注id',primary_key=True)
-    user = models.ForeignKey(Account, on_delete=models.SET_NULL, null=True,verbose_name='用户id', editable=False,db_column='user_id')
-    followed_user = models.ForeignKey(Account, on_delete=models.SET_NULL, null=True,verbose_name='关注的人id', editable=False,db_column='follwed_user_id')
+    user = models.ForeignKey(Account, on_delete=models.SET_NULL, null=True,verbose_name='用户id', editable=False,db_column='user_id',related_name="user")
+    followed_user = models.ForeignKey(Account, on_delete=models.SET_NULL, null=True,verbose_name='关注的人id', editable=False,db_column='followed_user_id',related_name="followed_user")
     crt_time = models.DateTimeField(verbose_name='创建日期', auto_now_add=True)
     upd_time = models.DateTimeField(verbose_name='更新日期', auto_now=True)
-    status = models.CharField(max_length = 2,choices = follow_choice)
+    status = models.CharField(max_length = 2,choices = follow_choice,verbose_name='点赞状态')
 
     class Meta:
         verbose_name = "关注"
