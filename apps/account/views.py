@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from .models import *
-from .serializer import *
+from .serializers import *
 from rest_framework.generics import CreateAPIView
 from rest_framework.serializers import *
 from rest_framework import mixins, permissions, authentication
@@ -13,10 +13,10 @@ from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework import status
 from api.permission import *
-from django.contrib.auth import get_user_model
+# from django.contrib.auth import get_user_model
 from rest_framework.decorators import *
-from club.models import Club
 from rest_framework.status import *
+
 
 
 class RegisterUserView(CreateAPIView):

@@ -9,6 +9,15 @@ from rest_framework.decorators import api_view
 from rest_framework.views import APIView,Response
 from rest_framework.generics import CreateAPIView
 from question.serializers import AddQuestionSerializer
+from rest_framework.generics import CreateAPIView
+from rest_framework.views import APIView,Response
+from rest_framework import viewsets
+from .models import *
+from .serializers import *
+from rest_framework.mixins import *
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from rest_framework.viewsets import GenericViewSet
+from rest_framework.permissions import *
 
 class QuestionSerializer(serializers.ModelSerializer):
     class Meta:
@@ -79,4 +88,21 @@ class AddQuestionView(CreateAPIView):
     '''
     print("---------------------")
     serializer_class = AddQuestionSerializer
+
+class QuestionViewSet(viewsets.ModelViewSet):
+    queryset = Question.objects.all()
+    serializer_class = QuestionSerializer
+    authentication_classes = (JSONWebTokenAuthentication,)
+
+def get_permissions(self):
+    permission_classes = [IsAuthenticated,]
+    return [permission() for permission in permission_classes]
+
+def get_serializer_class(self):
+    if self.action == "create":
+        return QuestionSerializer
+    elif self.action == "update":
+        return QuestionSerializer
+    return QuestionSerializer
+
 

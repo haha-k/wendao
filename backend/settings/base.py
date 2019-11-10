@@ -37,6 +37,8 @@ PROJECT_APPS = [
     'column',
     'report',
     'imgs',
+    'comment',
+    'votes',
 ]
 
 INSTALLED_APPS = PREREQ_APPS + PROJECT_APPS

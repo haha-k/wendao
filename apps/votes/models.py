@@ -1,7 +1,8 @@
 from django.db import models
 from account.models import Account
+from backend.choice import like_choice
 
-class votes(models.Model):
+class Votes(models.Model):
     vote_id = models.AutoField(verbose_name='投票id',primary_key=True)
     resource_id = models.IntegerField(unique=True,verbose_name='投票资源id')
     resource_type = models.CharField(max_length = 2,verbose_name='投票资源类型')
