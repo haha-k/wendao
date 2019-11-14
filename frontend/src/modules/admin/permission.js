@@ -20,8 +20,10 @@ router.beforeEach(async (to, from, next) => {
     NProgress.start();
     // document.title = getPageTitle(to.meta.title);
     const hasToken = getToken();
-    // console.log(hasToken);
-    // hasToken = "ssssd";
+    console.log(to);
+
+    console.log("123123123");
+    console.log(hasToken);
     if (hasToken) {
         if (to.path === '/login') {
             next({
@@ -30,29 +32,30 @@ router.beforeEach(async (to, from, next) => {
             NProgress.done();
         } else {
             const hasRoles = store.getters.roles && store.getters.roles.length > 0;
+            // const hasRoles = true;
             if (hasRoles) {
                 next()
             } else {
                 try {
                     // const clubs = await store.dispatch('user/getClubs');
                     const info = await store.dispatch('user/getInfo');
-                    let roles;
-                    var clubs = await store.dispatch('user/getClubs');
+                    let roles = ["sysAdmin"];
+                    // var clubs = await store.dispatch('user/getClubs');
                     console.log(clubs);
-                    if (info.is_superuser) {
-                        roles = ["sysAdmin"];
-                    } else if (clubs.length == 0) {
-                        Message.error("您没有权限登录");
-                    } else if (clubs) {
-                        // console.log(clubs);
-                        roles = ["clubAdmin"];
-                    }
+                    // if (info.is_superuser) {
+                    //     roles = ["sysAdmin"];
+                    // } else if (clubs.length == 0) {
+                    //     Message.error("您没有权限登录");
+                    // } else if (clubs) {
+                    //     // console.log(clubs);
+                    //     roles = ["clubAdmin"];
+                    // }
                     console.log(roles);
                     if (!roles || roles.length <= 0) {
                         reject('您没有权限登录');
                     }
                     store.commit('user/SET_ROLES', roles);
-                    store.commit('user/SET_CLUBS', clubs);
+                    // store.commit('user/SET_CLUBS', clubs);
                     // console.log(roles);
                     const accessedRoutes = await store.dispatch('permission/generateRoutes', roles);
                     // console.log(accessedRoutes);
@@ -63,9 +66,10 @@ router.beforeEach(async (to, from, next) => {
                     });
                 } catch (error) {
                     await store.dispatch('user/resetToken');
-                    // console.log("---");
+                    console.log("---");
                     Message.error(error || 'has error');
                     next(`/login?redirect=${to.path}`);
+                    // next();
                     NProgress.done();
                 }
             }

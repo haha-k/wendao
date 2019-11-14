@@ -17,7 +17,7 @@
           <router-link to="/explore">发现</router-link>
         </el-menu-item>
         <el-menu-item index="waiting">
-          <router-link to="/question/waiting">等你来答</router-link>
+          <router-link to="/waiting">等你来答</router-link>
         </el-menu-item>
       </el-menu>
     </div>
@@ -42,7 +42,7 @@
             <!-- <i class="el-icon-caret-bottom"></i> -->
           </div>
           <el-dropdown-menu slot="dropdown">
-            <router-link to="/profile/index">
+            <router-link to="/people/123">
               <el-dropdown-item icon="el-icon-user-solid">
                 我的主页
                 <el-badge class="mark" :value="3" is-dot />
@@ -89,7 +89,9 @@ export default {
     };
   },
   methods: {
-    logout() {},
+    logout() {
+      this.$router.push('/login');
+    },
     handleSelect() {}
   },
   watch: {

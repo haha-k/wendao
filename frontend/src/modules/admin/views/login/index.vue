@@ -9,7 +9,7 @@
       label-position="left"
     >
       <div class="title-container">
-        <h3 class="title">约健后台管理系统</h3>
+        <h3 class="title">问道后台管理系统</h3>
       </div>
 
       <el-form-item prop="username">
@@ -120,6 +120,7 @@ export default {
     },
     handleLogin() {
       // *************add handleLogin logic
+      // this.$router.push('/admin/home');
       this.$refs.loginForm.validate(valid => {
         if (valid) {
           this.loading = true;

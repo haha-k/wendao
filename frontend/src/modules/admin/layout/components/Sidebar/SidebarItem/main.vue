@@ -81,7 +81,7 @@ export default {
     }
   },
   mounted() {
-    // console.log(item)
+    console.log(this.item);
   },
   components: {
     Item,

@@ -4,7 +4,9 @@
       <div>
         <div class="Ask-items">
           <div class="item">
-            <el-avatar></el-avatar>
+            <el-avatar
+              src="https://pic4.zhimg.com/da8e974dc_xs.jpg"
+            ></el-avatar>
             <div class="title">
               <el-form-item prop="title">
                 <el-input
@@ -37,9 +39,11 @@
       </div>
       <div class="Ask-footer">
         <el-form-item>
-          <el-radio v-model="ruleForm.is_anonymous" label="1">匿名提问</el-radio>
+          <el-radio v-model="ruleForm.is_anonymous" label="1"
+            >匿名提问</el-radio
+          >
         </el-form-item>
-        <el-button>发布</el-button>
+        <el-button @click="handlerRelease">发布</el-button>
       </div>
     </el-form>
   </div>
@@ -69,7 +73,15 @@ export default {
       }
     };
   },
-  methods: {},
+  methods: {
+    handlerRelease() {
+
+      this.$message({
+        message: "发布成功",
+        type: "success"
+      });
+    }
+  },
   mounted() {},
   components: {}
 };

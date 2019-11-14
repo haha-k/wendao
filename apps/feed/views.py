@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from .models import *
+from answer.models import *
+from article.models import *
 from .serializer import *
 from rest_framework.mixins import *
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
@@ -8,10 +10,9 @@ from rest_framework.viewsets import GenericViewSet
 from rest_framework.permissions import *
 # from .permissions import *
 
-
 # Create your views here.
 class FeedViewSet(viewsets.ModelViewSet):
-    queryset = Feed.objects.all()
+    queryset = Answer.objects.all()
     serializer_class = FeedSerializer
     authentication_classes = (JSONWebTokenAuthentication,)
 

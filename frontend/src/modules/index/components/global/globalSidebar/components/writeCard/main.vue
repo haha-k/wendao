@@ -3,23 +3,23 @@
   <div class="writeCard-container">
     <el-card>
       <div class="GlobalWrite-nav">
-        <router-link target="_blank" class="GlobalWrite-navItem" to="/">
+        <router-link target="_blank" class="GlobalWrite-navItem" to="/write">
           <!-- <svg-icon></svg-icon> -->
           <i class="el-icon-thirdwenjian"></i>
           <div class="GlobalWrite-navTitle">写回答</div>
         </router-link>
-        <router-link target="_blank" to="/" class="GlobalWrite-navItem">
+        <router-link target="_blank" class="GlobalWrite-navItem" to="/write">
           <!-- <svg-icon></svg-icon> -->
           <i class="el-icon-thirdxie1"></i>
           <div class="GlobalWrite-navTitle">写文章</div>
         </router-link>
-        <router-link target="_blank" to="/" class="GlobalWrite-navItem">
+        <router-link target="_blank" class="GlobalWrite-navItem" to="/column/">
           <i class="el-icon-thirdxie1"></i>
           <div class="GlobalWrite-navTitle">建专栏</div>
         </router-link>
       </div>
       <div class="GlobalWriteAnswerLater">
-        <router-link to="/" target="_blank" class="GlobalSideBar-navLink">
+        <router-link to="/question/later" target="_blank" class="GlobalSideBar-navLink">
           <div class="GlobalWriterAnswerLater-text">
             <i class="el-icon-thirdlishi1"></i>
             <div class="GlobalSideBar-navText">我的稍后答</div>

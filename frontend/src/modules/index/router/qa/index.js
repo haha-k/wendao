@@ -7,7 +7,7 @@ export default [
    },
   {
      name:"questionWaiting",
-      path: "/question/waiting",
+      path: "/waiting",
       component: () => import("@/views/home/waiting.vue")
    },
   {

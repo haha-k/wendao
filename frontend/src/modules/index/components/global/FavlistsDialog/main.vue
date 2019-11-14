@@ -15,22 +15,35 @@
       <div slot="title" v-else>
         <h3 class="title">创建新收藏夹</h3>
       </div>
-      <div class="content" v-if="step1Show" :class="{'is_step':step1Show}">
+      <div class="content" v-if="step1Show" :class="{ is_step: step1Show }">
         <div class="favlists-content">
           <!-- <el-scrollbar style="height:100%"> -->
           <div class="items">
-            <div class="item" v-for="(i,index) in favlists" :key="i.id">
+            <div class="item" v-for="(i, index) in favlists" :key="i.id">
               <div class="inner">
                 <div class="item-name">
-                  <span>{{i.title}}</span>
+                  <span>{{ i.title }}</span>
                   <i class="el-icon-lock" v-if="!i.is_public"></i>
                 </div>
                 <div class="item-count">
-                  <span>{{i.answer_count}} 条内容</span>
+                  <span>{{ i.answer_count }} 条内容</span>
                 </div>
               </div>
-              <el-button v-if="!collectStatus[index].collected" class="collect">收藏</el-button>
-              <el-button v-else class="collected">已收藏</el-button>
+              <el-button
+                class="collect"
+                :class="{ collected: collectStatus[index].collected }"
+                @click="handlerCollect(index)"
+              >{{collectStatus[index].collected ?"已收藏":"收藏"}}</el-button>
+              <!-- <el-button
+                v-if="!collectStatus[index].collected"
+                class="collect"
+                @click="handlerCollect(index)"
+                :class="{ collected: is_collected }"
+                >收藏</el-button
+              >
+              <el-button v-else class="collected" @click="handlerCancelCollect"
+                >已收藏</el-button
+              > -->
             </div>
           </div>
           <!-- </el-scrollbar> -->
@@ -46,13 +59,20 @@
               <el-input v-model="form.title" placeholder="收藏标题"></el-input>
             </el-form-item>
             <el-form-item class="addItem">
-              <el-input type="textarea" :rows="5" v-model="form.desc" placeholder="收藏描述 (可选)"></el-input>
+              <el-input
+                type="textarea"
+                :rows="5"
+                v-model="form.desc"
+                placeholder="收藏描述 (可选)"
+              ></el-input>
             </el-form-item>
             <el-form-item class="addItem">
               <el-radio-group v-model="form.is_public">
                 <el-radio :label="true">
                   <span class="labelTitle">公开</span>
-                  <span class="labelDesc">有其他人关注此收藏夹时不可设置为私密</span>
+                  <span class="labelDesc"
+                    >有其他人关注此收藏夹时不可设置为私密</span
+                  >
                 </el-radio>
                 <el-radio :label="false">
                   <span class="labelTitle">私密</span>
@@ -63,7 +83,7 @@
           </div>
           <div class="ButtonGroup">
             <el-button @click="handleBack">返回</el-button>
-            <el-button :disabled="is_create">确认创建</el-button>
+            <el-button :disabled="form.title==''" @click="handlerCreate">确认创建</el-button>
           </div>
         </el-form>
       </div>
@@ -72,6 +92,7 @@
 </template>
 <script>
 import { getCollected, getFavlists } from "#/api/favlist";
+import { log } from 'util';
 export default {
   name: "FavlistsDialog",
   data() {
@@ -83,16 +104,25 @@ export default {
       step2Show: false,
       innerVisible: false,
       dialogFavlistsVisible: false,
+      collectText:"已收藏",
       form: {
         title: "",
         desc: "",
         is_public: true
       },
       rules: {},
-      allow_create:false,
+      allow_create: true
     };
   },
   methods: {
+    handlerCreate(){
+      this.handleBack();
+    },
+    handlerCollect(index) {
+      let status = this.collectStatus[index].collected;
+      console.log(status);
+      this.collectStatus[index].collected = !this.collectStatus[index].collected;
+    },
     handleCreate() {
       this.step1Show = false;
     },
@@ -118,7 +148,6 @@ export default {
       // });
       // console.log(c);
     },
-
     getCollection(uid, aid) {
       getCollected(aid)
         .then(result => {
@@ -210,14 +239,14 @@ export default {
           width: 76px;
           font-weight: 600;
         }
-        .el-button.collected {
-          color: #fff;
-          background-color: #8590a6;
-        }
 
-        .el-button.collect {
+        .collect {
           color: #0084ff;
           border-color: #0084ff;
+        }
+        .collected {
+          color: #fff;
+          background-color: #8590a6;
         }
       }
     }
@@ -287,7 +316,7 @@ export default {
           color: #fff;
 
           &.is-disabled {
-            opacity: .5;
+            opacity: 0.5;
           }
         }
       }
@@ -300,4 +329,3 @@ export default {
   padding: 0 !important;
 }
 </style>
-

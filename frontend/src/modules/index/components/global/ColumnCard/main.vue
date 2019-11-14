@@ -1,13 +1,13 @@
 <template>
   <div class="ColumnCard">
-    <el-avatar :size="80"></el-avatar>
-    <router-link to="/" class="Name">{{"zxxx"}}</router-link>
+    <el-avatar :size="80" src="https://pic4.zhimg.com/v2-3fc67878df16910f9312d6a4b6d4c8b8_xl.jpg"></el-avatar>
+    <router-link to="/" class="Name">{{"原创文学"}}</router-link>
     <div class="count">
       <span>{{"111"}}关注</span>
       <span>{{"111"}}文章</span>
     </div>
-    <div class="intro">{{"浮点数覅欧fsdfsdfsdfsdfsdf舒丹覅的生活普偶i哦哟偶偶"}}</div>
-    <el-button class="entry">进入专栏</el-button>
+    <div class="intro">{{"精选最优秀的原创作品，与您分享。"}}</div>
+    <el-button class="entry" @click="handlerEntry">进入专栏</el-button>
   </div>
 </template>
 <script>
@@ -16,7 +16,11 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    handlerEntry(){
+      this.$router.push('/column/123');
+    }
+  },
   mounted() {},
   components: {}
 };
@@ -70,7 +74,7 @@ export default {
     font-size: 14px;
     text-align: center;
     color: #444;
-    display: -webkit-box; 
+    display: -webkit-box;
     text-overflow: ellipsis;
     overflow: hidden;
     -webkit-line-clamp: 2;

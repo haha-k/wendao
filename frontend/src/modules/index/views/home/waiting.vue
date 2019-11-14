@@ -8,25 +8,25 @@
         <el-card class="mainColumn" :body-style="{ padding: '0px' }">
           <div slot="header" class="Sticky">
             <div class="types">
-              <router-link to="/">
+              <router-link to="/waiting">
                 <div class="type" :class="{'is-active':is_active}">
                   <i class="s"></i>
                   人气问题
                 </div>
               </router-link>
-              <router-link to="/">
+              <router-link to="/waiting">
                 <div class="type">
                   <i class="s"></i>
                   潜力好问
                 </div>
               </router-link>
-              <router-link to="/">
+              <router-link to="/waiting">
                 <div class="type">
                   <i class="s"></i>
                   新问题
                 </div>
               </router-link>
-              <router-link to="/">
+              <router-link to="/waiting">
                 <div class="type">
                   <i class="s"></i>
                   人人答

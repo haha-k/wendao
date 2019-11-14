@@ -6,14 +6,14 @@
         <div class="main">
           <div class="tags">
             <div class="topics">
-              <el-tag v-for="i in q.topics" :key="i">{{i.name}}</el-tag>
+              <el-tag v-for="i in q.topics" :key="i">{{ i.name }}</el-tag>
             </div>
           </div>
-          <h1 class="title">{{q.title}}</h1>
+          <h1 class="title">{{ q.title }}</h1>
           <div class="detail">
-            <div class="text" :class="{Collpsed:isCollpsed}">
+            <div class="text" :class="{ Collpsed: isCollpsed }">
               <div>
-                <p>{{q.detail}}</p>
+                <p>{{ q.detail }}</p>
               </div>
             </div>
           </div>
@@ -24,7 +24,7 @@
               <el-button class="numberBoard-item">
                 <div class="itemInner">
                   <div class="itemName">关注者</div>
-                  <strong class="itemValue">{{q.follower_count}}</strong>
+                  <strong class="itemValue">{{ q.follower_count }}</strong>
                 </div>
               </el-button>
               <div class="numberBoard-item">
@@ -47,22 +47,41 @@
         <div class="footer-inner">
           <div class="main footer-main">
             <div class="button-group">
-              <el-button class="follow-button">关注问题</el-button>
-              <el-button icon="el-icon-thirdxie1">写回答</el-button>
+              <el-button
+                class="follow-button"
+                @click="handlerFollow"
+                :class="{ 'is-active': followStatus }"
+                >{{ followStatus == true ? "已关注" : "关注问题" }}</el-button
+              >
+              <el-button icon="el-icon-thirdxie1" @click="handlerWrite"
+                >写回答</el-button
+              >
             </div>
             <div class="actions">
-              <el-button icon="el-icon-thirdyaoqinghaoyou" class="invite-button">邀请回答</el-button>
+              <el-button icon="el-icon-thirdyaoqinghaoyou" class="invite-button"
+                >邀请回答</el-button
+              >
               <div class="comment">
                 <el-button
                   class="ContentItem-action"
                   icon="el-icon-thirdcomment"
                   size="medium"
-                >{{(commentCount == 0?"":commentCount+"条")+"评论"}}</el-button>
+                  >{{
+                    (commentCount == 0 ? "" : commentCount + "条") + "评论"
+                  }}</el-button
+                >
               </div>
               <el-dropdown placement="bottom" trigger="click">
-                <el-button class="ContentItem-action" icon="el-icon-thirdfenxiang" size="medium">分享</el-button>
+                <el-button
+                  class="ContentItem-action"
+                  icon="el-icon-thirdfenxiang"
+                  size="medium"
+                  >分享</el-button
+                >
                 <el-dropdown-menu slot="dropdown">
-                  <el-dropdown-item icon="el-icon-thirdlianjie1">分享链接</el-dropdown-item>
+                  <el-dropdown-item icon="el-icon-thirdlianjie1"
+                    >分享链接</el-dropdown-item
+                  >
                 </el-dropdown-menu>
               </el-dropdown>
               <el-button
@@ -70,12 +89,20 @@
                 icon="el-icon-s-flag"
                 v-if="!isAns"
                 size="medium"
-              >举报</el-button>
+                >举报</el-button
+              >
               <el-dropdown placement="bottom" trigger="click">
-                <el-button class="ContentItem-action" icon="el-icon-thirdellipsis"></el-button>
+                <el-button
+                  class="ContentItem-action"
+                  icon="el-icon-thirdellipsis"
+                ></el-button>
                 <el-dropdown-menu slot="dropdown">
-                  <el-dropdown-item v-if="!isAuthor">使用匿名身份</el-dropdown-item>
-                  <el-dropdown-item v-if="!isAuthor">查看问题日志</el-dropdown-item>
+                  <el-dropdown-item v-if="!isAuthor"
+                    >使用匿名身份</el-dropdown-item
+                  >
+                  <el-dropdown-item v-if="!isAuthor"
+                    >查看问题日志</el-dropdown-item
+                  >
                 </el-dropdown-menu>
               </el-dropdown>
             </div>
@@ -94,10 +121,18 @@ export default {
       q: this.question,
       commentCount: 0,
       squareUrl:
-        "https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png"
+        "https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png",
+      followStatus: false
     };
   },
-  methods: {},
+  methods: {
+    handlerFollow() {
+      this.followStatus = !this.followStatus;
+    },
+    handlerWrite() {
+      this.$router.push("/write");
+    }
+  },
   mounted() {
     // console.log(this.question);
   },
@@ -314,6 +349,12 @@ export default {
               border-color: #0077e6;
               background-color: #0077e6;
             }
+
+            &.is-active {
+              color: #fff;
+              background-color: #8590a6;
+
+            }
           }
         }
         .actions {
@@ -331,7 +372,7 @@ export default {
             background: none;
             line-height: 32px;
             margin-right: 16px;
-              font-weight: 600;
+            font-weight: 600;
 
             &:hover {
               background-color: rgba(133, 144, 166, 0.06);
@@ -358,12 +399,13 @@ export default {
             border: none;
             border-radius: 0;
             color: #8590a6;
-              font-weight: 600;
+            font-weight: 600;
           }
 
-          .el-dropdown,.report-button{
+          .el-dropdown,
+          .report-button {
             margin-left: 20px;
-              font-weight: 600;
+            font-weight: 600;
           }
         }
       }

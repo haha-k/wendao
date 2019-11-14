@@ -1,11 +1,11 @@
 <template>
   <div class="questionWaitingCard">
-    <router-link to="/" class="title">xx很谨慎的人xxxxxxx</router-link>
-    <div class="detail">fsdfsdfsdfsd</div>
+    <router-link to="/" class="title">你们喜欢哪些国产漫画、国产动画作品？</router-link>
+    <div class="detail">（完全看一次看这个动漫，人长什么样子都不知道的情况下）</div>
     <div class="tool">
       <div class="mainTool">
-        <el-button icon="el-icon-thirdicon">写回答</el-button>
-        <el-button icon="el-icon-thirdjia">关注问题</el-button>
+        <el-button icon="el-icon-thirdicon" @click="handlerWrite">写回答</el-button>
+        <el-button icon="el-icon-thirdjia" @click="handlerFollow">关注问题</el-button>
         <el-button icon="el-icon-thirdlishi1">稍后答</el-button>
       </div>
       <div class="subTool">
@@ -18,9 +18,18 @@
 export default {
   name: "questionWaitingCard",
   data() {
-    return {};
+    return {
+
+    };
   },
-  methods: {},
+  methods: {
+    handlerWrite(){
+      this.$router.push('/write');
+    },
+    handlerFollow(){
+      this.status = 1;
+    }
+  },
   mounted() {},
   components: {}
 };

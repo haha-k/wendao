@@ -1,12 +1,13 @@
 <template>
   <div class="laterCard">
     <div class="item">
-      <div class="title">嘻嘻嘻嘻嘻</div>
+      <div class="title">{{"动漫给你的感觉是什么？"}}</div>
+
       <div class="tool">
         <div class="mainTool">
-          <el-button>写回答</el-button>
+          <el-button @click="handlerWrite">写回答</el-button>
           <el-button>移除</el-button>
-          <div class="info">100个回答'3334个浏览</div>
+          <div class="info">{{"100个回答 · 3334个浏览"}}</div>
         </div>
       </div>
     </div>
@@ -18,7 +19,11 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    handlerWrite() {
+      this.$router.push("/write");
+    }
+  },
   mounted() {},
   components: {}
 };

@@ -12,13 +12,18 @@
         :collapse-transition="true"
         mode="vertical"
       >
-        <sidebar-item
+        <!-- <sidebar-item
           v-for="route in permission_routes"
           :key="route.path"
           :item="route"
           :base-path="route.path"
+        ></sidebar-item> -->
+        <sidebar-item
+          v-for="route in rout"
+          :key="route.path"
+          :item="route"
+          :base-path="route.path"
         ></sidebar-item>
-        <!-- <p>{{permission_routes}}</p> -->
       </el-menu>
     </el-scrollbar>
   </div>
@@ -28,15 +33,23 @@ import { mapGetters } from "vuex";
 import logo from "./logo";
 import SidebarItem from "./SidebarItem";
 import variables from "@admin/styles/variables.scss";
+import { otherRoutes } from '@admin/router/modules/otherRoutes'
+
 
 export default {
   name: "Sidebar",
   data() {
-    return {};
+    return {
+      rout:otherRoutes,
+    };
   },
   methods: {},
   mounted() {
     console.log("....");
+    console.log(otherRoutes);
+    console.log(this.rout);
+
+    // console.log(this.permission_routes);
 
   },
   components: {

@@ -56,7 +56,7 @@ const actions = {
             username,
             password
         } = userInfo;
-        // console.log(userInfo);
+        console.log(userInfo);
         return new Promise((resolve, reject) => {
             login({
                 username: username.trim(),
@@ -105,13 +105,13 @@ const actions = {
                 if (!data) {
                     reject('验证失败,请再次登录');
                 }
-                const {
-                    // roles,
-                    avatar_url,
-                    username,
-                    id,
-                    ...info
-                } = data;
+                // const {
+                //     // roles,
+                //     avatar_url,
+                //     username,
+                //     id,
+                //     ...info
+                // } = data;
                 // console.log(info);
 
                 // let a = async () => {
@@ -121,7 +121,7 @@ const actions = {
                 // }
                 // a();
 
-                let roles;
+                // let roles;
 
 
                 // commit('SET_ROLES', roles);
@@ -132,6 +132,8 @@ const actions = {
 
                 resolve(info);
             }).catch(error => {
+                console.log("hahahah");
+
                 reject(error);
             })
         })

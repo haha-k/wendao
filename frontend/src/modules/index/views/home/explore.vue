@@ -34,7 +34,7 @@
               </div>
             </div>
             <div class="moreButton">
-              <router-link to="/" class="more">
+              <router-link to="/column/" class="more">
                 查看更多专栏
                 <i class="el-icon-thirdxiangshangjiantouarrowup1"></i>
               </router-link>

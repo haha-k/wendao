@@ -39,17 +39,21 @@ const mutations = {
 
 const actions =  {
     generateRoutes({commit},roles){
+            console.log('permission');
+
         return new Promise(resolve => {
             let accessedRoutes;
-            if(roles.includes('sysAdmin')){
-                accessedRoutes = sysAdminRoutes || [];
-                console.log("hahahahhaha");
-            }else{
-                accessedRoutes = clubAdminRoutes || [];
-            }
+            accessedRoutes = otherRoutes || [];
+            console.log(accessedRoutes);
+
+            // if(roles.includes('sysAdmin')){
+            //     accessedRoutes = sysAdminRoutes || [];
+            //     console.log("hahahahhaha");
+            // }else{
+            //     accessedRoutes = clubAdminRoutes || [];
+            // }
             commit('SET_ROUTES',accessedRoutes);
             resolve(accessedRoutes);
-            console.log('permission');
         })
     }
 }

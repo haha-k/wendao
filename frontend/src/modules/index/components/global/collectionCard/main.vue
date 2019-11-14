@@ -6,7 +6,8 @@
         <div class="relateMembers">
           <div class="creator">
             <span class="creator-avatar">
-              <el-avatar shape="square" :size="28"></el-avatar>
+              <el-avatar shape="square" :size="28" src="https://pic1.zhimg.com/3cc3a8c1b0e78b3ab520747bf5a46302_is.jpg"></el-avatar>
+
             </span>
             <router-link to="/" class="Name">{{"唐大行"}}</router-link>
             <span class="creator-suffix">创建</span>
@@ -15,7 +16,12 @@
         </div>
       </div>
       <div class="followButton">
-        <el-button>关注收藏夹</el-button>
+        <el-button
+          @click="handlerFollow"
+          :class="{ 'is-active': followStatus }"
+        >
+        {{ followStatus == true ? "已关注" : "关注收藏夹" }}
+        </el-button>
       </div>
     </div>
     <div class="contentList">
@@ -43,9 +49,15 @@
 export default {
   name: "collectionCard",
   data() {
-    return {};
+    return {
+      followStatus:false,
+    };
   },
-  methods: {},
+  methods: {
+    handlerFollow() {
+      this.followStatus = !this.followStatus;
+    },
+  },
   mounted() {},
   components: {}
 };
@@ -116,6 +128,15 @@ export default {
       }
       .followButton {
         margin-left: 20px;
+
+        .el-button{
+            &.is-active {
+              color: #fff;
+              background-color: #8590a6;
+
+            }
+        }
+
       }
     }
   }

@@ -92,6 +92,7 @@ export default {
           // console.log(this.ruleForm["password"]);
           var url1 = "/api/account/authorizations";
           var url2 = "http://localhost:8000/api/account/authorizations/";
+              this.$router.push('/home');
           this.$axios
             .post(url2, {
               username: this.ruleForm["username"],
@@ -120,7 +121,7 @@ export default {
               // cookie.setCookie('token',response.data.token,7);
               // cookie.setCookie('is_login',true,7);
               // location.href = "/#/home";
-              this.$router.push({name:'home'});
+              this.$router.push('/home');
               // 跳转页面
               // var return_url = this.get_query_string("next");
               // if (!return_url) {

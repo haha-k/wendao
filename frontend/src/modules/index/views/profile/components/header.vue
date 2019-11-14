@@ -23,7 +23,7 @@
             <div class="content-body"></div>
             <div class="content-footer">
               <el-button icon="el-icon-arrow-down" class="expand-button">查看详细资料</el-button>
-              <el-button class="edit-button">编辑个人资料</el-button>
+              <el-button class="edit-button" @click="handlerEdit">编辑个人资料</el-button>
             </div>
           </div>
         </div>
@@ -40,7 +40,11 @@ export default {
       avatar: ""
     };
   },
-  methods: {},
+  methods: {
+    handlerEdit(){
+      this.$router.push('/profile/edit');
+    }
+  },
   created() {},
   watch: {
     me: {
@@ -133,7 +137,7 @@ export default {
               position: absolute;
               left: 0;
               top: 0;
-              
+
             }
             .edit-button {
               position: absolute;

@@ -99,7 +99,7 @@ export default {
     },
   },
   mounted() {
-    this.searchPool = this.generateRoutes(this.routes);
+    // this.searchPool = this.generateRoutes(this.routes);
   },
   components: {},
   computed: {

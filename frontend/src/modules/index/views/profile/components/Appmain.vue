@@ -7,6 +7,7 @@
         </h4>
         <div class="headerOptions"></div>
       </div>
+      <feed-card></feed-card>
 
     </div>
   </div>

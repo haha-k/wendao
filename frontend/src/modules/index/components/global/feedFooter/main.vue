@@ -10,14 +10,17 @@
         icon="el-icon-thirdxiala-copy-copy"
         size="medium"
         class="VoteButton VoteButton-up"
+        :class="{'is-active' : is_like}"
       >{{statusText+" "+(votes == 0?"":votes)}}</el-button>
       <!-- <el-button>
         <svg-icon class-name="" icon-class="">
         </svg-icon>
       </el-button>-->
       <el-button
+        @click="down"
         type="primary"
         class="VoteButton VoteButton-down"
+        :class="{'is-active' : is_down}"
         icon="el-icon-thirdxiala"
         size="medium"
       ></el-button>
@@ -33,7 +36,7 @@
     <el-dropdown placement="bottom" trigger="click">
       <el-button class="ContentItem-action" icon="el-icon-thirdfenxiang" size="medium">分享</el-button>
       <el-dropdown-menu slot="dropdown">
-        <el-dropdown-item icon="el-icon-thirdlianjie1">分享链接</el-dropdown-item>
+        <el-dropdown-item icon="el-icon-thirdlianjie1" @click="handlerEnjoy">分享链接</el-dropdown-item>
       </el-dropdown-menu>
     </el-dropdown>
     <el-button
@@ -60,15 +63,43 @@ export default {
   name: "feedFooter",
   data() {
     return {
-      votes: 0,
+      votes: 10,
       statusText: "赞同",
+      is_like:false,
+      is_down:false,
       comments: 0,
       collectVisible: false,
       commentVisible: false,
     };
   },
   methods: {
-    like() {},
+    handlerEnjoy(){
+        console.log("xxxxx");
+
+    this.$message({
+          message: '成功复制链接',
+          type: 'success'
+        });
+    },
+    like() { if(this.statusText == "赞同"){
+      if(this.is_down == true){
+        this.down();
+      }
+      this.votes++;
+      this.statusText = "已赞同";
+      this.is_like = true;
+      }else{
+        this.votes--;
+        this.statusText = "赞同";
+        this.is_like = false;
+      }
+    },
+    down() {
+      if(this.statusText == "已赞同"){
+          this.like();
+      }
+      this.is_down = !this.is_down;
+      },
     handlerCollect(){
       this.collectVisible = true;
     },
@@ -141,6 +172,8 @@ export default {
         color: #fff;
         background: #0084ff;
       }
+
+
     }
   }
 }
