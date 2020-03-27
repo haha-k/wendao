@@ -9,7 +9,7 @@ export function getCollected(aid) {
     // });
     return request({
         baseURL: '',
-        url: 'json/favlist/collected.json',
+        url: '/json/favlist/collected.json',
         method: "get",
     });
 }
@@ -23,7 +23,7 @@ export function getFavlists(uid) {
     // });
     return request({
         baseURL: '',
-        url: 'json/favlist/favlists.json',
+        url: '/json/favlist/favlists.json',
         method: "get",
     });
 }

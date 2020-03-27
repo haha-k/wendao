@@ -8,17 +8,11 @@
         :router="true"
       >
         <el-menu-item>
-          <el-image class="image" style="width: 95px; height: 45px" src="img/2.png" fit="fill"></el-image>
+          <el-image class="image" style="width: 95px; height: 45px" src="/img/2.png" fit="fill"></el-image>
         </el-menu-item>
-        <el-menu-item index="home">
-          <router-link to="/home">首页</router-link>
-        </el-menu-item>
-        <el-menu-item class="login" index="explore">
-          <router-link to="/explore">发现</router-link>
-        </el-menu-item>
-        <el-menu-item index="waiting">
-          <router-link to="/waiting">等你来答</router-link>
-        </el-menu-item>
+        <el-menu-item index="home" route="/home">首页</el-menu-item>
+        <el-menu-item class="login" index="explore" route="/explore">发现</el-menu-item>
+        <el-menu-item index="waiting" route="/waiting">等你来答</el-menu-item>
       </el-menu>
     </div>
     <Search></Search>
@@ -38,7 +32,7 @@
       <el-badge is-dot class="item1">
         <el-dropdown class="avatar-container right-menu-item hover-effort" placement="bottom">
           <div class="avatar-wrapper">
-            <img src="img/default.png" class="user-avatar" />
+            <img src="/img/default.png" class="user-avatar" />
             <!-- <i class="el-icon-caret-bottom"></i> -->
           </div>
           <el-dropdown-menu slot="dropdown">
@@ -78,7 +72,7 @@ export default {
   name: "navbar",
   data() {
     return {
-      activeIndex: this.active,
+      activeIndex: "home",
       gridData: [
         {
           date: "2016-05-02",
@@ -90,20 +84,23 @@ export default {
   },
   methods: {
     logout() {
-      this.$router.push('/login');
+      this.$router.push("/login");
     },
-    handleSelect() {}
+    handleSelect(key, keyPath) {
+      console.log(key, keyPath);
+    }
   },
   watch: {
     active: {
-      handler:function(newVal, oldVal) {
-        this.activeIndex = this.newVal;
+      handler: function(newVal, oldVal) {
+        // this.activeIndex = this.newVal;
       },
       deep: true
     }
   },
   mounted() {
     console.log(this.active);
+    this.activeIndex = this.active;
   },
   components: {
     Search,
@@ -149,6 +146,10 @@ export default {
         color: #8590a6;
         height: $navbarHeight;
         line-height: $navbarHeight;
+
+        a {
+          height: 100%;
+        }
 
         &.is-active {
           color: #444;

@@ -1,8 +1,8 @@
-export default[
-        {
-            name:"article",
-            path: '/article/:pid',
-            component: ()=>import('@/views/article/article.vue')
-        },
+export default [{
+        name: "article",
+        path: '/article/:pid',
+        props: true,
+        component: () => import('@/views/article/article.vue')
+    },
 
 ]

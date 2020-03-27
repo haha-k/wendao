@@ -7,7 +7,7 @@ export function getQuestionDetail(qid){
     // });
     return request({
         baseURL: '',
-        url: 'json/question/question.json',
+        url: '/json/question/question.json',
         method: "get",
     });
 }

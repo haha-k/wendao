@@ -2,11 +2,8 @@
   <div class="feedCard-container">
     <h2 class="title">
       <div>
-          <!-- :to="isAns?item.target.question.url:item.target.url" -->
-        <router-link
-          :to="item.target.url"
-          target="_blank"
-        >{{isAns?item.target.question.title:item.target.title}}</router-link>
+        <!-- :to="isAns?item.target.question.url:item.target.url" -->
+        <router-link :to="item.target.url">{{isAns?item.target.question.title:item.target.title}}</router-link>
       </div>
     </h2>
     <div class="Content-container" :class="isCollapsed">
@@ -16,11 +13,11 @@
         </div>
       </div>
       <div class="text">
-        <span >{{myExcerpt}}</span>
+        <span>{{myExcerpt}}</span>
         <el-button class="contentItem-more">
           阅读全文
           <svg-icon class-name="icon1" class="icon" icon-class="more-index" />
-            <!-- <i class="el-icon-arrow-down"></i> -->
+          <!-- <i class="el-icon-arrow-down"></i> -->
         </el-button>
       </div>
     </div>
@@ -35,7 +32,7 @@ export default {
   data() {
     return {
       isAns: this.item.target.type === "answer",
-      isThumbnail: this.item.target.thumbnail!=="",
+      isThumbnail: this.item.target.thumbnail !== "",
       isCollapsed: true,
       excerpt: this.item.target.excerpt
     };
@@ -73,10 +70,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .feedCard-container {
-  -webkit-tap-highlight-color:rgba(26, 26, 26, 0);
-    font-weight: 600;
-    cursor: pointer;
-
+  -webkit-tap-highlight-color: rgba(26, 26, 26, 0);
+  font-weight: 600;
+  cursor: pointer;
 
   .title {
     font-size: 18px;
@@ -88,11 +84,9 @@ export default {
     // margin-bottom: -4px;
 
     & a:hover {
-        color:#175199;
-
+      color: #175199;
     }
   }
-
 
   .cover {
     width: 190px;
@@ -133,7 +127,6 @@ export default {
     .text {
       max-height: 100px;
       cursor: pointer;
-
     }
   }
 
@@ -144,13 +137,12 @@ export default {
     white-space: normal;
     word-break: break-all;
     line-height: 1.6;
-    text-align:left;
+    text-align: left;
     font-weight: 600;
 
     &:hover {
       color: rgb(100, 100, 100);
     }
-
   }
   .contentItem-more {
     padding: 0;

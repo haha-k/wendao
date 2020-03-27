@@ -8,7 +8,7 @@ export function getQuestionFollowers(qid) {
     // });
     return request({
         baseURL: '',
-        url: 'json/followers/followers.json',
+        url: '/json/followers/followers.json',
         method: "get",
     });
 }

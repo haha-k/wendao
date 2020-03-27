@@ -7,7 +7,7 @@ export function getAnswerDetail(aid) {
     // });
     return request({
         baseURL: '',
-        url: 'json/answer/answerDetail.json',
+        url: '/json/answer/answerDetail.json',
         method: "get",
     });
 }
@@ -21,7 +21,7 @@ export function getConcernedUpvoters(aid) {
     // });
     return request({
         baseURL: '',
-        url: 'json/answer/concernVotes.json',
+        url: '/json/answer/concernVotes.json',
         method: "get",
     });
 }

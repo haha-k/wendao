@@ -8,7 +8,7 @@ export function getAnswerVoters(aid) {
     // });
     return request({
         baseURL: '',
-        url: 'json/voters/voters.json',
+        url: '/json/voters/voters.json',
         method: "get",
     });
 }

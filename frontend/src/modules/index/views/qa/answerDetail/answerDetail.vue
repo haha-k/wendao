@@ -2,7 +2,7 @@
   <div class="answerDetail-container">
     <el-container>
       <el-header style="height:52px">
-        <navbar></navbar>
+        <Navbar :active="'home'"></Navbar>
       </el-header>
       <main>
         <div class="question-page">
@@ -17,6 +17,7 @@
 import { getAnswerDetail } from "#/api/answer";
 import { getQuestionDetail } from "#/api/question";
 import questionMain from "./components/questionMain";
+import Navbar from "@/components/global/Navbar";
 
 export default {
   name: "answerDetail",
@@ -28,7 +29,7 @@ export default {
       answerCount: 0,
       answer: {},
       mainAnswer: {},
-      otherAnswer: [],
+      otherAnswer: []
     };
   },
   methods: {
@@ -52,8 +53,7 @@ export default {
           for (let item of this.answer) {
             if (String(item.id) === this.mainAnswerId) {
               this.mainAnswer = item;
-            }
-            else {
+            } else {
               this.otherAnswer.push(item);
             }
           }
@@ -68,7 +68,8 @@ export default {
     this.getQuestion(this.questionId);
   },
   components: {
-    "question-main": questionMain
+    "question-main": questionMain,
+    Navbar: Navbar
   },
   props: {}
 };

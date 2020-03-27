@@ -8,7 +8,7 @@ export function getMember(uid) {
     // });
     return request({
         baseURL: '',
-        url: 'json/member/member.json',
+        url: '/json/member/member.json',
         method: "get",
     });
 }
@@ -20,7 +20,7 @@ export function getMe(uid) {
     // });
     return request({
         baseURL: '',
-        url: 'json/member/me.json',
+        url: '/json/member/me.json',
         method: "get",
     });
 }

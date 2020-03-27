@@ -8,7 +8,7 @@ export function getQuestionRootComment(qid) {
     // });
     return request({
         baseURL: '',
-        url: 'json/comments/QRcomments.json',
+        url: '/json/comments/QRcomments.json',
         method: "get",
     });
 }
@@ -22,8 +22,7 @@ export function getAnswerComments(aid) {
     // });
     return request({
         baseURL: '',
-        url: 'json/comments/comments.json',
+        url: '/json/comments/comments.json',
         method: "get",
     });
 }
-

@@ -7,7 +7,7 @@ export function getTopic(tid) {
     // });
     return request({
         baseURL: '',
-        url: 'json/topics/topics.json',
+        url: '/json/topics/topics.json',
         method: "get",
     });
 }
