@@ -6,7 +6,9 @@
         <div class="main">
           <div class="tags">
             <div class="topics">
-              <el-tag v-for="i in q.topics" :key="i">{{ i.name }}</el-tag>
+              <el-tag v-for="i in q.topics" :key="i">
+                <router-link :to="'/topic/'+i.id">{{ i.name }}</router-link>
+              </el-tag>
             </div>
           </div>
           <h1 class="title">{{ q.title }}</h1>
@@ -51,37 +53,22 @@
                 class="follow-button"
                 @click="handlerFollow"
                 :class="{ 'is-active': followStatus }"
-                >{{ followStatus == true ? "已关注" : "关注问题" }}</el-button
-              >
-              <el-button icon="el-icon-thirdxie1" @click="handlerWrite"
-                >写回答</el-button
-              >
+              >{{ followStatus == true ? "已关注" : "关注问题" }}</el-button>
+              <el-button icon="el-icon-thirdxie1" @click="handlerWrite">写回答</el-button>
             </div>
             <div class="actions">
-              <el-button icon="el-icon-thirdyaoqinghaoyou" class="invite-button"
-                >邀请回答</el-button
-              >
+              <el-button icon="el-icon-thirdyaoqinghaoyou" class="invite-button">邀请回答</el-button>
               <div class="comment">
-                <el-button
-                  class="ContentItem-action"
-                  icon="el-icon-thirdcomment"
-                  size="medium"
-                  >{{
-                    (commentCount == 0 ? "" : commentCount + "条") + "评论"
-                  }}</el-button
-                >
+                <el-button class="ContentItem-action" icon="el-icon-thirdcomment" size="medium">
+                  {{
+                  (commentCount == 0 ? "" : commentCount + "条") + "评论"
+                  }}
+                </el-button>
               </div>
               <el-dropdown placement="bottom" trigger="click">
-                <el-button
-                  class="ContentItem-action"
-                  icon="el-icon-thirdfenxiang"
-                  size="medium"
-                  >分享</el-button
-                >
+                <el-button class="ContentItem-action" icon="el-icon-thirdfenxiang" size="medium">分享</el-button>
                 <el-dropdown-menu slot="dropdown">
-                  <el-dropdown-item icon="el-icon-thirdlianjie1"
-                    >分享链接</el-dropdown-item
-                  >
+                  <el-dropdown-item icon="el-icon-thirdlianjie1">分享链接</el-dropdown-item>
                 </el-dropdown-menu>
               </el-dropdown>
               <el-button
@@ -89,20 +76,12 @@
                 icon="el-icon-s-flag"
                 v-if="!isAns"
                 size="medium"
-                >举报</el-button
-              >
+              >举报</el-button>
               <el-dropdown placement="bottom" trigger="click">
-                <el-button
-                  class="ContentItem-action"
-                  icon="el-icon-thirdellipsis"
-                ></el-button>
+                <el-button class="ContentItem-action" icon="el-icon-thirdellipsis"></el-button>
                 <el-dropdown-menu slot="dropdown">
-                  <el-dropdown-item v-if="!isAuthor"
-                    >使用匿名身份</el-dropdown-item
-                  >
-                  <el-dropdown-item v-if="!isAuthor"
-                    >查看问题日志</el-dropdown-item
-                  >
+                  <el-dropdown-item v-if="!isAuthor">使用匿名身份</el-dropdown-item>
+                  <el-dropdown-item v-if="!isAuthor">查看问题日志</el-dropdown-item>
                 </el-dropdown-menu>
               </el-dropdown>
             </div>
@@ -353,7 +332,6 @@ export default {
             &.is-active {
               color: #fff;
               background-color: #8590a6;
-
             }
           }
         }

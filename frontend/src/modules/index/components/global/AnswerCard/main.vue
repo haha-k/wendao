@@ -1,6 +1,5 @@
-
 <template>
-  <el-card class="AnswerCard">
+  <el-card ref="answerCard" class="AnswerCard">
     <div class="content">
       <div class="content-item">
         <div class="meta">
@@ -10,26 +9,36 @@
               <span>
                 <el-popover placement="bottom" width="200" trigger="hover">
                   <author-popover></author-popover>
-                  <el-link slot="reference" :underline="false">{{"换好几十块了的机会"}}</el-link>
+                  <el-link slot="reference" :underline="false">{{
+                    "换好几十块了的机会"
+                  }}</el-link>
                 </el-popover>
               </span>
               等
               <el-button>
-                {{"4,053"}}
+                {{ "4,053" }}
                 人赞同了该回答
               </el-button>
             </span>
           </div>
         </div>
-        <div class="RichContent">
-          <div
-            style="max-height:400px"
-            class="inner"
-            :class="{'is-collapsed':isCollapsed}"
-          >{{"有幸一毕业就进了阿里。身边的同事确实都很厉害， 我是个非科班的Java工程师，本科学的是电信，后来跨考到985软件工程，自己学了两年Java，期间找了两次实习，一次在网易，一次在百度，秋招前复习了小半年，最后拿到了BAT等公司的offer，考虑到技术栈和成长速度的原因，最后选择去了阿里。 分享一下我的自学经历和秋招经历，顺便给大家带点干货。 听说送资料可以防喷子，不知道是不是真的。CC 大学时期的迷茫与坚定 我的本科专业是电子信息工程，基本没有接触过计算机专业的课程，只学过c语言，然后在大三的时候接触过java，Android，以及前端开发。这时候我只是一个刚刚入门的菜鸟，还不知道软件开发的水有多深，抱着试一试的态度去应聘了很多公司。结果可想而知，连简历筛选都没有通过。"}}</div>
-          <el-button class="button-item">展开阅读全文</el-button>
+        <div class="RichContent" :class="{ 'is-collapsed': isCollapsed }">
+          <div style class="inner" @click="isCollapsed && handleCollapse()">
+            <article class="article-content" v-html="answer.content"></article>
+          </div>
+          <el-button
+            v-show="isCollapsed"
+            @click="handleCollapse"
+            class="button-item"
+            >展开阅读全文</el-button
+          >
           <div>
-            <feed-footer :ans="true"></feed-footer>
+            <feed-footer
+              v-on:getCollpase="getStatus"
+              :isAns="true"
+              :isCollapse="isCollapsed"
+              :dir="dir"
+            ></feed-footer>
           </div>
         </div>
       </div>
@@ -42,17 +51,33 @@ export default {
   data() {
     return {
       authorInfo: this.answer.author,
-      isCollapsed: true
+      isCollapsed: true,
+      text: `
+      <h4><a id="_0"></a>数据库索引</h4> <ul> <li>数据库索引就是一个能加快海量数据查询的一项技术</li> </ul> <blockquote> <p>比如字典里面的目录</p> </blockquote> <ul> <li>联合索引(包含多个字段的索引)</li> </ul> <blockquote> <p>比如字典里面的先查部首再根据笔画来查</p> </blockquote> <ul> <li>最左前缀匹配</li> </ul> <blockquote> <p>对于一个联合索引，如果有一个SQL查询语句需要执行，则只有从索引最左边的第一个字段开始到SQL语句查询条件中不包含的字段（不含）或范围条件字段（含）为止的部分才会使用索引进行加速。</p> </blockquote> <ul> <li>聚集索引(数据会根据索引中的顺序进行排列和组织的),比如主键索引</li> </ul> <blockquote> <p>比如像拼音目录这样的索引</p> </blockquote> <ul> <li>数据库索引设计 <ol> <li><strong>整理查询条件</strong> <ul> <li>在where子句、join连接条件中使用的字段</li> </ul> </li> <li><strong>分析字段的可选择性</strong> <ul> <li>会把可选择性高的字段放到前面，可选择性低的字段放在后面,可选择性是指字段的值的区分度</li> </ul> </li> <li><strong>合并查询条件</strong> <ul> <li>最左匹配原则来合并查询条件，尽可能让不同的查询条件使用同一个索引</li> </ul> </li> <li><strong>考虑是否需要使用全覆盖索引</strong></li> </ol> </li> </ul>
+      `
     };
   },
-  methods: {},
+  methods: {
+    getStatus() {
+      this.isCollapsed = true;
+    },
+    handleCollapse() {
+      this.isCollapsed = false;
+    }
+  },
   mounted() {
-    console.log();
+    this.isCollapsed = !(this.answer.id === this.$route.params.aid);
+    console.warn(this.$refs.answerCard);
+
+    this.$refs.answerCard.addEventListener("scroll", e => {
+      console.log(e);
+    });
   },
   components: {},
   props: {
     answer: Object
   },
+  created() {},
   watch: {
     answer: {
       handler(newVal, oldVal) {
@@ -66,7 +91,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .AnswerCard {
-  overflow: initial;
   .content {
     .answerItem-extraInfo {
       margin-top: 10px;
@@ -102,15 +126,30 @@ export default {
   }
 
   .RichContent {
+    &.is-collapsed {
+      transition: color 0.14s ease-out;
+      position: relative;
+      cursor: pointer;
+
+      .inner {
+        max-height: 400px;
+        mask-image: linear-gradient(
+          #1a1a1a calc(100% - 8rem),
+          transparent calc(100% - 2.8rem)
+        );
+        mask-size: 100% 100%;
+        transition: mask-size 0.22s cubic-bezier(0.95, 0.05, 0.795, 0.035),
+          max-height 0.32s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+      }
+    }
+
     .inner {
       margin-top: 9px;
       margin-bottom: -4;
       overflow: hidden;
-
-      .is-collapsed {
-        transition: color 0.14s ease-out;
-        position: relative;
-      }
+    }
+    .article-content {
+      text-align: left;
     }
     .button-item {
       // position: absolute;

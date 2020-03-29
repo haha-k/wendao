@@ -1,8 +1,7 @@
 // AuthorInfo HoverCard
-
 //profileHeader followshipCard lightList footerOperations
 <template>
-  <div class="feedFooter">
+  <div class="feedFooter" :class="{'is-fixed':!isCollapse}">
     <span>
       <el-button
         @click="like"
@@ -56,6 +55,7 @@
         <el-dropdown-item>不感兴趣</el-dropdown-item>
       </el-dropdown-menu>
     </el-dropdown>
+    <el-button class="collapse-button" v-show="!isCollapse" @click="handleCollpase">收起</el-button>
   </div>
 </template>
 <script>
@@ -65,45 +65,51 @@ export default {
     return {
       votes: 10,
       statusText: "赞同",
-      is_like:false,
-      is_down:false,
+      is_like: false,
+      is_down: false,
       comments: 0,
       collectVisible: false,
-      commentVisible: false,
+      commentVisible: false
     };
   },
   methods: {
-    handlerEnjoy(){
-        console.log("xxxxx");
-
-    this.$message({
-          message: '成功复制链接',
-          type: 'success'
-        });
+    handleCollpase() {
+      this.isCollapse = true;
+      console.warn("hhhsA");
+      this.$emit("getCollpase", this.isCollapse);
     },
-    like() { if(this.statusText == "赞同"){
-      if(this.is_down == true){
-        this.down();
-      }
-      this.votes++;
-      this.statusText = "已赞同";
-      this.is_like = true;
-      }else{
+    handlerEnjoy() {
+      console.log("xxxxx");
+
+      this.$message({
+        message: "成功复制链接",
+        type: "success"
+      });
+    },
+    like() {
+      if (this.statusText == "赞同") {
+        if (this.is_down == true) {
+          this.down();
+        }
+        this.votes++;
+        this.statusText = "已赞同";
+        this.is_like = true;
+      } else {
         this.votes--;
         this.statusText = "赞同";
         this.is_like = false;
       }
     },
     down() {
-      if(this.statusText == "已赞同"){
-          this.like();
+      if (this.statusText == "已赞同") {
+        this.like();
       }
       this.is_down = !this.is_down;
-      },
-    handlerCollect(){
+    },
+    handlerCollect() {
       this.collectVisible = true;
     },
-    handlerComment(){
+    handlerComment() {
       this.commentVisible = true;
     },
     getCollectStatus(status) {
@@ -113,11 +119,24 @@ export default {
       this.commentVisible = status;
     }
   },
-  mounted() {},
+  mounted() {
+    console.warn(this.isAns, this.isCollapse);
+  },
   components: {},
+  watch: {
+    isCollapse: {
+      handler: (newVal, oldVal) => {
+        this.isCollapse = newVal;
+      }
+    }
+  },
   props: {
     item: Object,
-    isAns: Boolean
+    isAns: Boolean,
+    isCollapse: {
+      type: Boolean,
+      default: true
+    }
   }
 };
 </script>
@@ -126,10 +145,19 @@ export default {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  margin: 0 -20px -10px;
+  // margin: 0 -20px -10px;
   clear: both;
+  margin: 0 -20px;
   color: #646464;
   background: #fff;
+
+  &.is-fixed {
+    position: fixed;
+    width: 692px;
+    bottom: 0px;
+    box-sizing: border-box;
+    animation: slideInUp 0.2s;
+  }
 
   span .el-button {
     line-height: 30px;
@@ -148,10 +176,14 @@ export default {
     font-size: 14px;
     padding: 0;
     background-color: transparent;
+    color: #8590a6;
 
     &:hover {
       color: rgb(151, 161, 179);
     }
+  }
+  .collapse-button {
+    font-size: 15px;
   }
 
   span {
@@ -172,8 +204,6 @@ export default {
         color: #fff;
         background: #0084ff;
       }
-
-
     }
   }
 }

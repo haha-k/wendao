@@ -9,6 +9,7 @@ import './plugins/index'
 import '#/icons';
 import axios from 'axios';
 import 'normalize.css';
+import 'animate.css';
 import "@/styles/index.scss";
 import "./assets/icon/iconfont.css";
 

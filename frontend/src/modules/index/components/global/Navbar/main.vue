@@ -93,7 +93,7 @@ export default {
   watch: {
     active: {
       handler: function(newVal, oldVal) {
-        // this.activeIndex = this.newVal;
+        this.activeIndex = this.newVal;
       },
       deep: true
     }

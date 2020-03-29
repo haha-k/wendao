@@ -13,7 +13,7 @@
       <div class="head">
         <el-popover placement="bottom" width="200" trigger="hover">
           <author-popover></author-popover>
-          <el-link slot="reference" :underline="false">{{name}}</el-link>
+          <el-link slot="reference" :underline="false">{{Info.name}}</el-link>
         </el-popover>
       </div>
       <div class="detail">
@@ -31,7 +31,7 @@ export default {
     return {
       Info: this.author,
       name: "",
-      headline:"",
+      headline: "",
       authorUrl: "/",
       avatarUrl:
         "https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png",
