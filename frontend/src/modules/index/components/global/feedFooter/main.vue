@@ -1,7 +1,7 @@
-// AuthorInfo HoverCard
-//profileHeader followshipCard lightList footerOperations
+// AuthorInfo HoverCard //profileHeader followshipCard lightList
+footerOperations
 <template>
-  <div class="feedFooter" :class="{'is-fixed':!isCollapse}">
+  <div class="feedFooter" :class="{ 'is-fixed': !isCollapse && !show }">
     <span>
       <el-button
         @click="like"
@@ -9,8 +9,8 @@
         icon="el-icon-thirdxiala-copy-copy"
         size="medium"
         class="VoteButton VoteButton-up"
-        :class="{'is-active' : is_like}"
-      >{{statusText+" "+(votes == 0?"":votes)}}</el-button>
+        :class="{ 'is-active': is_like }"
+      >{{ statusText + " " + (votes == 0 ? "" : votes) }}</el-button>
       <!-- <el-button>
         <svg-icon class-name="" icon-class="">
         </svg-icon>
@@ -19,7 +19,7 @@
         @click="down"
         type="primary"
         class="VoteButton VoteButton-down"
-        :class="{'is-active' : is_down}"
+        :class="{ 'is-active': is_down }"
         icon="el-icon-thirdxiala"
         size="medium"
       ></el-button>
@@ -29,7 +29,7 @@
       icon="el-icon-thirdcomment"
       size="medium"
       @click="handlerComment"
-    >{{(comments == 0?"":comments+"条")+"评论"}}</el-button>
+    >{{ (comments == 0 ? "" : comments + "条") + "评论" }}</el-button>
     <comment-dialog :dialogCommentVisible="commentVisible" :aid="111" @listen="getCommentStatus"></comment-dialog>
 
     <el-dropdown placement="bottom" trigger="click">
@@ -117,7 +117,8 @@ export default {
     },
     getCommentStatus(status) {
       this.commentVisible = status;
-    }
+    },
+    handleScroll() {}
   },
   mounted() {
     console.warn(this.isAns, this.isCollapse);
@@ -128,6 +129,13 @@ export default {
       handler: (newVal, oldVal) => {
         this.isCollapse = newVal;
       }
+    },
+    show: {
+      handler: (newVal, oldVal) => {
+        if (this.show !== newVal) {
+          this.show = newVal;
+        }
+      }
     }
   },
   props: {
@@ -136,6 +144,9 @@ export default {
     isCollapse: {
       type: Boolean,
       default: true
+    },
+    show: {
+      type: Boolean
     }
   }
 };

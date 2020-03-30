@@ -14,11 +14,10 @@ export default {
   name: "globalSidebar",
   data() {
     return {
-      isCreator:false,
+      isCreator: false
     };
   },
   methods: {},
-  mounted() {},
   components: {
     creatorEntrance: creatorEntrance,
     writeCard: writeCard,
@@ -27,6 +26,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "@/styles/index.scss";
 .globalSidebar-container {
   flex: 1 1;
   font-size: 14px;

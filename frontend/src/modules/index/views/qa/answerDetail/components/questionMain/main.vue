@@ -8,7 +8,7 @@
         <view-all-card :answerCount="answerCount"></view-all-card>
       </div>
     </div>
-    <div class="side-column">
+    <div class="side-column" :class="{'is-fixed':isFixed}" ref="side">
       <div class="Sticky">
         <author-card :uid="author.id" :name="author.name"></author-card>
         <answer-favlisat-card></answer-favlisat-card>
@@ -25,17 +25,24 @@ export default {
       answerCount: this.ac,
       answer: {},
       loadding: false,
-      otherAnswer:[],
-      author:{},
+      otherAnswer: [],
+      author: {}
     };
   },
   methods: {},
-  mounted() {},
+  mounted() {
+    console.warn(this.isFixed);
+  },
+  destroyed() {},
   components: {},
   props: {
     ac: Number,
     mainAnswer: Object,
-    otherAnswer:Array,
+    otherAnswer: Array,
+    isFixed: {
+      type: Boolean,
+      default: false
+    }
   },
   watch: {
     ac: {
@@ -61,6 +68,11 @@ export default {
       },
       deep: true,
       immediate: true
+    },
+    isFixed: {
+      handler(newVal, oldVal) {
+        this.isFixed = newVal;
+      }
     }
   }
 };
@@ -80,8 +92,14 @@ export default {
     padding-bottom: 20px;
   }
 
-  .side-column{
+  .side-column {
     width: 296px;
+
+    &.is-fixed {
+      position: fixed;
+      left: 860px;
+      top: 62px;
+    }
   }
 }
 </style>

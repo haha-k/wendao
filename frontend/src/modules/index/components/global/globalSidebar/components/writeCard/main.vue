@@ -53,8 +53,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
-@import '@/styles/index.scss';
+@import "@/styles/index.scss";
 .writeCard-container {
   width: 296px;
 

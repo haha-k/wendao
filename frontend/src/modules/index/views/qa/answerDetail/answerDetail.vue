@@ -4,10 +4,15 @@
       <el-header style="height:52px">
         <Navbar :active="'home'"></Navbar>
       </el-header>
-      <main>
+      <main style="margin-top:52px">
         <div class="question-page">
-          <question-header :question="question"></question-header>
-          <question-main :mainAnswer="mainAnswer" :otherAnswer="otherAnswer" :ac="answerCount"></question-main>
+          <question-header :question="question" ref="qHeader"></question-header>
+          <question-main
+            :isFixed="isFixed"
+            :mainAnswer="mainAnswer"
+            :otherAnswer="otherAnswer"
+            :ac="answerCount"
+          ></question-main>
         </div>
       </main>
     </el-container>
@@ -29,10 +34,20 @@ export default {
       answerCount: 0,
       answer: {},
       mainAnswer: {},
-      otherAnswer: []
+      otherAnswer: [],
+      isFixed: false
     };
   },
   methods: {
+    handleScroll() {
+      let el = this.$refs.qHeader.$el;
+      let scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      this.isFixed = scrollTop >= el.offsetHeight;
+      console.log(this.isFixed);
+    },
     getQuestion(id) {
       getQuestionDetail(id)
         .then(result => {
@@ -64,8 +79,12 @@ export default {
     }
   },
   mounted() {
+    window.addEventListener("scroll", this.handleScroll);
     this.getAnswer(this.mainAnswerId);
     this.getQuestion(this.questionId);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
   components: {
     "question-main": questionMain,

@@ -80,6 +80,7 @@ a:hover {
   z-index: 100;
   min-width: 100%;
   background-color: #fff;
+  position: fixed;
 }
 .Topstory-container {
   width: 1000px;
@@ -101,6 +102,7 @@ a:hover {
   margin: 10px auto;
   // overflow: visible;
   box-sizing: content-box;
+
   // flex-basis:0 0 1000px;
   .el-backtop {
     div {
