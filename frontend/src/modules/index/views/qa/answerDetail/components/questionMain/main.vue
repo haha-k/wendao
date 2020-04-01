@@ -97,8 +97,8 @@ export default {
 
     &.is-fixed {
       position: fixed;
-      left: 860px;
       top: 62px;
+      transform: translateX(704px);
     }
   }
 }

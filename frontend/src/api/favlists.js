@@ -5,11 +5,11 @@ export function getCollected(aid) {
     // return request({
     //     url: '/answers/:aid/relations/collected',
     //     method: "get",
-            // param:""
+    // param:""
     // });
     return request({
         baseURL: '',
-        url: '/json/favlist/collected.json',
+        url: '/json/favlists/collected.json',
         method: "get",
     });
 }
@@ -23,7 +23,20 @@ export function getFavlists(uid) {
     // });
     return request({
         baseURL: '',
-        url: '/json/favlist/favlists.json',
+        url: '/json/favlists/favlists.json',
+        method: "get",
+    });
+}
+
+// /api/v1/favlists/discover
+export function getHotFavlists() {
+    // return request({
+    //     url: '/favlists/discover',
+    //     method: "get",
+    // });
+    return request({
+        baseURL: '',
+        url: '/json/favlists/discover/hotFavlists.json',
         method: "get",
     });
 }

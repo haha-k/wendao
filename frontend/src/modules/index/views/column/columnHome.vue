@@ -7,9 +7,7 @@
       <main class="App-main">
         <div class="home">
           <div class="home-top">
-            <h2 class="sub-title">
-              随心写作,自由表达
-            </h2>
+            <h2 class="sub-title">随心写作,自由表达</h2>
             <el-button class="write-button" @click="handlerWrite">开始写文章</el-button>
             <el-button class="apply-button">申请开通专栏 ></el-button>
           </div>
@@ -18,30 +16,22 @@
             <!-- <div class="line"></div> -->
             <div class="card-container">
               <!-- <el-card v-for="i in 8" :key="i"> -->
-                <router-link to="/column/123" v-for="i in 8" :key="i">
-                  <el-image
-                    :size="48"
-                    src="https://pic3.zhimg.com/8138eae6469a7c8c93497b45ad41e28e_xs.jpg"
-                    alt="专栏图像"
-                  />
-                  <div class="info">
-                    <div class="title">
-                      7号汽车
-                    </div>
-                    <div class="description">
-                      愿你我都能在这里看到更广阔的世界
-                    </div>
-                  </div>
-                  <div class="meta">
-                    930人关注 |266篇文章
-                  </div>
-                  <el-button class="follow-button">进入专栏</el-button>
-                </router-link>
+              <router-link
+                :to="`/column/${item.id}`"
+                v-for="(item,index) in columns.slice(0,8)"
+                :key="index"
+              >
+                <el-image style="width:48px;height:48px" :src="item.image_url" alt="专栏图像" />
+                <div class="info">
+                  <div class="title">{{item.title}}</div>
+                  <div class="description">{{item.description}}</div>
+                </div>
+                <div class="meta">{{item.followers}}人关注 | {{item.articles_count}}篇文章</div>
+                <el-button class="follow-button">进入专栏</el-button>
+              </router-link>
               <!-- </el-card> -->
             </div>
-            <el-button class="refresh-button">
-              换一换
-            </el-button>
+            <el-button class="refresh-button">换一换</el-button>
           </div>
           <div class="home-bottom">
             <el-button>申请专栏</el-button>
@@ -54,17 +44,31 @@
 </template>
 <script>
 import Navbar from "@/components/global/Navbar";
+import { getColumn } from "#/api/column";
+
 export default {
   name: "column-home",
   data() {
-    return {};
+    return {
+      columns: []
+    };
   },
   methods: {
-    handlerWrite(){
-      this.$router.push("/write")
+    handlerWrite() {
+      this.$router.push("/write");
     }
+    // handlerEntry() {
+    //   this.$router.push(`/column/${column.id}/articles`);
+    // }
   },
-  mounted() {},
+  mounted() {
+    getColumn()
+      .then(result => {
+        this.columns = result.data.data;
+        console.log(this.columns);
+      })
+      .catch(err => {});
+  },
   components: {
     Navbar: Navbar
   }
@@ -161,9 +165,6 @@ export default {
           flex-direction: column;
           padding: 26px 0 23px;
           width: 206px;
-          .el-image__inner {
-            border-radius: 50%;
-          }
           .info {
             display: flex;
             align-items: center;
@@ -176,25 +177,27 @@ export default {
               text-overflow: ellipsis;
               overflow: hidden;
               font-weight: 600;
+            }
 
-              .description {
-                color: grey;
-                font-size: 14px;
-                line-height: 21px;
-                margin-top: 7px;
-                text-align: center;
-                word-break: break-all;
-                display: -webkit-box;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-              }
+            .description {
+              color: grey;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 21px;
+              margin-top: 7px;
+              text-align: center;
+              word-break: break-all;
+              display: -webkit-box;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
             }
           }
           .meta {
             color: grey;
             font-size: 14px;
+            font-weight: 400;
             margin-top: 14px;
           }
           .follow-button {
@@ -210,5 +213,8 @@ export default {
 <style scoped>
 .card-container >>> .el-card__body {
   padding: 0 !important;
+}
+.card-container >>> .el-image__inner {
+  border-radius: 50%;
 }
 </style>

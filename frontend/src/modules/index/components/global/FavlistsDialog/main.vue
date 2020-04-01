@@ -43,7 +43,7 @@
               >
               <el-button v-else class="collected" @click="handlerCancelCollect"
                 >已收藏</el-button
-              > -->
+              >-->
             </div>
           </div>
           <!-- </el-scrollbar> -->
@@ -59,20 +59,13 @@
               <el-input v-model="form.title" placeholder="收藏标题"></el-input>
             </el-form-item>
             <el-form-item class="addItem">
-              <el-input
-                type="textarea"
-                :rows="5"
-                v-model="form.desc"
-                placeholder="收藏描述 (可选)"
-              ></el-input>
+              <el-input type="textarea" :rows="5" v-model="form.desc" placeholder="收藏描述 (可选)"></el-input>
             </el-form-item>
             <el-form-item class="addItem">
               <el-radio-group v-model="form.is_public">
                 <el-radio :label="true">
                   <span class="labelTitle">公开</span>
-                  <span class="labelDesc"
-                    >有其他人关注此收藏夹时不可设置为私密</span
-                  >
+                  <span class="labelDesc">有其他人关注此收藏夹时不可设置为私密</span>
                 </el-radio>
                 <el-radio :label="false">
                   <span class="labelTitle">私密</span>
@@ -91,8 +84,8 @@
   </div>
 </template>
 <script>
-import { getCollected, getFavlists } from "#/api/favlist";
-import { log } from 'util';
+import { getCollected, getFavlists } from "#/api/favlists";
+import { log } from "util";
 export default {
   name: "FavlistsDialog",
   data() {
@@ -104,7 +97,7 @@ export default {
       step2Show: false,
       innerVisible: false,
       dialogFavlistsVisible: false,
-      collectText:"已收藏",
+      collectText: "已收藏",
       form: {
         title: "",
         desc: "",
@@ -115,13 +108,14 @@ export default {
     };
   },
   methods: {
-    handlerCreate(){
+    handlerCreate() {
       this.handleBack();
     },
     handlerCollect(index) {
       let status = this.collectStatus[index].collected;
       console.log(status);
-      this.collectStatus[index].collected = !this.collectStatus[index].collected;
+      this.collectStatus[index].collected = !this.collectStatus[index]
+        .collected;
     },
     handleCreate() {
       this.step1Show = false;

@@ -23,6 +23,7 @@
 import Navbar from "@/components/global/Navbar";
 import globalSidebar from "@/components/global/globalSidebar";
 import topStory from "@/components/global/topStory";
+import { debounce } from "#/utils/common.js";
 export default {
   name: "home",
   data() {
@@ -54,10 +55,10 @@ export default {
   },
 
   mounted() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("scroll", debounce(this.handleScroll, 500));
   },
   destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener("scroll", debounce(this.handleScroll, 500));
   },
   components: {
     Navbar: Navbar,
@@ -71,8 +72,9 @@ export default {
 .globalSidebar {
   &.is-fixed {
     position: fixed;
-    left: 860px;
-    top: -133px;
+    // top: -133px;
+    top: 62px;
+    transform: translateX(704px);
   }
 }
 </style>

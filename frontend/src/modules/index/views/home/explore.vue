@@ -4,7 +4,7 @@
       <el-header style="height:52px">
         <Navbar :active="'explore'"></Navbar>
       </el-header>
-      <el-main class="App-main">
+      <el-main class="App-main" style="margin-top:62px">
         <div class="ExploreHomePage">
           <div class="ContentSection">
             <div class="header">
@@ -13,11 +13,11 @@
             </div>
             <div class="body">
               <div class="collections">
-                <collection-card v-for="i in 4" :key="i"></collection-card>
+                <collection-card v-for="item in favlists.slice(0,4)" :key="item.id" :favItem="item"></collection-card>
               </div>
             </div>
             <div class="moreButton">
-              <router-link to="/" class="more">
+              <router-link to="/collection/hot" class="more">
                 查看更多收藏夹
                 <i class="el-icon-thirdxiangshangjiantouarrowup1"></i>
               </router-link>
@@ -30,11 +30,11 @@
             </div>
             <div class="body">
               <div class="columns">
-                <column-card v-for="i in 4" :key="i"></column-card>
+                <column-card v-for="item in columns.slice(0,4)" :key="item.id" :column="item"></column-card>
               </div>
             </div>
             <div class="moreButton">
-              <router-link to="/column/" class="more">
+              <router-link to="/column" class="more">
                 查看更多专栏
                 <i class="el-icon-thirdxiangshangjiantouarrowup1"></i>
               </router-link>
@@ -47,13 +47,33 @@
 </template>
 <script>
 import Navbar from "@/components/global/Navbar";
+import { getHotFavlists } from "#/api/favlists";
+import { getColumn } from "#/api/column";
 export default {
   name: "explore",
   data() {
-    return {};
+    return {
+      favlists: [],
+      columns: []
+    };
   },
   methods: {},
-  mounted() {},
+  mounted() {
+    getHotFavlists()
+      .then(result => {
+        this.favlists = result.data.data;
+      })
+      .catch(err => {
+        console.error(err);
+      });
+
+    getColumn()
+      .then(result => {
+        this.columns = result.data.data;
+        console.log(this.columns);
+      })
+      .catch(err => {});
+  },
   components: {
     Navbar: Navbar
   }
@@ -91,7 +111,6 @@ export default {
         .columns {
           display: flex;
           justify-content: space-between;
-
         }
       }
     }

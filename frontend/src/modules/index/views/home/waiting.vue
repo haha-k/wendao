@@ -4,7 +4,7 @@
       <el-header style="height:52px">
         <Navbar :active="'waiting'"></Navbar>
       </el-header>
-      <el-main class="QuestionWaiting-container">
+      <el-main class="QuestionWaiting-container" style="margin-top:62px">
         <el-card class="mainColumn" :body-style="{ padding: '0px' }">
           <div slot="header" class="Sticky">
             <div class="types">
@@ -94,7 +94,7 @@ export default {
           cursor: pointer;
           border-radius: 16px;
           align-items: center;
-          background: rgba(133,144,166,.12);
+          background: rgba(133, 144, 166, 0.12);
           color: #444;
 
           &.is-active {

@@ -4,7 +4,7 @@
       <el-header style="height:52px">
         <Navbar :active="'home'"></Navbar>
       </el-header>
-      <el-main class="later-container">
+      <el-main class="later-container" style="margin-top:62px">
         <el-card class="mainColumn" :body-style="{ padding: '0px' }">
           <div slot="header" class="title">
             <i class="el-icon-thirdlishi1"></i>
@@ -45,11 +45,11 @@ export default {
   display: flex;
   margin: 10px auto;
   width: 1000px;
-  .mainColumn{
+  .mainColumn {
     width: 694px;
     margin-right: 10px;
     align-self: flex-start;
-    .title{
+    .title {
       padding: 0;
       display: flex;
       align-items: center;
@@ -57,9 +57,8 @@ export default {
       height: 68px;
       padding: 0 20px;
       border-bottom: 1px solid #f6f6f6;
-      font-size:19px;
+      font-size: 19px;
     }
-
   }
 }
 </style>

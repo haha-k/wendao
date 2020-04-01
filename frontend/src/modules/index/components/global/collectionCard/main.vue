@@ -2,45 +2,44 @@
   <div class="collectionCard">
     <div class="header">
       <div class="info">
-        <router-link to="/" class="title">{{"游戏设计"}}</router-link>
+        <router-link :to="`/collection/${favItem.id}`" class="title">{{favItem.title}}</router-link>
         <div class="relateMembers">
           <div class="creator">
             <span class="creator-avatar">
-              <el-avatar shape="square" :size="28" src="https://pic1.zhimg.com/3cc3a8c1b0e78b3ab520747bf5a46302_is.jpg"></el-avatar>
-
+              <el-avatar shape="square" :size="28" :src="favItem.creator.avatar_url"></el-avatar>
             </span>
-            <router-link to="/" class="Name">{{"唐大行"}}</router-link>
+            <router-link to="/" class="Name">{{favItem.creator.name}}</router-link>
             <span class="creator-suffix">创建</span>
           </div>
-          <div class="followers">{{311}}人关注</div>
+          <div class="followers">{{favItem.follower_count}}人关注</div>
         </div>
       </div>
       <div class="followButton">
         <el-button
           @click="handlerFollow"
           :class="{ 'is-active': followStatus }"
-        >
-        {{ followStatus == true ? "已关注" : "关注收藏夹" }}
-        </el-button>
+        >{{ followStatus == true ? "已关注" : "关注收藏夹" }}</el-button>
       </div>
     </div>
     <div class="contentList">
-      <div class="contentItem" v-for="i in 2" :key="i">
-        <router-link to="/" class="title">"但美国回家的路上空间和老师的江户时代可能就会"</router-link>
-        <div class="Excerpt">
-          {{"附件是"}}
-          :
-          {{"房价多少人口和军事打击人家"}}
-        </div>
+      <div class="contentItem" v-for="(item,index) in favItem.favitems" :key="index">
+        <router-link
+          v-if="item.content.question"
+          :to="`/question/${item.content.question.id}/answer/${item.content.id}`"
+          class="title"
+        >{{item.content.question.title}}</router-link>
+        <router-link v-else :to="`/article/${item.content.id}`" class="title">{{item.content.title}}</router-link>
+
+        <div class="Excerpt" v-html="item.content.excerpt"></div>
         <div class="Tags">
-          <span class="TypeTag">文章</span>
-          <span class="CountTag">{{"123"}} 赞同</span>
-          <span class="CountTag">{{"12"}} 评论</span>
+          <span class="TypeTag">{{item.content.type==="answer"?"回答":"文章"}}</span>
+          <span class="CountTag">{{item.content.voteup_count}} 赞同</span>
+          <span class="CountTag">{{item.content.comment_count}} 评论</span>
         </div>
       </div>
     </div>
-    <router-link to="/" class="Count">
-      已收藏{{"1345"}}条内容
+    <router-link :to="`/collection/${favItem.id}`" class="Count">
+      已收藏{{favItem.total_count}}条内容
       <i class="el-icon-thirdxiangshangjiantouarrowup1"></i>
     </router-link>
   </div>
@@ -50,16 +49,34 @@ export default {
   name: "collectionCard",
   data() {
     return {
-      followStatus:false,
+      followStatus: false
     };
+  },
+  computed: {
+    getImg(imgSrc) {
+      return require(imgSrc);
+    }
   },
   methods: {
     handlerFollow() {
       this.followStatus = !this.followStatus;
-    },
+    }
   },
-  mounted() {},
-  components: {}
+  mounted() {
+    console.log(this.favItem.creator.avatar_url);
+  },
+  components: {},
+  props: {
+    favItem: Object
+  },
+  watch: {
+    favItem: {
+      handler: (newVal, oldVal) => {
+        this.favItem = newVal;
+      },
+      deep: true
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -129,14 +146,12 @@ export default {
       .followButton {
         margin-left: 20px;
 
-        .el-button{
-            &.is-active {
-              color: #fff;
-              background-color: #8590a6;
-
-            }
+        .el-button {
+          &.is-active {
+            color: #fff;
+            background-color: #8590a6;
+          }
         }
-
       }
     }
   }
@@ -184,7 +199,7 @@ export default {
         font-size: 12px;
         margin-right: 8px;
       }
-      .CountTag+.CountTag::before {
+      .CountTag + .CountTag::before {
         content: "\B7";
         margin: 0 3px;
       }
