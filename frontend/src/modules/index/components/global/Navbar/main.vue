@@ -87,7 +87,7 @@ export default {
       this.$router.push("/login");
     },
     handleSelect(key, keyPath) {
-      console.log(key, keyPath);
+      //TODOconsole.log(key, keyPath);
     }
   },
   watch: {
@@ -99,7 +99,6 @@ export default {
     }
   },
   mounted() {
-    console.log(this.active);
     this.activeIndex = this.active;
   },
   components: {

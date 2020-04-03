@@ -1,15 +1,19 @@
 export default [{
         name: "collection",
         path: '/collection',
+        component: {
+            render: h => h('router-view')
+        },
         children: [{
                 name: "collectionHot",
-                path: 'collection/hot',
-                component: () => import('@/views/home/Home.vue')
+                path: 'hot',
+                component: () => import('@/views/collection/hot.vue')
             },
             {
                 name: "collectItem",
-                path: '/collection/:cid',
-                component: () => import('@/views/home/explore.vue')
+                path: ':cid',
+                props: true,
+                component: () => import('@/views/collection/collection.vue')
             }
         ]
     },

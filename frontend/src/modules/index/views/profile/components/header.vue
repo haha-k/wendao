@@ -41,8 +41,8 @@ export default {
     };
   },
   methods: {
-    handlerEdit(){
-      this.$router.push('/profile/edit');
+    handlerEdit() {
+      this.$router.push("/profile/edit");
     }
   },
   created() {},
@@ -51,7 +51,6 @@ export default {
       handler: function(newVal, oldVale) {
         this.profile = newVal;
         this.avatar = newVal.avatar_url;
-        console.log(this.avatar);
       },
       deep: true
     }
@@ -137,7 +136,6 @@ export default {
               position: absolute;
               left: 0;
               top: 0;
-
             }
             .edit-button {
               position: absolute;

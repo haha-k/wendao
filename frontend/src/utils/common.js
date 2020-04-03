@@ -2,10 +2,14 @@ export function flush(superThis) {
     const {
         fullPath
     } = superThis.$route;
-    console.log(fullPath)
     superThis.$router.replace({
         path: '/redirect' + fullPath
     })
+}
+
+export function FormatterDate(date) {
+    let created = new Date(date);
+    return `${created.getFullYear()}-${created.getMonth()+1}-${created.getDate()}`;
 }
 
 //防抖

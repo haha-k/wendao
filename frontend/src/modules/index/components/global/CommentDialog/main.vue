@@ -53,7 +53,6 @@ export default {
         .then(result => {
           let { data } = result.data;
           this.commentsList = data;
-          console.log(this.commentsList);
         })
         .catch(err => {});
     }
@@ -63,11 +62,11 @@ export default {
   },
   components: {
     rootNoChild: rootNoChild,
-    commentFooter: commentFooter,
+    commentFooter: commentFooter
   },
   props: {
     dialogCommentVisible: Boolean,
-    aid: String
+    aid: Number
   }
 };
 </script>

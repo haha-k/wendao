@@ -1,18 +1,18 @@
 <template>
-  <div class="feedCard-container">
+  <div class="InfoCard-container">
     <h2 class="title">
       <div>
-        <!-- :to="isAns?item.target.question.url:item.target.url" -->
-        <!-- <router-link :to="item.target.url">{{isAns?item.target.question.title:item.target.title}}</router-link> -->
+        <!-- :to="isAns?item.question.url:item.url" -->
+        <!-- <router-link :to="item.url">{{isAns?item.question.title:item.title}}</router-link> -->
         <router-link
-          :to="isAns ? `/question/${item.target.question.id}/answer/${item.target.id}` :  `/article/${item.target.id}`"
-        >{{isAns?item.target.question.title:item.target.title}}</router-link>
+          :to="isAns ? `/question/${item.question.id}/answer/${item.id}` :  `/article/${item.id}`"
+        >{{isAns?item.question.title:item.title}}</router-link>
       </div>
     </h2>
     <div class="Content-container" :class="isCollapsed">
       <div class="cover" v-if="isThumbnail">
         <div class="cover-inner">
-          <el-image style="width: 100%; height: 100%" :src="item.target.thumbnail"></el-image>
+          <el-image style="width: 100%; height: 100%" :src="item.thumbnail"></el-image>
         </div>
       </div>
       <div class="text">
@@ -31,30 +31,27 @@
 // import feedFooter from "@/components/global/feedFooter";
 // import feedContent from "@/components/global/feedContent";
 export default {
-  name: "feedCard",
+  name: "InfoCard",
   data() {
     return {
-      isAns: this.item.target.type === "answer",
-      isThumbnail: this.item.target.thumbnail !== "",
+      isAns: this.item.type === "answer",
+      isThumbnail: this.item.thumbnail !== "",
       isCollapsed: true,
-      excerpt: this.item.target.excerpt
+      excerpt: this.item.excerpt
     };
   },
   methods: {},
   mounted() {},
   computed: {
     myExcerpt: function() {
-      let Len = this.item.target.author.name.length;
+      let Len = this.item.author.name.length;
       let limit = this.isThumbnail ? 105 - (Len + 3) : 80 - (Len + 3);
       if (this.excerpt.length > limit) {
         return (
-          this.item.target.author.name +
-          "：" +
-          this.excerpt.slice(0, limit) +
-          "…"
+          this.item.author.name + "：" + this.excerpt.slice(0, limit) + "…"
         );
       } else {
-        this.item.target.author.name + "：" + this.excerpt + "…";
+        this.item.author.name + "：" + this.excerpt + "…";
       }
     }
   },
@@ -68,7 +65,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.feedCard-container {
+.InfoCard-container {
   -webkit-tap-highlight-color: rgba(26, 26, 26, 0);
   font-weight: 600;
   cursor: pointer;

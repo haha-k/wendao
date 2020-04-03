@@ -15,31 +15,27 @@
   <!-- </div> -->
 </template>
 <script>
-import qfooter from "@/components/global/qfooter"
+import qfooter from "@/components/global/qfooter";
 export default {
   name: "Abbreviation",
-  props:["data"],
-  data(){
-    return{
-        data:null,
-         setq:{
-          name: 'question1',
-          // path:'' ,
-          params: {
-            qid: this.data.qid,
-            // aid: this.data.aid,
-          }
+  props: ["data"],
+  data() {
+    return {
+      data: null,
+      setq: {
+        name: "question1",
+        // path:'' ,
+        params: {
+          qid: this.data.qid
+          // aid: this.data.aid,
+        }
       }
-    }
+    };
   },
-  method(){
-
-  },
-  mounted(){
-    // console.log(this.data);
-  },
+  method() {},
+  mounted() {},
   components: {
-    "qfooter":qfooter,
+    qfooter: qfooter
   }
 };
 </script>
@@ -63,14 +59,12 @@ export default {
     float: left;
     font-size: 22px;
     // text-align: left;
-
   }
-  .qc{
-      text-align: left;
-      color: #1a1a1a;
-      line-height: 40px;
-
-    }
+  .qc {
+    text-align: left;
+    color: #1a1a1a;
+    line-height: 40px;
+  }
   a {
     text-decoration: none;
     float: left;

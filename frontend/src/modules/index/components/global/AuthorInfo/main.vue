@@ -1,11 +1,10 @@
 <template>
-  <div class="AnswerAuthorInfo">
+  <div class="AuthorInfo">
     <span class="UserLink">
       <el-popover placement="bottom" width="200" trigger="hover">
         <author-popover></author-popover>
-        <router-link :to="authorUrl" slot="reference">
-          <el-avatar v-if="avatarUrl" shape="square" :size="38" :src="Info.avatar_url"></el-avatar>
-          <el-avatar v-else shape="square" :size="38" :src="squareUrl"></el-avatar>
+        <router-link :to="`/member/${author.id}`" slot="reference">
+          <el-avatar shape="square" :size="size" :src="author.avatar_url || avatarUrl"></el-avatar>
         </router-link>
       </el-popover>
     </span>
@@ -13,12 +12,12 @@
       <div class="head">
         <el-popover placement="bottom" width="200" trigger="hover">
           <author-popover></author-popover>
-          <el-link slot="reference" :underline="false">{{Info.name}}</el-link>
+          <el-link slot="reference" :underline="false">{{author.name}}</el-link>
         </el-popover>
       </div>
       <div class="detail">
         <div class="headline">
-          <div class="text">{{Info.headline}}</div>
+          <div class="text">{{author.headline}}</div>
         </div>
       </div>
     </div>
@@ -26,13 +25,9 @@
 </template>
 <script>
 export default {
-  name: "AnswerAuthorInfo",
+  name: "AuthorInfo",
   data() {
     return {
-      Info: this.author,
-      name: "",
-      headline: "",
-      authorUrl: "/",
       avatarUrl:
         "https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png",
       squareUrl:
@@ -43,14 +38,13 @@ export default {
   mounted() {},
   components: {},
   props: {
-    author: Object
+    author: Object,
+    size: Number
   },
   watch: {
     author: {
       handler(newVal, oldVal) {
-        this.Info = newVal;
-        this.name = this.Info.name;
-        this.headline = this.Info.headline;
+        this.author = newVal;
       },
       deep: true
     }
@@ -58,7 +52,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.AnswerAuthorInfo {
+.AuthorInfo {
   margin-top: 0;
   display: flex;
   align-items: center;
@@ -83,6 +77,7 @@ export default {
 
     .detail {
       overflow: hidden;
+      font-weight: 500;
       .headline {
         display: flex;
         align-items: center;

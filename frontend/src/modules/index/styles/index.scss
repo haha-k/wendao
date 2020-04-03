@@ -3,7 +3,11 @@
 
 html {
   height: 100%;
-  // box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -48,6 +52,22 @@ a:hover {
 }
 
 //globalSidebar
+.Card {
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+}
+
+.button__link {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+[v-cloak] {
+  display: none !important;
+}
 
 .GlobalSideBar-navLink {
   display: flex;
@@ -101,7 +121,7 @@ a:hover {
   padding: 0 16px;
   margin: 10px auto;
   // overflow: visible;
-  box-sizing: content-box;
+  // box-sizing: content-box;
 
   // flex-basis:0 0 1000px;
   .el-backtop {

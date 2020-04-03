@@ -36,6 +36,7 @@
               :isAns="true"
               :isCollapse="isCollapsed"
               :show="show"
+              :id="answer.id"
             ></feed-footer>
           </div>
         </div>
@@ -70,8 +71,11 @@ export default {
       let wh = window.innerHeight;
       let ff = this.$refs.feedFooter.$el.offsetHeight;
       let x = el.offsetHeight;
+      // console.warn(el.offsetTop + ff >= sc + wh);
       this.show =
-        !this.isCollapsed && sc + wh >= el.offsetHeight + el.offsetTop;
+        !this.isCollapsed &&
+        (sc + wh >= el.offsetHeight + el.offsetTop ||
+          sc + wh <= el.offsetTop + ff);
     }
   },
   mounted() {

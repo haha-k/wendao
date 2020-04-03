@@ -20,6 +20,5 @@ const componentsContext = require.context('../components/global', true, /\.js$/)
 componentsContext.keys().forEach(component => {
   const componentConfig = componentsContext(component)
   const ctrl = componentConfig.default || componentConfig
-  console.log(ctrl);
   Vue.component(ctrl.name, ctrl)
 })

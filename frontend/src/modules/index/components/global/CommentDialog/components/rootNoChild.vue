@@ -50,7 +50,6 @@ export default {
   computed: {
     time: function() {
       let date = new Date(this.comment.created_time);
-      console.log(date);
       return date.getDate();
     }
   }

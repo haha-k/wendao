@@ -2,15 +2,30 @@
   <div class="questionMain-container">
     <div class="ListShortcut">
       <div class="question-mainColumn">
-        <view-all-card :answerCount="answerCount"></view-all-card>
-        <answer-card :answer="answer"></answer-card>
-        <more-answers-card :otherAnswer="otherAnswer"></more-answers-card>
-        <view-all-card :answerCount="answerCount"></view-all-card>
+        <template v-if="!isAll">
+          <view-all-card :answerCount="answerCount"></view-all-card>
+          <answer-card :answer="answer"></answer-card>
+          <el-card :body-style="{ padding: '0px' }" class="moreAnswersCard">
+            <div slot="header">
+              <span>更多回答</span>
+            </div>
+            <answer-card :answer="otherAnswer[0]"></answer-card>
+            <answer-card :answer="otherAnswer[1]"></answer-card>
+          </el-card>
+          <view-all-card :answerCount="answerCount"></view-all-card>
+        </template>
+        <template v-else>
+          <!-- <el-card :body-style="{ padding: '0px' }" class="">
+          <div slot="header">
+          </div>-->
+          <answer-card v-for="item in answers" :key="item.id" :answer="item"></answer-card>
+          <!-- </el-card> -->
+        </template>
       </div>
     </div>
     <div class="side-column" :class="{'is-fixed':isFixed}" ref="side">
       <div class="Sticky">
-        <author-card :uid="author.id" :name="author.name"></author-card>
+        <author-card v-if="!isAll" :uid="author.id" :name="author.name"></author-card>
         <answer-favlisat-card></answer-favlisat-card>
         <related-question-card></related-question-card>
       </div>
@@ -18,6 +33,7 @@
   </div>
 </template>
 <script>
+import { getAnswers } from "#/api/answer";
 export default {
   name: "questionMain",
   data() {
@@ -26,23 +42,40 @@ export default {
       answer: {},
       loadding: false,
       otherAnswer: [],
-      author: {}
+      author: {},
+      answers: []
     };
   },
-  methods: {},
+  methods: {
+    getAllAnswer(qid) {
+      getAnswers()
+        .then(result => {
+          this.answers = result.data.data;
+        })
+        .catch(err => {});
+    }
+  },
   mounted() {
+    if (this.isAll) {
+      this.getAllAnswer(this.qid);
+    }
     console.warn(this.isFixed);
   },
   destroyed() {},
   components: {},
   props: {
-    ac: Number,
+    ac: {
+      type: Number,
+      require: false
+    },
     mainAnswer: Object,
     otherAnswer: Array,
     isFixed: {
       type: Boolean,
       default: false
-    }
+    },
+    isAll: Boolean,
+    qid: String
   },
   watch: {
     ac: {
@@ -56,8 +89,6 @@ export default {
       handler(newVal, oldVal) {
         this.answer = newVal;
         this.author = this.answer.author;
-        // console.log("xxxxx");
-        // console.log(this.answer);
       },
       deep: true,
       immediate: true
@@ -100,6 +131,10 @@ export default {
       top: 62px;
       transform: translateX(704px);
     }
+  }
+
+  .moreAnswersCard {
+    margin-top: 10px;
   }
 }
 </style>

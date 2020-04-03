@@ -65,7 +65,6 @@ export default {
     getColumn()
       .then(result => {
         this.columns = result.data.data;
-        console.log(this.columns);
       })
       .catch(err => {});
   },

@@ -12,13 +12,11 @@ export default {
   data() {
     return {
       answerCount: this.answerCount,
-      url: "/question/" + this.$route.params.qid + "/answers",
+      url: "/question/" + this.$route.params.qid + "/answers"
     };
   },
   methods: {},
-  mounted() {
-    console.log(this.answerCount);
-  },
+  mounted() {},
   components: {},
   props: {
     answerCount: Number
@@ -51,9 +49,8 @@ export default {
 }
 </style>
 <style scoped>
-
 .viewAllCard >>> .el-card__body {
   padding: 0 !important;
-    /* padding:0 20px !important; */
+  /* padding:0 20px !important; */
 }
 </style>

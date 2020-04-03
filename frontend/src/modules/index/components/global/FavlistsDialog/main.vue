@@ -96,7 +96,7 @@ export default {
       step1Show: true,
       step2Show: false,
       innerVisible: false,
-      dialogFavlistsVisible: false,
+      // dialogFavlistsVisible: false,
       collectText: "已收藏",
       form: {
         title: "",
@@ -113,7 +113,6 @@ export default {
     },
     handlerCollect(index) {
       let status = this.collectStatus[index].collected;
-      console.log(status);
       this.collectStatus[index].collected = !this.collectStatus[index]
         .collected;
     },
@@ -135,7 +134,6 @@ export default {
       done();
     },
     judgeStatus(fid) {
-      console.log(fid);
       return true;
       // let c = this.collectStatus.find(item => {
       //   return item["favlist_id"]===fid;

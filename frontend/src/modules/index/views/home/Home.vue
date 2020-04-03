@@ -6,7 +6,7 @@
       </el-header>
       <el-main class="Topstory-container" style="margin-top: 62px;">
         <topStory></topStory>
-        <globalSidebar ref="globalSidebar" @scroll="handleScroll" :class="{'is-fixed':isFixed}"></globalSidebar>
+        <globalSidebar ref="globalSidebar" @scroll="handleScroll" :class="{'is-fixed':true}"></globalSidebar>
       </el-main>
       <div></div>
     </el-container>
@@ -37,7 +37,6 @@ export default {
         window.pageYOffset ||
         document.documentElement.scrollTop ||
         document.body.scrollTop;
-
       let el = this.$refs["globalSidebar"].$el;
       // var offsetTop = document.querySelector("#searchBar").offsetTop;
       // if (scrollTop <= 200) {
@@ -45,20 +44,26 @@ export default {
 
       // } else {
       // }
-      console.warn(scrollTop, el.offsetTop);
-      if (scrollTop >= 193) {
-        this.isFixed = true;
-      } else {
-        this.isFixed = false;
-      }
+      // console.warn(scrollTop, el.offsetTop);
+
+    // 待优化
+      // if (scrollTop >= 62) {
+      //   this.isFixed = true;
+      // } else {
+      //   this.isFixed = false;
+      // }
     }
   },
 
   mounted() {
-    window.addEventListener("scroll", debounce(this.handleScroll, 500));
+    // window.addEventListener("scroll", debounce(this.handleScroll, 500));
+    // 待优化
+    // window.addEventListener("scroll", this.handleScroll, 500);
   },
   destroyed() {
-    window.removeEventListener("scroll", debounce(this.handleScroll, 500));
+    // window.removeEventListener("scroll", debounce(this.handleScroll, 500));
+    // 待优化
+    // window.removeEventListener("scroll", this.handleScroll, 500);
   },
   components: {
     Navbar: Navbar,
@@ -74,7 +79,10 @@ export default {
     position: fixed;
     // top: -133px;
     top: 62px;
+    // transform: translateY(62px);
     transform: translateX(704px);
+    // left: 704px;
+    transition: top 0.4s;
   }
 }
 </style>

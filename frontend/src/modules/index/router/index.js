@@ -1,6 +1,7 @@
 // components/index.js
 import Vue from "vue";
 import Router from "vue-router";
+import NProgress from 'nprogress'
 
 Vue.use(Router);
 
@@ -16,11 +17,23 @@ routerContext.keys().forEach(route => {
    * 兼容 import export 和 require module.export 两种规范
    */
   routes = [...routes, ...(routerModule.default || routerModule)];
-  console.log(routes);
 });
 
-export default new Router({
+
+const router = new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: routes
 });
+
+router.beforeEach((to, from, next) => {
+  NProgress.start();
+  next();
+});
+
+router.afterEach((to, from) => {
+  NProgress.done();
+  NProgress.remove();
+});
+
+export default router;

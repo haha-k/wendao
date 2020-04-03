@@ -9,22 +9,32 @@ export default [{
       path: "/waiting",
       component: () => import("@/views/home/waiting.vue")
    },
+
    {
-      name: "questionLater",
-      path: "/question/later",
-      component: () => import("@/views/home/later.vue")
-   },
-   {
-      name: "answers",
-      path: "/question/:qid",
-      props: true,
-      component: () => import("@/views/qa/answers/answers.vue")
-   },
-   {
-      name: "answerDetail",
-      path: "/question/:qid/answer/:aid",
-      props: true,
-      component: () => import("@/views/qa/answerDetail/answerDetail.vue")
+      name: "question",
+      path: "/question",
+      component: {
+         render: h => h('router-view')
+      },
+      children: [{
+            name: "questionLater",
+            path: "later",
+            component: () => import("@/views/home/later.vue")
+         },
+         {
+            name: "answers",
+            path: ":qid/answers",
+            props: true,
+            // component: () => import("@/views/qa/answers/answers.vue"),
+            component: () => import("@/views/qa/answerDetail/answerDetail.vue")
+         },
+         {
+            name: "answerDetail",
+            path: ":qid/answer/:aid",
+            props: true,
+            component: () => import("@/views/qa/answerDetail/answerDetail.vue")
+         },
+      ]
    },
 
 

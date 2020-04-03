@@ -62,9 +62,7 @@ export default {
       this.followStatus = !this.followStatus;
     }
   },
-  mounted() {
-    console.log(this.favItem.creator.avatar_url);
-  },
+  mounted() {},
   components: {},
   props: {
     favItem: Object
@@ -82,7 +80,7 @@ export default {
 <style lang="scss" scoped>
 .collectionCard {
   flex-shrink: 0;
-  width: 490px;
+  width: 482px;
   height: 364px;
   border-radius: 4px;
   box-shadow: 0 1px 3px 0 rgba(26, 26, 26, 0.1);

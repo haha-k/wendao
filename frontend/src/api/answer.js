@@ -2,12 +2,25 @@ import request from '#/utils/request';
 
 export function getAnswerDetail(aid) {
     // return request({
-    //     url: '/answers/:aid',
+    //     url: `/answers/${aid}`,
     //     method: "get",
     // });
     return request({
         baseURL: '',
         url: '/json/answer/answerDetail.json',
+        method: "get",
+    });
+}
+
+
+export function getAnswers(qid) {
+    // return request({
+    //     url: `/question/${qid}/answers`,
+    //     method: "get",
+    // });
+    return request({
+        baseURL: '',
+        url: '/json/answer/answers.json',
         method: "get",
     });
 }

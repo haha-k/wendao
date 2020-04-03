@@ -80,7 +80,6 @@ export default {
   },
   methods: {
     handleClose(done) {
-      console.log("))))");
       // this.dialogAskVisible = !this.dialogAskVisible;
       this.dialogclose = false;
       this.$emit("listen", this.dialogclose);
@@ -89,7 +88,6 @@ export default {
     },
     validateQuestion: function(rule, value, callback) {
       var last = value.slice(-1, value.length);
-      console.log(last);
       if (last != "？" && last != "?") {
         callback(new Error("你的问题还没有加问号呢"));
       } else {

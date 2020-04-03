@@ -59,7 +59,6 @@ export default {
       handler: function(newVal, oldVale) {
         this.profile = newVal;
         this.avatar = newVal.avatar_url;
-        console.log(this.avatar);
       },
       deep: true
     }
@@ -81,9 +80,9 @@ export default {
   .main-column {
     width: 694px;
   }
-  .side-column{
+  .side-column {
     width: 296px;
-    color:#646464;
+    color: #646464;
   }
   .el-card {
   }

@@ -36,26 +36,27 @@ export default {
       question_title: "",
       title: "显示描述",
       describe: "无",
-      visable:true
+      visable: true
     };
   },
   methods: {
-    write:function(){
-      console.log("===========");
-        this.$emit("visable",true);
+    write: function() {
+      this.$emit("visable", true);
     },
     getdes() {}
   },
   mounted() {
     this.qid = this.$route.params.qid;
-    // console.log
-    var url = "http://localhost:8000/api/question/qid/"+this.qid;
-    this.$axios.get(url).then((result) => {
-        this.question_title=result.data[0]["question_content"];
-        this.describe=result.data[0]["question_describe"];
-    }).catch((err) => {
+    var url = "http://localhost:8000/api/question/qid/" + this.qid;
+    this.$axios
+      .get(url)
+      .then(result => {
+        this.question_title = result.data[0]["question_content"];
+        this.describe = result.data[0]["question_describe"];
+      })
+      .catch(err => {
         console.log(err);
-    });
+      });
   },
   components: {}
 };

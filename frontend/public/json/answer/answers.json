@@ -1,0 +1,485 @@
+{
+  "data": [
+    {
+      "id": 932872132,
+      "type": "answer",
+      "answer_type": "normal",
+      "question": {
+        "type": "question",
+        "id": 344204972,
+        "title": "一毕业就能进阿里的人有多厉害？",
+        "question_type": "normal",
+        "created": 1567504238,
+        "updated_time": 1567504238,
+        "url": "https://www.zhihu.com/api/v4/questions/344204972",
+        "relationship": {}
+      },
+      "author": {
+        "id": "1c0da560cd8dd2e4c16d6d836a6a24ee",
+        "url_token": "a-li-ba-ba-da-mo-yuan",
+        "name": "阿里巴巴达摩院",
+        "avatar_url": "https://pic2.zhimg.com/v2-d4a802213e03da4c6be7596dcd66a630_is.jpg",
+        "avatar_url_template": "https://pic2.zhimg.com/v2-d4a802213e03da4c6be7596dcd66a630_{size}.jpg",
+        "is_org": true,
+        "type": "people",
+        "url": "https://www.zhihu.com/api/v4/people/1c0da560cd8dd2e4c16d6d836a6a24ee",
+        "user_type": "organization",
+        "headline": "以科技创世界",
+        "badge": [
+          {
+            "type": "identity",
+            "description": "已认证的官方帐号",
+            "topics": []
+          }
+        ],
+        "gender": -1,
+        "is_advertiser": false,
+        "follower_count": 57935,
+        "is_followed": false,
+        "is_privacy": false
+      },
+      "url": "https://www.zhihu.com/api/v4/answers/932872132",
+      "is_collapsed": false,
+      "created_time": 1576141950,
+      "updated_time": 1576214855,
+      "extras": "",
+      "is_copyable": true,
+      "is_normal": true,
+      "voteup_count": 279,
+      "comment_count": 12,
+      "is_sticky": false,
+      "admin_closed_comment": false,
+      "comment_permission": "all",
+      "can_comment": { "reason": "", "status": true },
+      "reshipment_settings": "allowed",
+      "content": "\u003cp\u003e\u003c/p\u003e\u003cp\u003e与其羡慕别人，不如先从让自己变得牛逼开始。\u003c/p\u003e\u003cp\u003e我有1份修炼自己技术的通关秘籍给到青年豪杰，是阿里巴巴一位90后高级技术专家的个人分享，助各位一臂之力：\u003c/p\u003e\u003cp\u003e他叫王晨纯，一毕业后就进入了阿里，不到4年时间就做到了阿里巴巴高级技术专家，带领了一个team在做新零售技术的探索，下面的分享PPT是他个人对自己成长经历的总结：\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-06fb9eadd118277a34d55f2f4ed1b303_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2030\" data-rawheight=\"1100\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-b6b8e58d5b65f31948c016d514d951ac_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"2030\" data-original=\"https://pic3.zhimg.com/v2-06fb9eadd118277a34d55f2f4ed1b303_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;2030\u0026#39; height=\u0026#39;1100\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2030\" data-rawheight=\"1100\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-b6b8e58d5b65f31948c016d514d951ac_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"2030\" data-original=\"https://pic3.zhimg.com/v2-06fb9eadd118277a34d55f2f4ed1b303_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-06fb9eadd118277a34d55f2f4ed1b303_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic4.zhimg.com/50/v2-96015ca31ecc8e38bc219b25c702f89e_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2010\" data-rawheight=\"1134\" data-default-watermark-src=\"https://pic2.zhimg.com/50/v2-b2d09e18f919d12d0fe196074a736727_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"2010\" data-original=\"https://pic4.zhimg.com/v2-96015ca31ecc8e38bc219b25c702f89e_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;2010\u0026#39; height=\u0026#39;1134\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2010\" data-rawheight=\"1134\" data-default-watermark-src=\"https://pic2.zhimg.com/50/v2-b2d09e18f919d12d0fe196074a736727_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"2010\" data-original=\"https://pic4.zhimg.com/v2-96015ca31ecc8e38bc219b25c702f89e_r.jpg\" data-actualsrc=\"https://pic4.zhimg.com/50/v2-96015ca31ecc8e38bc219b25c702f89e_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic4.zhimg.com/50/v2-d744049efc98e6a95db236638816258e_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2052\" data-rawheight=\"1142\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-3c24565ab4bb54c3f2bd864cb9e39ff7_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"2052\" data-original=\"https://pic4.zhimg.com/v2-d744049efc98e6a95db236638816258e_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;2052\u0026#39; height=\u0026#39;1142\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2052\" data-rawheight=\"1142\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-3c24565ab4bb54c3f2bd864cb9e39ff7_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"2052\" data-original=\"https://pic4.zhimg.com/v2-d744049efc98e6a95db236638816258e_r.jpg\" data-actualsrc=\"https://pic4.zhimg.com/50/v2-d744049efc98e6a95db236638816258e_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic1.zhimg.com/50/v2-ff1323429863df74415fe692013a21dc_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2036\" data-rawheight=\"1136\" data-default-watermark-src=\"https://pic2.zhimg.com/50/v2-f73b1047a540a889f4799a957e91e896_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"2036\" data-original=\"https://pic1.zhimg.com/v2-ff1323429863df74415fe692013a21dc_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;2036\u0026#39; height=\u0026#39;1136\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2036\" data-rawheight=\"1136\" data-default-watermark-src=\"https://pic2.zhimg.com/50/v2-f73b1047a540a889f4799a957e91e896_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"2036\" data-original=\"https://pic1.zhimg.com/v2-ff1323429863df74415fe692013a21dc_r.jpg\" data-actualsrc=\"https://pic1.zhimg.com/50/v2-ff1323429863df74415fe692013a21dc_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic1.zhimg.com/50/v2-bce334856e09b524529d24408dcb4f06_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2024\" data-rawheight=\"1128\" data-default-watermark-src=\"https://pic3.zhimg.com/50/v2-daaa7bb68d5937a1c0fcf33783ba0585_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"2024\" data-original=\"https://pic1.zhimg.com/v2-bce334856e09b524529d24408dcb4f06_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;2024\u0026#39; height=\u0026#39;1128\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2024\" data-rawheight=\"1128\" data-default-watermark-src=\"https://pic3.zhimg.com/50/v2-daaa7bb68d5937a1c0fcf33783ba0585_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"2024\" data-original=\"https://pic1.zhimg.com/v2-bce334856e09b524529d24408dcb4f06_r.jpg\" data-actualsrc=\"https://pic1.zhimg.com/50/v2-bce334856e09b524529d24408dcb4f06_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic1.zhimg.com/50/v2-1386347ca821551b8e899e9b1ee881b2_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2050\" data-rawheight=\"1156\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-59881646beed3f98420f6b956d80d228_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"2050\" data-original=\"https://pic1.zhimg.com/v2-1386347ca821551b8e899e9b1ee881b2_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;2050\u0026#39; height=\u0026#39;1156\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2050\" data-rawheight=\"1156\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-59881646beed3f98420f6b956d80d228_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"2050\" data-original=\"https://pic1.zhimg.com/v2-1386347ca821551b8e899e9b1ee881b2_r.jpg\" data-actualsrc=\"https://pic1.zhimg.com/50/v2-1386347ca821551b8e899e9b1ee881b2_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-5b15600adb8fdc1520f77e1c7ad14902_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2020\" data-rawheight=\"1146\" data-default-watermark-src=\"https://pic1.zhimg.com/50/v2-bc8455d2a748c1cb3f9f616c3ba631c6_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"2020\" data-original=\"https://pic3.zhimg.com/v2-5b15600adb8fdc1520f77e1c7ad14902_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;2020\u0026#39; height=\u0026#39;1146\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2020\" data-rawheight=\"1146\" data-default-watermark-src=\"https://pic1.zhimg.com/50/v2-bc8455d2a748c1cb3f9f616c3ba631c6_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"2020\" data-original=\"https://pic3.zhimg.com/v2-5b15600adb8fdc1520f77e1c7ad14902_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-5b15600adb8fdc1520f77e1c7ad14902_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic2.zhimg.com/50/v2-7e7f63a685998028c70432a059790192_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2030\" data-rawheight=\"1150\" data-default-watermark-src=\"https://pic1.zhimg.com/50/v2-2f01b7bbb3d7ffeb403d7ac3eb477f31_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"2030\" data-original=\"https://pic2.zhimg.com/v2-7e7f63a685998028c70432a059790192_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;2030\u0026#39; height=\u0026#39;1150\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2030\" data-rawheight=\"1150\" data-default-watermark-src=\"https://pic1.zhimg.com/50/v2-2f01b7bbb3d7ffeb403d7ac3eb477f31_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"2030\" data-original=\"https://pic2.zhimg.com/v2-7e7f63a685998028c70432a059790192_r.jpg\" data-actualsrc=\"https://pic2.zhimg.com/50/v2-7e7f63a685998028c70432a059790192_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic4.zhimg.com/50/v2-b865bb5b051aa4d533539da98838475a_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2046\" data-rawheight=\"1142\" data-default-watermark-src=\"https://pic2.zhimg.com/50/v2-f713362d9b9ec2a99be791e221c0d025_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"2046\" data-original=\"https://pic4.zhimg.com/v2-b865bb5b051aa4d533539da98838475a_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;2046\u0026#39; height=\u0026#39;1142\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2046\" data-rawheight=\"1142\" data-default-watermark-src=\"https://pic2.zhimg.com/50/v2-f713362d9b9ec2a99be791e221c0d025_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"2046\" data-original=\"https://pic4.zhimg.com/v2-b865bb5b051aa4d533539da98838475a_r.jpg\" data-actualsrc=\"https://pic4.zhimg.com/50/v2-b865bb5b051aa4d533539da98838475a_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-82c1233a81fb62a1a0b1db61248ee59a_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2052\" data-rawheight=\"1150\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-e4138bf5f6b33acc7d76a4881de2e134_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"2052\" data-original=\"https://pic3.zhimg.com/v2-82c1233a81fb62a1a0b1db61248ee59a_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;2052\u0026#39; height=\u0026#39;1150\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2052\" data-rawheight=\"1150\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-e4138bf5f6b33acc7d76a4881de2e134_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"2052\" data-original=\"https://pic3.zhimg.com/v2-82c1233a81fb62a1a0b1db61248ee59a_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-82c1233a81fb62a1a0b1db61248ee59a_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic1.zhimg.com/50/v2-11d29320fe3c973f1f01ff4522983ad4_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2042\" data-rawheight=\"1130\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-790f5fa0ef10d203b1179c257f852d4a_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"2042\" data-original=\"https://pic1.zhimg.com/v2-11d29320fe3c973f1f01ff4522983ad4_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;2042\u0026#39; height=\u0026#39;1130\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2042\" data-rawheight=\"1130\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-790f5fa0ef10d203b1179c257f852d4a_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"2042\" data-original=\"https://pic1.zhimg.com/v2-11d29320fe3c973f1f01ff4522983ad4_r.jpg\" data-actualsrc=\"https://pic1.zhimg.com/50/v2-11d29320fe3c973f1f01ff4522983ad4_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic4.zhimg.com/50/v2-1d110e6a52b7d871c1bff10e6a58b88b_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2054\" data-rawheight=\"1144\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-b409db5ee80e7ccd918f75f4745c9d70_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"2054\" data-original=\"https://pic4.zhimg.com/v2-1d110e6a52b7d871c1bff10e6a58b88b_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;2054\u0026#39; height=\u0026#39;1144\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2054\" data-rawheight=\"1144\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-b409db5ee80e7ccd918f75f4745c9d70_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"2054\" data-original=\"https://pic4.zhimg.com/v2-1d110e6a52b7d871c1bff10e6a58b88b_r.jpg\" data-actualsrc=\"https://pic4.zhimg.com/50/v2-1d110e6a52b7d871c1bff10e6a58b88b_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic2.zhimg.com/50/v2-d577e97cacbee237b7ee9ed95e27c7c2_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2034\" data-rawheight=\"1142\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-5b80a3c6e0f7c8a57b4fb76bf695b93e_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"2034\" data-original=\"https://pic2.zhimg.com/v2-d577e97cacbee237b7ee9ed95e27c7c2_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;2034\u0026#39; height=\u0026#39;1142\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"2034\" data-rawheight=\"1142\" data-default-watermark-src=\"https://pic4.zhimg.com/50/v2-5b80a3c6e0f7c8a57b4fb76bf695b93e_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"2034\" data-original=\"https://pic2.zhimg.com/v2-d577e97cacbee237b7ee9ed95e27c7c2_r.jpg\" data-actualsrc=\"https://pic2.zhimg.com/50/v2-d577e97cacbee237b7ee9ed95e27c7c2_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e并且我了解到一个消息：2020年阿里校招中，基础科学研究岗位会比往年增加30%，并开放量子计算、芯片研发等多种高端职位。\u003c/p\u003e\u003cp\u003e优秀毕业生将有机会加入传说中的“阿里星”计划，由副总裁亲自培养，年薪上不封顶！\u003c/p\u003e\u003cp\u003e不怕你太优秀，就看你敢不敢挑战！加油吧，年轻人！我在达摩院等你们！\u003c/p\u003e",
+      "editable_content": "",
+      "excerpt": "与其羡慕别人，不如先从让自己变得牛逼开始。 我有1份修炼自己技术的通关秘籍给到青年豪杰，是阿里巴巴一位90后高级技术专家的个人分享，助各位一臂之力： 他叫王晨纯，一毕业后就进入了阿里，不到4年时间就做到了阿里巴巴高级技术专家，带领了一个team在做新零售技术的探索，下面的分享PPT是他个人对自己成长经历的总结： [图片] [图片] [图片] [图片] [图片] [图片] [图片] [图片] [图片] [图片] [图片] [图片] [图片] 并且我了解到一个消息：2020年阿里校招中，基础科学研究岗位会比往年增加30%，并开放量子计算、芯片研发…",
+      "collapsed_by": "nobody",
+      "collapse_reason": "",
+      "annotation_action": null,
+      "mark_infos": [],
+      "relevant_info": {
+        "is_relevant": false,
+        "relevant_type": "",
+        "relevant_text": ""
+      },
+      "suggest_edit": {
+        "reason": "",
+        "status": false,
+        "tip": "",
+        "title": "",
+        "unnormal_details": {
+          "status": "",
+          "description": "",
+          "reason": "",
+          "reason_id": 0,
+          "note": ""
+        },
+        "url": ""
+      },
+      "is_labeled": false,
+      "reward_info": {
+        "can_open_reward": false,
+        "is_rewardable": false,
+        "reward_member_count": 0,
+        "reward_total_money": 0,
+        "tagline": ""
+      },
+      "relationship": {
+        "is_author": false,
+        "is_authorized": false,
+        "is_nothelp": false,
+        "is_thanked": false,
+        "is_recognized": false,
+        "voting": 0,
+        "upvoted_followees": []
+      },
+      "ad_answer": null
+    },
+    {
+      "id": 814845258,
+      "type": "answer",
+      "answer_type": "normal",
+      "question": {
+        "type": "question",
+        "id": 344204972,
+        "title": "一毕业就能进阿里的人有多厉害？",
+        "question_type": "normal",
+        "created": 1567504238,
+        "updated_time": 1567504238,
+        "url": "https://www.zhihu.com/api/v4/questions/344204972",
+        "relationship": {}
+      },
+      "author": {
+        "id": "0",
+        "url_token": "",
+        "name": "匿名用户",
+        "avatar_url": "https://pic1.zhimg.com/aadd7b895_is.jpg",
+        "avatar_url_template": "https://pic1.zhimg.com/aadd7b895_{size}.jpg",
+        "is_org": false,
+        "type": "people",
+        "url": "https://www.zhihu.com/api/v4/people/0",
+        "user_type": "people",
+        "headline": "",
+        "badge": [],
+        "gender": 1,
+        "is_advertiser": false,
+        "follower_count": 0,
+        "is_following": false,
+        "is_followed": false,
+        "is_celebrity": false,
+        "is_blocking": false,
+        "is_blocked": false,
+        "is_privacy": false
+      },
+      "url": "https://www.zhihu.com/api/v4/answers/814845258",
+      "is_collapsed": false,
+      "created_time": 1567729213,
+      "updated_time": 1567780315,
+      "extras": "",
+      "is_copyable": false,
+      "is_normal": true,
+      "voteup_count": 435,
+      "comment_count": 92,
+      "is_sticky": false,
+      "admin_closed_comment": false,
+      "comment_permission": "all",
+      "can_comment": { "reason": "", "status": true },
+      "reshipment_settings": "disallowed",
+      "content": "\u003cp\u003e十分厉害，非常成功，能说会道，上天遁地，无所不能，p8身份能和协和医院主任医师级别平起平坐，收入能和传统企业董事长级别平起平坐，技术能被Jeff dean大为赞赏。阿里人技术基础扎实，商业逻辑清晰，创新能力也首屈一指，开源也是业界一枝独秀，员工皆为未来独角兽创业公司cto，合伙人预备名单，如果朋友当中有阿里的同学，请一定要多多向人家学习，甚至做好抱大腿准备。\u003c/p\u003e\u003cp\u003e阿里要求高，员工收入都非常可观，先不说其他人多牛多猛，我说说要赛过人家有多难，比如我在100线混到现在，33岁了，被外面猎头告知我的职级平移到阿里也就 p4 水平，属于无能级，让我趁早放弃互联网回家耕地去。阿里职级是整个互联网的对标核心，p4就是人家普通校招生入职水平，干满三年有概率到p6，碾压我两个级别，可见阿里校招生能够拳打脚踢其它100线互联网的技术骨干。\u003c/p\u003e\u003cp\u003e阿里人的水平确实能够改变整个技术世界，甚至研制核聚变，航天科技都需要这些公司员工转行去辅助，唯一限制阿里人做出改变世界的事情，是中国房价。\u003c/p\u003e",
+      "editable_content": "",
+      "excerpt": "十分厉害，非常成功，能说会道，上天遁地，无所不能，p8身份能和协和医院主任医师级别平起平坐，收入能和传统企业董事长级别平起平坐，技术能被Jeff dean大为赞赏。阿里人技术基础扎实，商业逻辑清晰，创新能力也首屈一指，开源也是业界一枝独秀，员工皆为未来独角兽创业公司cto，合伙人预备名单，如果朋友当中有阿里的同学，请一定要多多向人家学习，甚至做好抱大腿准备。 阿里要求高，员工收入都非常可观，先不说其他人多牛多…",
+      "collapsed_by": "nobody",
+      "collapse_reason": "",
+      "annotation_action": null,
+      "mark_infos": [],
+      "relevant_info": {
+        "is_relevant": false,
+        "relevant_type": "",
+        "relevant_text": ""
+      },
+      "suggest_edit": {
+        "reason": "",
+        "status": false,
+        "tip": "",
+        "title": "",
+        "unnormal_details": {
+          "status": "",
+          "description": "",
+          "reason": "",
+          "reason_id": 0,
+          "note": ""
+        },
+        "url": ""
+      },
+      "is_labeled": false,
+      "reward_info": {
+        "can_open_reward": false,
+        "is_rewardable": false,
+        "reward_member_count": 0,
+        "reward_total_money": 0,
+        "tagline": ""
+      },
+      "relationship": {
+        "is_author": false,
+        "is_authorized": false,
+        "is_nothelp": false,
+        "is_thanked": false,
+        "is_recognized": false,
+        "voting": 0,
+        "upvoted_followees": []
+      },
+      "ad_answer": null
+    },
+    {
+      "id": 814273973,
+      "type": "answer",
+      "answer_type": "normal",
+      "question": {
+        "type": "question",
+        "id": 344204972,
+        "title": "一毕业就能进阿里的人有多厉害？",
+        "question_type": "normal",
+        "created": 1567504238,
+        "updated_time": 1567504238,
+        "url": "https://www.zhihu.com/api/v4/questions/344204972",
+        "relationship": {}
+      },
+      "author": {
+        "id": "2d6abe52db864cfbd8a10f4430b804e1",
+        "url_token": "a-li-yun-97-77",
+        "name": "阿里云",
+        "avatar_url": "https://pic3.zhimg.com/v2-c0130a1b788859a1e73b418c1e93a582_is.jpg",
+        "avatar_url_template": "https://pic3.zhimg.com/v2-c0130a1b788859a1e73b418c1e93a582_{size}.jpg",
+        "is_org": true,
+        "type": "people",
+        "url": "https://www.zhihu.com/api/v4/people/2d6abe52db864cfbd8a10f4430b804e1",
+        "user_type": "organization",
+        "headline": "为了无法计算的价值",
+        "badge": [
+          {
+            "type": "identity",
+            "description": "已认证的官方帐号",
+            "topics": []
+          }
+        ],
+        "gender": -1,
+        "is_advertiser": true,
+        "follower_count": 80246,
+        "is_followed": false,
+        "is_privacy": false
+      },
+      "url": "https://www.zhihu.com/api/v4/answers/814273973",
+      "is_collapsed": false,
+      "created_time": 1567670636,
+      "updated_time": 1567670636,
+      "extras": "",
+      "is_copyable": true,
+      "is_normal": true,
+      "voteup_count": 419,
+      "comment_count": 25,
+      "is_sticky": false,
+      "admin_closed_comment": false,
+      "comment_permission": "all",
+      "can_comment": { "reason": "", "status": true },
+      "reshipment_settings": "allowed",
+      "content": "\u003cp\u003e谢邀，强答一发。\u003c/p\u003e\u003cp\u003e可能，他们并没有多厉害。只是看到了这个招聘广告，想找份工作\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic2.zhimg.com/50/v2-15e4b6319b077aaca126aa63dd11de29_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"1392\" data-rawheight=\"378\" data-default-watermark-src=\"https://pic3.zhimg.com/50/v2-597f2028336d1a340910278c91f4fa01_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"1392\" data-original=\"https://pic2.zhimg.com/v2-15e4b6319b077aaca126aa63dd11de29_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;1392\u0026#39; height=\u0026#39;378\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"1392\" data-rawheight=\"378\" data-default-watermark-src=\"https://pic3.zhimg.com/50/v2-597f2028336d1a340910278c91f4fa01_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"1392\" data-original=\"https://pic2.zhimg.com/v2-15e4b6319b077aaca126aa63dd11de29_r.jpg\" data-actualsrc=\"https://pic2.zhimg.com/50/v2-15e4b6319b077aaca126aa63dd11de29_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e十几年后，他们就变成了现在的：行癫，鲁肃，多隆，阿玺，小邪……\u003c/p\u003e\u003cp\u003e非凡人，平常心，非凡事。\u003c/p\u003e\u003cp\u003e只要你有“此时此刻，非我莫属”的勇气，都可以来试一试。\u003c/p\u003e\u003cp\u003e你一定是独一无二的。\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-a5468a2aeda9b89d745e7787de80fc01_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"1270\" data-rawheight=\"476\" data-default-watermark-src=\"https://pic3.zhimg.com/50/v2-2c5f501d87fb6af02e9df10426956a3e_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"1270\" data-original=\"https://pic3.zhimg.com/v2-a5468a2aeda9b89d745e7787de80fc01_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;1270\u0026#39; height=\u0026#39;476\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"1270\" data-rawheight=\"476\" data-default-watermark-src=\"https://pic3.zhimg.com/50/v2-2c5f501d87fb6af02e9df10426956a3e_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"1270\" data-original=\"https://pic3.zhimg.com/v2-a5468a2aeda9b89d745e7787de80fc01_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-a5468a2aeda9b89d745e7787de80fc01_hd.jpg\"/\u003e\u003c/figure\u003e\u003ca href=\"https://link.zhihu.com/?target=https%3A//job.alibaba.com/zhaopin/index.htm\" data-draft-node=\"block\" data-draft-type=\"link-card\" class=\" external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003e\u003cspan class=\"invisible\"\u003ehttps://\u003c/span\u003e\u003cspan class=\"visible\"\u003ejob.alibaba.com/zhaopin\u003c/span\u003e\u003cspan class=\"invisible\"\u003e/index.htm\u003c/span\u003e\u003cspan class=\"ellipsis\"\u003e\u003c/span\u003e\u003c/a\u003e\u003cp\u003e\u003c/p\u003e\u003cp\u003e\u003c/p\u003e\u003cp\u003e\u003c/p\u003e",
+      "editable_content": "",
+      "excerpt": "谢邀，强答一发。 可能，他们并没有多厉害。只是看到了这个招聘广告，想找份工作 [图片] 十几年后，他们就变成了现在的：行癫，鲁肃，多隆，阿玺，小邪… 非凡人，平常心，非凡事。 只要你有“此时此刻，非我莫属”的勇气，都可以来试一试。 你一定是独一无二的。 [图片] https://job.alibaba.com/zhaopin/index.htm",
+      "collapsed_by": "nobody",
+      "collapse_reason": "",
+      "annotation_action": null,
+      "mark_infos": [],
+      "relevant_info": {
+        "is_relevant": false,
+        "relevant_type": "",
+        "relevant_text": ""
+      },
+      "suggest_edit": {
+        "reason": "",
+        "status": false,
+        "tip": "",
+        "title": "",
+        "unnormal_details": {
+          "status": "",
+          "description": "",
+          "reason": "",
+          "reason_id": 0,
+          "note": ""
+        },
+        "url": ""
+      },
+      "is_labeled": false,
+      "reward_info": {
+        "can_open_reward": false,
+        "is_rewardable": false,
+        "reward_member_count": 0,
+        "reward_total_money": 0,
+        "tagline": ""
+      },
+      "relationship": {
+        "is_author": false,
+        "is_authorized": false,
+        "is_nothelp": false,
+        "is_thanked": false,
+        "is_recognized": false,
+        "voting": 0,
+        "upvoted_followees": []
+      },
+      "ad_answer": null
+    },
+    {
+      "id": 814626458,
+      "type": "answer",
+      "answer_type": "normal",
+      "question": {
+        "type": "question",
+        "id": 344204972,
+        "title": "一毕业就能进阿里的人有多厉害？",
+        "question_type": "normal",
+        "created": 1567504238,
+        "updated_time": 1567504238,
+        "url": "https://www.zhihu.com/api/v4/questions/344204972",
+        "relationship": {}
+      },
+      "author": {
+        "id": "752aab3c8e5834616a0653a623f3edc0",
+        "url_token": "da-cheng-cheng-70",
+        "name": "乔戈里",
+        "avatar_url": "https://pic2.zhimg.com/v2-3a36a445df045c541c16de2c0cf06838_is.jpg",
+        "avatar_url_template": "https://pic2.zhimg.com/v2-3a36a445df045c541c16de2c0cf06838_{size}.jpg",
+        "is_org": false,
+        "type": "people",
+        "url": "https://www.zhihu.com/api/v4/people/752aab3c8e5834616a0653a623f3edc0",
+        "user_type": "people",
+        "headline": "微信公众号：程序员乔戈里  想成为知乎大V，求关注",
+        "badge": [],
+        "gender": 1,
+        "is_advertiser": false,
+        "follower_count": 8270,
+        "is_followed": false,
+        "is_privacy": false
+      },
+      "url": "https://www.zhihu.com/api/v4/answers/814626458",
+      "is_collapsed": false,
+      "created_time": 1567693611,
+      "updated_time": 1569080208,
+      "extras": "",
+      "is_copyable": true,
+      "is_normal": true,
+      "voteup_count": 3534,
+      "comment_count": 61,
+      "is_sticky": false,
+      "admin_closed_comment": false,
+      "comment_permission": "censor",
+      "can_comment": {
+        "reason": "你的评论将会由作者筛选后显示",
+        "status": true
+      },
+      "reshipment_settings": "allowed",
+      "content": "\u003cp\u003e\u003cb\u003e一.简历篇\u003c/b\u003e\u003c/p\u003e\u003cp\u003e我是使用的乔布简历，在里面买了一个模板，本科还是免费的，研究生阶段就收费了，呵呵。\u003c/p\u003e\u003cp\u003e（1）个人联系方式\u003c/p\u003e\u003cp\u003e简历的话要把电话，email这些重要的信息放到显眼的位置，方便联系。\u003c/p\u003e\u003cp\u003e（2）技能掌握\u003c/p\u003e\u003cp\u003e熟悉 精通等词汇慎用（\u003cb\u003e精通应届生就不要用了\u003c/b\u003e），我举一下我的java为何用了熟悉的例子，java看了《java核心技术卷1》《java编程思想》前几章《深入了解java虚拟机》前7章，《java并发编程的艺术》《java多线程编程核心技术》还看了一堆网上的博客，\u003cb\u003e看了这么多我才写上了熟悉java\u003c/b\u003e。\u003c/p\u003e\u003cp\u003e了解的话适用于只是看过一点书，只是一种浅尝辄止的感觉，比如你只是通过刷了刷面经，了解了一些数据库的面试常见的问题，那么这种就应该用了解。一般都写上了解吧，你应聘啥工程师，对应的语言写上熟悉。\u003c/p\u003e\u003cp\u003e（3）荣誉奖励\u003c/p\u003e\u003cp\u003e奖学金，优秀干部，竞赛获奖，paper啥的都往上怼，多多益善。\u003c/p\u003e\u003cp\u003e（4）项目\u003c/p\u003e\u003cp\u003e项目篇很重要，基本面试的第一个环节都是扣你的项目。\u003c/p\u003e\u003cp\u003e\u003cb\u003e项目一定要准备1到2个亮点（难点）！！！\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e项目一定要准备1到2个亮点（难点）！！！\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e项目一定要准备1到2个亮点（难点）！！！\u003c/b\u003e\u003c/p\u003e\u003cp\u003e有些人看到这里就会说，我这项目水的一批，一点亮点都没有，咋整，全完了呀，别慌，听我给你吹一波。\u003c/p\u003e\u003cp\u003e一开始我第一次面试的时候(第一次就去面阿里，我也是胆贼大)，阿里面试官上来就怼项目，\u003c/p\u003e\u003cp\u003e问我这是啥，那是啥，我说了以后，\u003cb\u003e他就问着玩意底层是咋实现的\u003c/b\u003e，我用的是一个开源的爬虫，然后我就说我只会用，底层没有看过，他估计很失望；\u003cb\u003e然后他问我的项目亮点是啥\u003c/b\u003e，我当时一下愣住了，扯了一些有的没的，都是失败的惨痛的教训，大家参考参考就好，不一定就一定要照着我学，非要知耻而后勇，咋提前准备好也是不错的。\u003c/p\u003e\u003cp\u003e经过这次惨痛的教训以后，我就开始有意识地去想一些项目的亮点，\u003cb\u003e即使不是我遇到的问题，我强行把这些问题加到我的项目上面，当做我的项目亮点。\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e亮点举例\u003c/b\u003e：我的第一个项目的我说我负责舆情监控项目的地域分析，这个模块其实平平无奇，很水，就是利用一个开源的NER命名实体识别的包去识别出来新闻正文的地点，然后统计地点出现的次数这样的一个简单的模块。我就这样吹：最深刻的一个项目就是最近做的网络舆情监控项目,其中我在里面有负责一个地域分析模块，就是从最新爬进来的新闻数据里面提取出来地域信息，最后在地图上显示出来,当时把后台模块写好了以后,是可以在本地的windows系统上运行的，然后导出jar包的时候，想把jar包在linux系统上运行起来，但是一运行就显示OOM内存溢出错误，当时遇到的这个问题的时候第一时间想起来了以前看的关于虚拟机方面的书，于是我在虚拟机的配置上添加了一个-XX:+HeapDumpOnOutOfMemoryError,尝试将dump文件保留到本地,然后采用了jmap命令去分析这个dump文件，发现代表老年代的参数Old Generation每次一启动都是一直满着的,然后去看了虚拟机的配置参数，发现虚拟机中的-xmx参数只有256M，而程序需要的内存大小为500M（因为需要加载一个MIT的提取名词的包），所以最后通过设置成1024M解决了这个问题，我感觉通过这个学到了很多。在项目中扮演了核心角色，独立完成了地域分析模块。\u003c/p\u003e\u003cp\u003e示例看不懂也没关系，这个得有一定的java虚拟机的知识才可以看懂，推荐看《深入了解java虚拟机》\u003c/p\u003e\u003cp\u003e\u003cb\u003e看到这里，你完全可以把我的这个项目的这个亮点融合到你自己的项目里面\u003c/b\u003e，换个背景就是你的项目亮点了，我上面推荐的《深入了解java虚拟机》里面也有很多虚拟机调优的经验，你可以看懂之后，把这些融合到自己的项目里面，完全是可以的。\u003c/p\u003e\u003cp\u003e\u003cb\u003e除此之外，关于项目还有一个问题\u003c/b\u003e：就是你看了我的简历，会发现许多项目都是与爬虫相关的，面试管会问你在爬虫上你遇到了啥问题，这种完全可以上网去搜爬虫和反爬虫的技术博客，然后理解记忆，说给面试官听。说到这里，其实也就是在说，你的项目可能涉及到的点你都得有准备，有备无患，\u003cb\u003e你如果不知道自己项目涉及到哪些点，那么可以通过一些公司练练手，他问到的一些问题，就有可能是你的项目需要准备的点。\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e亮点举例二：\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e这道题目是来源于我面试百度的一道面试题。\u003c/b\u003e\u003c/p\u003e\u003cp\u003e题目是这样子的：面试官：这个是我们在实际业务中遇到的，就是用户反映系统会周期性地出现卡顿现象。\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic1.zhimg.com/50/v2-e46306bcfc1e5c72e433b4a74dfc1713_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"721\" data-rawheight=\"361\" class=\"origin_image zh-lightbox-thumb\" width=\"721\" data-original=\"https://pic1.zhimg.com/v2-e46306bcfc1e5c72e433b4a74dfc1713_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;721\u0026#39; height=\u0026#39;361\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"721\" data-rawheight=\"361\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"721\" data-original=\"https://pic1.zhimg.com/v2-e46306bcfc1e5c72e433b4a74dfc1713_r.jpg\" data-actualsrc=\"https://pic1.zhimg.com/50/v2-e46306bcfc1e5c72e433b4a74dfc1713_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003e面试官给我画了一个上面这样的图，横轴代表时间，纵轴代表系统的性能，可以看成，过了一个周期系统性能就会到底一个低谷值，然后又慢慢恢复正常。面试官问我是什么原因。\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003e我的思考\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003e我略作思量，目前我手里的牌只有jvm虚拟机的知识，其它我实在想不出和这个问题相关的答案，于是我推测和jvm虚拟机垃圾回收有关。\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003ejvm虚拟机垃圾回收会发生stop the word(中文翻译过来就是停止这个世界，也就是说会使得正常的工作线程停止运行)，这样工作线程停止了工作，那么系统性能必然下降，于是我抱着自己的这种猜测这样回答这个问题。\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003e我推测是与jvm垃圾回收有关。jvm虚拟机中将堆分为新生代和老年代，而当new了一个对象以后，由于是强引用，这个对象在经历minorGC的时候，年龄会变大，在达到参数MaxTenuringThreshold的值的时候，就会进入到老年代中。一直进行这个过程，那么老年代中的活着的对象就会越来越多，最后老年代满了以后发生fullGC,而fullGC是很耗时间的，尤其是当老年代越大，那么fullGC就越耗时间。这个系统周期性出现这个问题的就是由于对象周期性地把老年代填充满了，然后jvm虚拟机周期性地去进行fullGC去回收垃圾，当回收的时候系统性能就下降，当回收结束时系统性能就上升。\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003e那么如何解决呢？通过调整新生代与老年代的比例（该值可以通过参数 –XX:NewRatio 来指定），调低老年代占的内存大小，这样老年代很快就满了，就会提前进行fullGC,直到调整到发生fullGC时候对于系统性能影响不大的时候（用户察觉不出来），那么调优结束。\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003e面试官听完以后，满意地点了点头，我感觉应该算是推测正确了。\u003c/p\u003e\u003cp\u003e项目亮点\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003e“乔兄，那么如何把这个面试题变成我的项目亮点？\u003c/p\u003e\u003cp\u003e“别急，看我72变~”\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic2.zhimg.com/50/v2-2642de261e1b14449e18dbe2d846977e_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"442\" data-rawheight=\"455\" class=\"origin_image zh-lightbox-thumb\" width=\"442\" data-original=\"https://pic2.zhimg.com/v2-2642de261e1b14449e18dbe2d846977e_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;442\u0026#39; height=\u0026#39;455\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"442\" data-rawheight=\"455\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"442\" data-original=\"https://pic2.zhimg.com/v2-2642de261e1b14449e18dbe2d846977e_r.jpg\" data-actualsrc=\"https://pic2.zhimg.com/50/v2-2642de261e1b14449e18dbe2d846977e_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003e首先我们来了解一下jstat命令。\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-013ae145025416b24afcd1b4b42bc9b8_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"771\" data-rawheight=\"320\" class=\"origin_image zh-lightbox-thumb\" width=\"771\" data-original=\"https://pic3.zhimg.com/v2-013ae145025416b24afcd1b4b42bc9b8_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;771\u0026#39; height=\u0026#39;320\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"771\" data-rawheight=\"320\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"771\" data-original=\"https://pic3.zhimg.com/v2-013ae145025416b24afcd1b4b42bc9b8_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-013ae145025416b24afcd1b4b42bc9b8_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003e上图来源于《深入理解JVM虚拟机》这本书，讲解了jstat命令的作用。\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003e对于你的任意的一个项目，比如说你做的网站，你都可以说你的网站在运行的时候周期性地遇到出现卡顿现象。出现卡顿了，你肯定想去找解决方法，于是你想到了jstat这个命令，去观察jvm虚拟机的各项指标。\u003c/p\u003e\u003cp\u003e在观察的过程中，你发现FGC这个参数很大，说明fullGC进行的很频繁，而且FGCT也就是fullGC总的耗时时间很长，所以你推测这可能是jvm虚拟机频繁地进行fullGC导致了系统出现周期性的卡顿，这时候你再按照我刚才说的解决思路，说一遍给面试官听，那么你的项目亮点可能就会让你在你的面试中加分~\u003c/p\u003e\u003cp\u003e\u003cb\u003e上述出自我自己写的文章：\u003c/b\u003e\u003c/p\u003e\u003ca href=\"https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s%3F__biz%3DMzI5MzYzMDAwNw%3D%3D%26mid%3D2247483833%26idx%3D1%26sn%3Da529fb77351fa034e3815ad1d2c414f3%26chksm%3Dec6e78e1db19f1f7132c6b7144380cb7d4dfc9773dc165d653e0e16e3165dd8d20c25934a8d9%26token%3D482244162%26lang%3Dzh_CN%23rd\" data-draft-node=\"block\" data-draft-type=\"link-card\" data-image=\"https://pic4.zhimg.com/v2-98953b3f2fbb01d771291f3117ae0e5f_180x120.jpg\" data-image-width=\"732\" data-image-height=\"462\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003e可以作为你面试的项目亮点的文章，不来看看吗？\u003c/a\u003e\u003cp\u003e\u003cb\u003e-------------------------------------------------------------------------------------------\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e二.简历投递篇\u003c/b\u003e\u003c/p\u003e\u003cp\u003e（1）官方网申\u003c/p\u003e\u003cp\u003e学历不好的，不建议这走这条路，容易被刷，985/211也有一定几率被刷。\u003c/p\u003e\u003cp\u003e（2）内推\u003c/p\u003e\u003cp\u003e关注 \u003ca href=\"https://link.zhihu.com/?target=https%3A//www.nowcoder.com/\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003e牛客网- 互联网求职神器和备考学习平台\u003c/a\u003e 的内推信息，都是真实可靠的，虽然不一定免笔试，但是可以保证你简历不被刷啊！！！\u003c/p\u003e\u003cp\u003e微信公众好 互联派 也有很多内推的信息，值得关注。\u003c/p\u003e\u003cp\u003e（3）内推完之后的添加个人信息\u003c/p\u003e\u003cp\u003e强推 牛客网简历助手 \u003ca href=\"https://link.zhihu.com/?target=https%3A//www.nowcoder.com/quick-fill/show-introduce\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003e助手介绍_牛客简历助手-简历一次填写，N网闪填__牛客网\u003c/a\u003e\u003c/p\u003e\u003cp\u003e爽的一批，谁用谁知道，你填写完牛客网的简历助手，进来其它求职网站的时候，可以把插件调出来，如果调不出来，多点几下，自己摸索哈。\u003c/p\u003e\u003cp\u003e\u003cb\u003e三.笔试面试篇\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e提前批:\u003c/b\u003e一般公司的提前批是面笔试的，这个机会一定要抓住，提前批不耽误正常网申流程，相当于多了一次机会。（其实你每次应聘都是会有记录的，现在的面试官可以看到你所有的过往的面试记录，但我觉得影响不大，你这次能过和上次没过还是取决于你自己的实力，能不能打动面试官）\u003c/p\u003e\u003cp\u003e\u003cb\u003e笔试\u003c/b\u003e：就算你内推成功了，也会有极大可能笔试，如果你算法功力强，可以独当一面，那么不用看这里，直接跳过，如果你算法一般的话，我说一下我在秋招过程中看到的一些其他人是怎么办的。周围人一般都是三五成群，算法题互相说思路，基本知道思路就知道咋写了，也有的比如他1道题AC了，他是C++版本的，其他人把这个AC代码改成了java版本等等，也可以请周围大神帮忙A几道等等，其实周围同学的算法功底真的说不上多强，反正是通过这种方法也算是把笔试给过了。\u003cb\u003e其实笔试题吧，你把剑指offer刷一刷，leetcode刷个几百道（建议一个tag一个tag的刷），问题不大，我是通过刷leedcode，然后感觉这些公司的笔试题也就那么回事\u003c/b\u003e，还OK，当然阿里笔试题另说，还是A不了，真的变态！！！\u003c/p\u003e\u003cp\u003e\u003cb\u003e面试\u003c/b\u003e：面试这个就看平时积累了。\u003c/p\u003e\u003cp\u003e\u003cb\u003e四.平时积累篇\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e-------------------------------------------------------------------------------------------\u003c/b\u003e\u003c/p\u003e\u003cp\u003egif动图演示（面经自带书签，每个问题都有答案，面试中比如说电话面试和视频面试，问的你的一些问题，我这上面都有）\u003cbr/\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic1.zhimg.com/50/v2-13b899ca8eb450cf34d60c8c32f29c9f_hd.jpg\" data-caption=\"\" data-size=\"normal\" class=\"content_image\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;0\u0026#39; height=\u0026#39;0\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" class=\"content_image lazy\" data-actualsrc=\"https://pic1.zhimg.com/50/v2-13b899ca8eb450cf34d60c8c32f29c9f_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003e（Java基础，集合，虚拟机，框架，计算机网络，数据库，linux,操作系统，安全等都有）\u003c/p\u003e\u003cp\u003ejava/C++/前端/测试/运维等技术岗位我的面经都具有很高的价值\u003c/p\u003e\u003cp\u003e\u003cb\u003e下文中截图来源于我做的一个pdf版本的面经，把所以知识点的答案整理了下来，耗费我将近至少1个月时间，在本文最后部分把这个pdf分享给大家，觉得有用的麻烦点赞关注走一波，谢谢！！！面经中有我的知识点的答案，如下图示例，非常详细！！！\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e下文中截图来源于我做的一个pdf版本的面经，把所以知识点的答案整理了下来，耗费我将近至少1个月时间，在本文最后部分把这个pdf分享给大家，觉得有用的麻烦点赞关注走一波，谢谢！！！面经中有我的知识点的答案，如下图示例，非常详细！！！\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e下文中截图来源于我做的一个pdf版本的面经，把所以知识点的答案整理了下来，耗费我将近至少1个月时间，在本文最后部分把这个pdf分享给大家，觉得有用的麻烦点赞关注走一波，谢谢！！！面经中有我的知识点的答案，如下图示例，非常详细！！！\u003c/b\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic4.zhimg.com/50/v2-6a306874a51ca185ea41e272d96b5358_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"1440\" data-rawheight=\"860\" class=\"origin_image zh-lightbox-thumb\" width=\"1440\" data-original=\"https://pic4.zhimg.com/v2-6a306874a51ca185ea41e272d96b5358_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;1440\u0026#39; height=\u0026#39;860\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"1440\" data-rawheight=\"860\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"1440\" data-original=\"https://pic4.zhimg.com/v2-6a306874a51ca185ea41e272d96b5358_r.jpg\" data-actualsrc=\"https://pic4.zhimg.com/50/v2-6a306874a51ca185ea41e272d96b5358_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic2.zhimg.com/50/v2-6388065d93bc4539a4b8e18701c64c27_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"1440\" data-rawheight=\"860\" class=\"origin_image zh-lightbox-thumb\" width=\"1440\" data-original=\"https://pic2.zhimg.com/v2-6388065d93bc4539a4b8e18701c64c27_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;1440\u0026#39; height=\u0026#39;860\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"1440\" data-rawheight=\"860\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"1440\" data-original=\"https://pic2.zhimg.com/v2-6388065d93bc4539a4b8e18701c64c27_r.jpg\" data-actualsrc=\"https://pic2.zhimg.com/50/v2-6388065d93bc4539a4b8e18701c64c27_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e--------------------------------------------------------------------------------------------\u003c/p\u003e\u003cp\u003e\u003cb\u003e1.数据结构与算法篇\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e你是java开发你就用java代码去实现，是C++开发就用C++去实现。\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e书籍参考：\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e（0）\u003c/b\u003e《图解算法》入门\u003c/p\u003e\u003cp\u003e\u003cb\u003e（1）《剑指offer》\u003c/b\u003e \u003ca href=\"https://link.zhihu.com/?target=https%3A//www.nowcoder.com/ta/coding-interviews\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003e剑指Offer_编程题_牛客网\u003c/a\u003e\u003c/p\u003e\u003cp\u003e（2）《程序员代码面试指南 IT名企算法与数据结构题目最优解》参考左神视频\u003c/p\u003e\u003cp\u003e（3）leetcode \u003ca href=\"https://link.zhihu.com/?target=https%3A//leetcode.com/\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003eLeetCode - The World\u0026#39;s Leading Online Programming Learning Platform\u003c/a\u003e\u003c/p\u003e\u003cp\u003eleedcode注意去英文官网，别去中国区，中国区讨论区讨论的少。\u003c/p\u003e\u003cp\u003eleedcode 注意一个tag一个tag的刷，例如动态规划，就把动态规划下的题目都刷了，基本刷个10多道，其它也基本有思路了，而且动态规划的题目笔试面试也常出。其次就是二叉树，链表，数组，回溯的题目。\u003c/p\u003e\u003cp\u003e（4）数据结构（严蔚敏）/大话数据结构 //如果觉得教材无聊就可以看大话系列\u003c/p\u003e\u003cp\u003e需要掌握的知识点：\u003c/p\u003e\u003cul\u003e\u003cli\u003e数组、链表、二叉树、队列、栈的各种操作（性能，场景）\u003c/li\u003e\u003cli\u003e二分查找和各种变种的二分查找（循环有序数组找最大值最小值找n,有序数组找最左下标，最右下标）\u003c/li\u003e\u003cli\u003e各类排序算法以及复杂度分析（\u003cb\u003e快排、归并、堆、冒泡、直接选择、插入排序\u003c/b\u003e）\u003c/li\u003e\u003cli\u003e各类算法题（手写）\u003c/li\u003e\u003cli\u003e理解并可以分析时间和空间复杂度。\u003c/li\u003e\u003cli\u003e动态规划（笔试回回有。。）、贪心。\u003c/li\u003e\u003cli\u003e红黑树、AVL树、Hash树、Tire树、B树、B+ 树（除了红黑树，其它要会插入删除查找，红黑树如果会更好，也算一个亮点）。\u003c/li\u003e\u003cli\u003e图算法（克鲁斯卡尔算法、普林母算法、迪克拉斯算法）\u003c/li\u003e\u003cli\u003e树的前序后序中序遍历的递归非递归实现，层次遍历，深度优先遍历，广度优先遍历递归与非递归实现\u003c/li\u003e\u003c/ul\u003e\u003cp\u003e排序算法总结：\u003ca href=\"https://link.zhihu.com/?target=https%3A//blog.csdn.net/whuslei/article/details/6442755\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003e常见排序算法小结 - CSDN博客\u003c/a\u003e\u003c/p\u003e\u003cp\u003e排序算法递归与非递归的java实现版本：\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://link.zhihu.com/?target=https%3A//blog.csdn.net/WantFlyDaCheng/article/details/81546348\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003eLintcode 快排递归与非递归实现 464. 整数排序 II java\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://link.zhihu.com/?target=https%3A//blog.csdn.net/WantFlyDaCheng/article/details/81565260\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003eLintcode 464. 整数排序 II 冒泡排序三种实现 直接插入排序 直接选择排序 java\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://link.zhihu.com/?target=https%3A//blog.csdn.net/WantFlyDaCheng/article/details/81585403\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003eLintcode 464. 整数排序 II 归并排序递归与非递归实现 java\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e2.海量数据篇\u003c/b\u003e\u003c/p\u003e\u003cp\u003e看这一篇就足够用了，什么bitmap，布隆过滤器都得知道。\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://link.zhihu.com/?target=https%3A//blog.csdn.net/WantFlyDaCheng/article/details/81531994\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003e教你如何迅速秒杀掉：99%的海量数据处理面试题 - CSDN博客\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e3.计算机网络篇\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e参考书籍：《图解http》《图解TCP/IP》《TCP/IP详解卷1》《计算机网络（谢希仁）》\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e知识点：\u003c/b\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-c94627aa594f5231d9eb42725e216142_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"418\" data-rawheight=\"287\" class=\"content_image\" width=\"418\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;418\u0026#39; height=\u0026#39;287\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"418\" data-rawheight=\"287\" class=\"content_image lazy\" width=\"418\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-c94627aa594f5231d9eb42725e216142_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic1.zhimg.com/50/v2-605a3fe1d0eed1fd53e0df3d62d30b0c_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"431\" data-rawheight=\"356\" class=\"origin_image zh-lightbox-thumb\" width=\"431\" data-original=\"https://pic1.zhimg.com/v2-605a3fe1d0eed1fd53e0df3d62d30b0c_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;431\u0026#39; height=\u0026#39;356\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"431\" data-rawheight=\"356\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"431\" data-original=\"https://pic1.zhimg.com/v2-605a3fe1d0eed1fd53e0df3d62d30b0c_r.jpg\" data-actualsrc=\"https://pic1.zhimg.com/50/v2-605a3fe1d0eed1fd53e0df3d62d30b0c_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-f589a744d28c055b8126406dec99d88e_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"440\" data-rawheight=\"214\" class=\"origin_image zh-lightbox-thumb\" width=\"440\" data-original=\"https://pic3.zhimg.com/v2-f589a744d28c055b8126406dec99d88e_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;440\u0026#39; height=\u0026#39;214\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"440\" data-rawheight=\"214\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"440\" data-original=\"https://pic3.zhimg.com/v2-f589a744d28c055b8126406dec99d88e_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-f589a744d28c055b8126406dec99d88e_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-a4499708be8208a374e46ca718e7e2a1_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"446\" data-rawheight=\"430\" class=\"origin_image zh-lightbox-thumb\" width=\"446\" data-original=\"https://pic3.zhimg.com/v2-a4499708be8208a374e46ca718e7e2a1_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;446\u0026#39; height=\u0026#39;430\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"446\" data-rawheight=\"430\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"446\" data-original=\"https://pic3.zhimg.com/v2-a4499708be8208a374e46ca718e7e2a1_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-a4499708be8208a374e46ca718e7e2a1_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e\u003cb\u003e所有的知识点，需要做到，不看面经，能知道答案是啥，自己可以用嘴说出来！！！\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e所有的知识点，需要做到，不看面经，能知道答案是啥，自己可以用嘴说出来！！！\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e所有的知识点，需要做到，不看面经，能知道答案是啥，自己可以用嘴说出来！！！\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e4.数据库篇\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e参考书籍：《高性能MySQL》 《MySQL技术内幕:InnoDB存储引擎(第2版)》\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e知识点：\u003c/b\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-f34d661f0adef52635dd2c4dbd05e34c_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"451\" data-rawheight=\"480\" class=\"origin_image zh-lightbox-thumb\" width=\"451\" data-original=\"https://pic3.zhimg.com/v2-f34d661f0adef52635dd2c4dbd05e34c_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;451\u0026#39; height=\u0026#39;480\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"451\" data-rawheight=\"480\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"451\" data-original=\"https://pic3.zhimg.com/v2-f34d661f0adef52635dd2c4dbd05e34c_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-f34d661f0adef52635dd2c4dbd05e34c_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-312fa0ef571979dabaaba09cecbda6d7_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"441\" data-rawheight=\"626\" class=\"origin_image zh-lightbox-thumb\" width=\"441\" data-original=\"https://pic3.zhimg.com/v2-312fa0ef571979dabaaba09cecbda6d7_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;441\u0026#39; height=\u0026#39;626\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"441\" data-rawheight=\"626\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"441\" data-original=\"https://pic3.zhimg.com/v2-312fa0ef571979dabaaba09cecbda6d7_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-312fa0ef571979dabaaba09cecbda6d7_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e\u003cb\u003e5.操作系统篇\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e参考书籍：\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e知识点：《操作系统精髓与设计原理(原书第6版)》\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003eLRU会手写一个LRU的set与get的时间复杂度是o（1）的代码\u003c/b\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-cb7dcdb4ec27424dbac3c1a7f168d5f0_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"446\" data-rawheight=\"548\" class=\"origin_image zh-lightbox-thumb\" width=\"446\" data-original=\"https://pic3.zhimg.com/v2-cb7dcdb4ec27424dbac3c1a7f168d5f0_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;446\u0026#39; height=\u0026#39;548\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"446\" data-rawheight=\"548\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"446\" data-original=\"https://pic3.zhimg.com/v2-cb7dcdb4ec27424dbac3c1a7f168d5f0_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-cb7dcdb4ec27424dbac3c1a7f168d5f0_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e\u003cb\u003e6.Linux命令篇\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e参考书籍：《linux 鸟哥的私房菜》\u003c/b\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-cde0cdf94d82c6b99a4be5b30fabdf54_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"435\" data-rawheight=\"382\" class=\"origin_image zh-lightbox-thumb\" width=\"435\" data-original=\"https://pic3.zhimg.com/v2-cde0cdf94d82c6b99a4be5b30fabdf54_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;435\u0026#39; height=\u0026#39;382\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"435\" data-rawheight=\"382\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"435\" data-original=\"https://pic3.zhimg.com/v2-cde0cdf94d82c6b99a4be5b30fabdf54_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-cde0cdf94d82c6b99a4be5b30fabdf54_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e\u003cb\u003e7.安全加密\u003c/b\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic1.zhimg.com/50/v2-dbc7151712f896470bce1a00d4a98fa0_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"455\" data-rawheight=\"193\" class=\"origin_image zh-lightbox-thumb\" width=\"455\" data-original=\"https://pic1.zhimg.com/v2-dbc7151712f896470bce1a00d4a98fa0_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;455\u0026#39; height=\u0026#39;193\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"455\" data-rawheight=\"193\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"455\" data-original=\"https://pic1.zhimg.com/v2-dbc7151712f896470bce1a00d4a98fa0_r.jpg\" data-actualsrc=\"https://pic1.zhimg.com/50/v2-dbc7151712f896470bce1a00d4a98fa0_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e\u003cb\u003e8.重头戏java篇\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e基础篇：\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e推荐书籍：《Java程序员面试笔试宝典-何昊》突击java面试的好书啊！！！\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e《写给大忙人看的JavaSE8》 《深入理解Java虚拟机：JVM高级特性与最佳实践》\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e《JAVA并发编程实战》《Java多线程编程核心技术》《java核心技术卷1》\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e1.基础篇：\u003c/b\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-83af52a9dbefaf138124b4ec789ee809_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"454\" data-rawheight=\"653\" class=\"origin_image zh-lightbox-thumb\" width=\"454\" data-original=\"https://pic3.zhimg.com/v2-83af52a9dbefaf138124b4ec789ee809_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;454\u0026#39; height=\u0026#39;653\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"454\" data-rawheight=\"653\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"454\" data-original=\"https://pic3.zhimg.com/v2-83af52a9dbefaf138124b4ec789ee809_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-83af52a9dbefaf138124b4ec789ee809_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic1.zhimg.com/50/v2-244802c6f9bb4159cc929c0de2ec5645_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"435\" data-rawheight=\"361\" class=\"origin_image zh-lightbox-thumb\" width=\"435\" data-original=\"https://pic1.zhimg.com/v2-244802c6f9bb4159cc929c0de2ec5645_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;435\u0026#39; height=\u0026#39;361\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"435\" data-rawheight=\"361\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"435\" data-original=\"https://pic1.zhimg.com/v2-244802c6f9bb4159cc929c0de2ec5645_r.jpg\" data-actualsrc=\"https://pic1.zhimg.com/50/v2-244802c6f9bb4159cc929c0de2ec5645_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e\u003cb\u003e2.集合篇：\u003c/b\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic2.zhimg.com/50/v2-4f8f4eff1d93312d4b8508ec63862d00_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"442\" data-rawheight=\"648\" class=\"origin_image zh-lightbox-thumb\" width=\"442\" data-original=\"https://pic2.zhimg.com/v2-4f8f4eff1d93312d4b8508ec63862d00_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;442\u0026#39; height=\u0026#39;648\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"442\" data-rawheight=\"648\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"442\" data-original=\"https://pic2.zhimg.com/v2-4f8f4eff1d93312d4b8508ec63862d00_r.jpg\" data-actualsrc=\"https://pic2.zhimg.com/50/v2-4f8f4eff1d93312d4b8508ec63862d00_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic2.zhimg.com/50/v2-1c7f403d82c6058b364aeed9ca0326f0_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"443\" data-rawheight=\"194\" class=\"origin_image zh-lightbox-thumb\" width=\"443\" data-original=\"https://pic2.zhimg.com/v2-1c7f403d82c6058b364aeed9ca0326f0_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;443\u0026#39; height=\u0026#39;194\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"443\" data-rawheight=\"194\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"443\" data-original=\"https://pic2.zhimg.com/v2-1c7f403d82c6058b364aeed9ca0326f0_r.jpg\" data-actualsrc=\"https://pic2.zhimg.com/50/v2-1c7f403d82c6058b364aeed9ca0326f0_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e\u003cb\u003e3.锁\u003c/b\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-cfdd111202ea2c635cff1145dd49fc9e_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"448\" data-rawheight=\"211\" class=\"origin_image zh-lightbox-thumb\" width=\"448\" data-original=\"https://pic3.zhimg.com/v2-cfdd111202ea2c635cff1145dd49fc9e_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;448\u0026#39; height=\u0026#39;211\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"448\" data-rawheight=\"211\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"448\" data-original=\"https://pic3.zhimg.com/v2-cfdd111202ea2c635cff1145dd49fc9e_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-cfdd111202ea2c635cff1145dd49fc9e_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e\u003cb\u003e4.多线程\u003c/b\u003e\u003c/p\u003e\u003cp\u003e多看看《Java多线程编程核心技术》这块就没问题\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic1.zhimg.com/50/v2-398dda576a6474d6e5c798d9ac36d240_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"452\" data-rawheight=\"294\" class=\"origin_image zh-lightbox-thumb\" width=\"452\" data-original=\"https://pic1.zhimg.com/v2-398dda576a6474d6e5c798d9ac36d240_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;452\u0026#39; height=\u0026#39;294\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"452\" data-rawheight=\"294\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"452\" data-original=\"https://pic1.zhimg.com/v2-398dda576a6474d6e5c798d9ac36d240_r.jpg\" data-actualsrc=\"https://pic1.zhimg.com/50/v2-398dda576a6474d6e5c798d9ac36d240_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e\u003cb\u003e5.jdk中的concurrent 俗称juc包\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e都要搞懂底层原理！！！\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e都要搞懂底层原理！！！\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e都要搞懂底层原理！！！\u003c/b\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic1.zhimg.com/50/v2-03d3cf68d28686ec0e62ebbe9844ea48_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"708\" data-rawheight=\"436\" class=\"origin_image zh-lightbox-thumb\" width=\"708\" data-original=\"https://pic1.zhimg.com/v2-03d3cf68d28686ec0e62ebbe9844ea48_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;708\u0026#39; height=\u0026#39;436\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"708\" data-rawheight=\"436\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"708\" data-original=\"https://pic1.zhimg.com/v2-03d3cf68d28686ec0e62ebbe9844ea48_r.jpg\" data-actualsrc=\"https://pic1.zhimg.com/50/v2-03d3cf68d28686ec0e62ebbe9844ea48_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic2.zhimg.com/50/v2-ee94a790e199818396c174070e33fe8f_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"446\" data-rawheight=\"439\" class=\"origin_image zh-lightbox-thumb\" width=\"446\" data-original=\"https://pic2.zhimg.com/v2-ee94a790e199818396c174070e33fe8f_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;446\u0026#39; height=\u0026#39;439\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"446\" data-rawheight=\"439\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"446\" data-original=\"https://pic2.zhimg.com/v2-ee94a790e199818396c174070e33fe8f_r.jpg\" data-actualsrc=\"https://pic2.zhimg.com/50/v2-ee94a790e199818396c174070e33fe8f_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e\u003cb\u003e6.java虚拟机\u003c/b\u003e\u003c/p\u003e\u003cp\u003e主要看《深入理解java虚拟机》\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic2.zhimg.com/50/v2-5344909402b1d459cafdba10241c88ca_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"452\" data-rawheight=\"649\" class=\"origin_image zh-lightbox-thumb\" width=\"452\" data-original=\"https://pic2.zhimg.com/v2-5344909402b1d459cafdba10241c88ca_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;452\u0026#39; height=\u0026#39;649\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"452\" data-rawheight=\"649\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"452\" data-original=\"https://pic2.zhimg.com/v2-5344909402b1d459cafdba10241c88ca_r.jpg\" data-actualsrc=\"https://pic2.zhimg.com/50/v2-5344909402b1d459cafdba10241c88ca_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e\u003cb\u003e7.设计模式\u003c/b\u003e\u003c/p\u003e\u003cp\u003e参考书籍：《大话设计模式》\u003c/p\u003e\u003cp\u003e知道每种设计模式是啥意思，可以手写一个单例模式，手写适配器模式，工厂模式，观察者模式，装饰器模式。\u003c/p\u003e\u003cp\u003e知识点：\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/50/v2-192a9df3724320304079573f1893d838_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"418\" data-rawheight=\"605\" class=\"content_image\" width=\"418\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;418\u0026#39; height=\u0026#39;605\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"418\" data-rawheight=\"605\" class=\"content_image lazy\" width=\"418\" data-actualsrc=\"https://pic3.zhimg.com/50/v2-192a9df3724320304079573f1893d838_hd.jpg\"/\u003e\u003c/figure\u003e\u003cp\u003e----------------------------------------------------------------------------------------------\u003c/p\u003e\u003cp\u003e基本把我上面列的知识点都搞懂，算法题都刷地明明白白的，不说battmd这些公司，至少我觉得互联网前50+\u003c/p\u003e\u003cp\u003e如果没有项目经验，想做项目，可以推荐你去淘宝上去买黑马视频，照着整个java web的项目、\u003c/p\u003e\u003cp\u003e-----------------------------------------------------------------------------------\u003c/p\u003e\u003cp\u003e\u003cb\u003e附上我呕心沥血整理的java面经，觉得有用的点赞关注走一波！！！\u003c/b\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic2.zhimg.com/50/v2-d18eb75c3fb469a4a6a9d47e6b8fe040_hd.gif\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"873\" data-rawheight=\"371\" data-thumbnail=\"https://pic2.zhimg.com/50/v2-d18eb75c3fb469a4a6a9d47e6b8fe040_hd.jpg\" class=\"origin_image zh-lightbox-thumb\" width=\"873\" data-original=\"https://pic2.zhimg.com/v2-d18eb75c3fb469a4a6a9d47e6b8fe040_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;873\u0026#39; height=\u0026#39;371\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"873\" data-rawheight=\"371\" data-thumbnail=\"https://pic2.zhimg.com/50/v2-d18eb75c3fb469a4a6a9d47e6b8fe040_hd.jpg\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"873\" data-original=\"https://pic2.zhimg.com/v2-d18eb75c3fb469a4a6a9d47e6b8fe040_r.jpg\" data-actualsrc=\"https://pic2.zhimg.com/50/v2-d18eb75c3fb469a4a6a9d47e6b8fe040_hd.gif\"/\u003e\u003c/figure\u003e\u003ca href=\"https://link.zhihu.com/?target=https%3A//www.jianshu.com/p/10a6ece34280\" data-draft-node=\"block\" data-draft-type=\"link-card\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003e我的微信公众号 戳此文字即可看到\u003c/a\u003e\u003cp\u003e\u003cb\u003e关注我的公众号 现名字:程序员乔戈里\u003c/b\u003e\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e在后台回复：面经 按照要求即可获取到我的面经，也算是对我继续输出干货的一种鼓励。谢谢大家！！！\u003c/b\u003e\u003c/p\u003e\u003cp\u003e-------------------------------------------------------------------------------------------\u003c/p\u003e\u003cp\u003e\u003cb\u003e1.实习对于找工作的作用？？？\u003c/b\u003e\u003c/p\u003e\u003cp\u003e答：很重要，也不重要。很重要：实习经历的作用：1.面试都是有固定的时间，比如一些公司规定一次面试最短时间是40分钟，你如果做过实习，可以好好加工一下你的实习经历，使劲吹，可以占个10分钟多点时间，然后后来问你的东西就少了些；2.学历不好的可以通过一些实习经历获得大公司的笔试面试的机会；3.在同等面试表现的前提下，有实习经历的优先考虑\u003c/p\u003e\u003cp\u003e不重要：\u003c/p\u003e\u003cp\u003e\u003cb\u003e春招的暑期实习和提前批的时间冲突\u003c/b\u003e，\u003cb\u003e春招的暑期实习和提前批的时间冲突\u003c/b\u003e，\u003cb\u003e春招的暑期实习和提前批的时间冲突，（如果你现在距离秋招的8月还有挺长时间，如果获得实习机会直接就去，如果是7月和8月的实习得慎重，实习也不一定能留用）\u003c/b\u003e所以你如果春招找到的实习不是自己想最后工作的小公司，那么不建议去实习，不如好好准备秋招。如果是心仪的部门和岗位比如BAT之类的可以去实习。假如去实习了，一定要关注转正的事，好好努力，同时也别忘准备秋招，晚上和周末看书刷题看面经。没转正立马走人准备秋招。（实习的时候也可以投提前批电话面试，楼主当初没投，其实可以投几个单独招聘的提前批，比如百度很多部门都是自己招聘提前批的，不走系统，过了才录入系统）\u003c/p\u003e\u003cp\u003e完全可以用实习这段时间，好好复习，准备提前批也是个不错的选择，\u003cb\u003e当然如果你前期准备充分，那么可以去实习\u003c/b\u003e，如果你时间已经非常紧了，比如你6月份才开始准备，人家8月份就提前批了，你去不去实习就得好好衡量了，\u003cb\u003e大厂的实习一定要去，秋招加成不少\u003c/b\u003e。\u003c/p\u003e\u003cp\u003e\u003cb\u003e2.啥时候开始准备？\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e现在！！！现在！！！现在！！！\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e3.没有java开发的项目咋办？？？\u003c/b\u003e\u003c/p\u003e\u003cp\u003e答：0.关注我的公众号：原名字：HIT程序猿的日常 现名字：程序员乔戈里\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://link.zhihu.com/?target=https%3A//www.jianshu.com/p/10a6ece34280\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003e我的微信公众号 戳此文字即可看到\u003c/a\u003e\u003c/p\u003e\u003cp\u003e在我的公众号有我做过的一些项目的源码分享，以及一些练手项目的视频教程。\u003c/p\u003e\u003cp\u003e1.去淘宝买黑马的视频，照着做一个javaweb的项目，然后使劲扣项目，到时候就是和面试官吹，30元左右，没钱买的话，大家可以在我评论下众筹一波，哈哈哈啊哈哈哈。\u003c/p\u003e\u003cp\u003e2.淘宝买牛客网的项目视频，听说叶神的项目不错；\u003c/p\u003e\u003cp\u003e\u003cb\u003e4.HR面试\u003c/b\u003e\u003c/p\u003e\u003cp\u003e一顿跪舔就行，就是你们公司真好，你自己罗列个123哪里好；女朋友，有也说没有（也可以说有，女朋友就在xx公司的地方上班/上学）；父母不干涉决定；薪资，互联网的普遍薪资就行（适用于第一份offer，以及非常想去的公司）。总之就是求生欲强一些。\u003c/p\u003e\u003cp\u003e\u003cb\u003e5.答主，我选算法还是开发呀？\u003c/b\u003e\u003c/p\u003e\u003cp\u003e你如果是北京时间2018.10.3号看见了我这篇回答，而且自己本身的学历不错本硕985/211专业都是计算机相关的，那么我强烈建议你选算法。原因有：1.算法工资比开发高；2.算法比开发轻松；你会说算法难啊，不好找啊！！！我不知道你怕啥，你就硬着头皮去整(\u003cb\u003e每天高三一般的生活，如果你每天吊儿郎当的，最后没找到，怪我了，那你滚一边去哈，我不背这锅\u003c/b\u003e），你本身条件不错，最后肯定会有offer。而且有的公司，就算你算法不行，会问你可以转开发不，所以搞算法何乐而不为呢？？？\u003c/p\u003e\u003cp\u003e如果你是距离2019年或者8021年的临近秋招前的2-3个月时间看到我这篇回答，而且你学历不是很好，那么我建议你去整开发。\u003c/p\u003e\u003cp\u003e上述说的情况也不完全适用，反正就是\u003cb\u003efollow your heart!!!\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e6.答主你咋不回复我评论啊？？？\u003c/b\u003e\u003c/p\u003e\u003cp\u003e你都不赞我，我也不想回复你。。。。\u003c/p\u003e\u003cp\u003e\u003cb\u003e7.java开发需要看的书籍推荐？？？\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003e具体请查看我的专栏文章\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://zhuanlan.zhihu.com/p/45911483\" class=\"internal\"\u003eJava后端书架\u003c/a\u003e\u003c/p\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic4.zhimg.com/50/v2-29d34e3a93776bec58abe5ca77d199f1_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"622\" data-rawheight=\"671\" class=\"origin_image zh-lightbox-thumb\" width=\"622\" data-original=\"https://pic4.zhimg.com/v2-29d34e3a93776bec58abe5ca77d199f1_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;622\u0026#39; height=\u0026#39;671\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"622\" data-rawheight=\"671\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"622\" data-original=\"https://pic4.zhimg.com/v2-29d34e3a93776bec58abe5ca77d199f1_r.jpg\" data-actualsrc=\"https://pic4.zhimg.com/50/v2-29d34e3a93776bec58abe5ca77d199f1_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic2.zhimg.com/50/v2-3d778eda4a44127dae84bbf89473a475_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"853\" data-rawheight=\"602\" class=\"origin_image zh-lightbox-thumb\" width=\"853\" data-original=\"https://pic2.zhimg.com/v2-3d778eda4a44127dae84bbf89473a475_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;853\u0026#39; height=\u0026#39;602\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"853\" data-rawheight=\"602\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"853\" data-original=\"https://pic2.zhimg.com/v2-3d778eda4a44127dae84bbf89473a475_r.jpg\" data-actualsrc=\"https://pic2.zhimg.com/50/v2-3d778eda4a44127dae84bbf89473a475_hd.jpg\"/\u003e\u003c/figure\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic4.zhimg.com/50/v2-3c9f2310f12be08ef3db1caeffc43a07_hd.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"746\" data-rawheight=\"364\" class=\"origin_image zh-lightbox-thumb\" width=\"746\" data-original=\"https://pic4.zhimg.com/v2-3c9f2310f12be08ef3db1caeffc43a07_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;746\u0026#39; height=\u0026#39;364\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"746\" data-rawheight=\"364\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"746\" data-original=\"https://pic4.zhimg.com/v2-3c9f2310f12be08ef3db1caeffc43a07_r.jpg\" data-actualsrc=\"https://pic4.zhimg.com/50/v2-3c9f2310f12be08ef3db1caeffc43a07_hd.jpg\"/\u003e\u003c/figure\u003e\u003chr/\u003e\u003cp\u003e\u003c/p\u003e",
+      "editable_content": "",
+      "excerpt": "一.简历篇我是使用的乔布简历，在里面买了一个模板，本科还是免费的，研究生阶段就收费了，呵呵。 （1）个人联系方式 简历的话要把电话，email这些重要的信息放到显眼的位置，方便联系。 （2）技能掌握 熟悉 精通等词汇慎用（ 精通应届生就不要用了），我举一下我的java为何用了熟悉的例子，java看了《java核心技术卷1》《java编程思想》前几章《深入了解java虚拟机》前7章，《java并发编程的艺术》《java多线程编程核心技术》还…",
+      "collapsed_by": "nobody",
+      "collapse_reason": "",
+      "annotation_action": null,
+      "mark_infos": [],
+      "relevant_info": {
+        "is_relevant": false,
+        "relevant_type": "",
+        "relevant_text": ""
+      },
+      "suggest_edit": {
+        "reason": "",
+        "status": false,
+        "tip": "",
+        "title": "",
+        "unnormal_details": {
+          "status": "",
+          "description": "",
+          "reason": "",
+          "reason_id": 0,
+          "note": ""
+        },
+        "url": ""
+      },
+      "is_labeled": false,
+      "reward_info": {
+        "can_open_reward": false,
+        "is_rewardable": false,
+        "reward_member_count": 0,
+        "reward_total_money": 0,
+        "tagline": ""
+      },
+      "relationship": {
+        "is_author": false,
+        "is_authorized": false,
+        "is_nothelp": false,
+        "is_thanked": false,
+        "is_recognized": false,
+        "voting": 0,
+        "upvoted_followees": []
+      },
+      "ad_answer": null
+    },
+    {
+      "id": 851459361,
+      "type": "answer",
+      "answer_type": "normal",
+      "question": {
+        "type": "question",
+        "id": 344204972,
+        "title": "一毕业就能进阿里的人有多厉害？",
+        "question_type": "normal",
+        "created": 1567504238,
+        "updated_time": 1567504238,
+        "url": "https://www.zhihu.com/api/v4/questions/344204972",
+        "relationship": {}
+      },
+      "author": {
+        "id": "a2d348341d98db97f44920a642cdef41",
+        "url_token": "tong-ku-2-9",
+        "name": "想念",
+        "avatar_url": "https://pic1.zhimg.com/v2-673dd434ef7ac1975202b6f40592cdf9_is.jpg",
+        "avatar_url_template": "https://pic1.zhimg.com/v2-673dd434ef7ac1975202b6f40592cdf9_{size}.jpg",
+        "is_org": false,
+        "type": "people",
+        "url": "https://www.zhihu.com/api/v4/people/a2d348341d98db97f44920a642cdef41",
+        "user_type": "people",
+        "headline": "勇气就是运气。",
+        "badge": [],
+        "gender": -1,
+        "is_advertiser": false,
+        "follower_count": 40,
+        "is_followed": false,
+        "is_privacy": false
+      },
+      "url": "https://www.zhihu.com/api/v4/answers/851459361",
+      "is_collapsed": false,
+      "created_time": 1570640110,
+      "updated_time": 1570928717,
+      "extras": "",
+      "is_copyable": true,
+      "is_normal": true,
+      "voteup_count": 1643,
+      "comment_count": 298,
+      "is_sticky": false,
+      "admin_closed_comment": false,
+      "comment_permission": "all",
+      "can_comment": { "reason": "", "status": true },
+      "reshipment_settings": "allowed",
+      "content": "\u003cp\u003e大家知不知道，以前的阿里巴巴对面有一个学校，叫浙江理工大学科技与艺术学院，这个学校是个独立学院，学校不是很好，但是他在阿里巴巴对面，这个学校17年刚搬走，老师说，以前的阿里都从这个学校招人，那时候阿里没并不是很出名，很多人没毕业就进了阿里，而且很多人还不愿意去阿里，现在呢？想去也去不了。所以，我想说的是什么呢？并不是所有人进阿里都很牛逼，这得是天时地利人和。\u003c/p\u003e\u003cp class=\"ztext-empty-paragraph\"\u003e\u003cbr/\u003e\u003c/p\u003e\u003cp\u003e大家就当看个段子看吧，老师可能也是为了让我们好好学习才那么说的吧。(发现好多我们学校的，哈哈)\u003c/p\u003e",
+      "editable_content": "",
+      "excerpt": "大家知不知道，以前的阿里巴巴对面有一个学校，叫浙江理工大学科技与艺术学院，这个学校是个独立学院，学校不是很好，但是他在阿里巴巴对面，这个学校17年刚搬走，老师说，以前的阿里都从这个学校招人，那时候阿里没并不是很出名，很多人没毕业就进了阿里，而且很多人还不愿意去阿里，现在呢？想去也去不了。所以，我想说的是什么呢？并不是所有人进阿里都很牛逼，这得是天时地利人和。 大家就当看个段子看吧，老师可能也是为了…",
+      "collapsed_by": "nobody",
+      "collapse_reason": "",
+      "annotation_action": null,
+      "mark_infos": [],
+      "relevant_info": {
+        "is_relevant": false,
+        "relevant_type": "",
+        "relevant_text": ""
+      },
+      "suggest_edit": {
+        "reason": "",
+        "status": false,
+        "tip": "",
+        "title": "",
+        "unnormal_details": {
+          "status": "",
+          "description": "",
+          "reason": "",
+          "reason_id": 0,
+          "note": ""
+        },
+        "url": ""
+      },
+      "is_labeled": false,
+      "reward_info": {
+        "can_open_reward": false,
+        "is_rewardable": false,
+        "reward_member_count": 0,
+        "reward_total_money": 0,
+        "tagline": ""
+      },
+      "relationship": {
+        "is_author": false,
+        "is_authorized": false,
+        "is_nothelp": false,
+        "is_thanked": false,
+        "is_recognized": false,
+        "voting": 0,
+        "upvoted_followees": []
+      },
+      "ad_answer": null
+    }
+  ],
+  "paging": {
+    "is_end": false,
+    "is_start": false,
+    "next": "https://www.zhihu.com/api/v4/questions/344204972/answers?include=data%5B%2A%5D.is_normal%2Cadmin_closed_comment%2Creward_info%2Cis_collapsed%2Cannotation_action%2Cannotation_detail%2Ccollapse_reason%2Cis_sticky%2Ccollapsed_by%2Csuggest_edit%2Ccomment_count%2Ccan_comment%2Ccontent%2Ceditable_content%2Cvoteup_count%2Creshipment_settings%2Ccomment_permission%2Ccreated_time%2Cupdated_time%2Creview_info%2Crelevant_info%2Cquestion%2Cexcerpt%2Crelationship.is_authorized%2Cis_author%2Cvoting%2Cis_thanked%2Cis_nothelp%2Cis_labeled%2Cis_recognized%2Cpaid_info%2Cpaid_info_content%3Bdata%5B%2A%5D.mark_infos%5B%2A%5D.url%3Bdata%5B%2A%5D.author.follower_count%2Cbadge%5B%2A%5D.topics\u0026limit=5\u0026offset=10\u0026platform=desktop\u0026sort_by=default",
+    "previous": "https://www.zhihu.com/api/v4/questions/344204972/answers?include=data%5B%2A%5D.is_normal%2Cadmin_closed_comment%2Creward_info%2Cis_collapsed%2Cannotation_action%2Cannotation_detail%2Ccollapse_reason%2Cis_sticky%2Ccollapsed_by%2Csuggest_edit%2Ccomment_count%2Ccan_comment%2Ccontent%2Ceditable_content%2Cvoteup_count%2Creshipment_settings%2Ccomment_permission%2Ccreated_time%2Cupdated_time%2Creview_info%2Crelevant_info%2Cquestion%2Cexcerpt%2Crelationship.is_authorized%2Cis_author%2Cvoting%2Cis_thanked%2Cis_nothelp%2Cis_labeled%2Cis_recognized%2Cpaid_info%2Cpaid_info_content%3Bdata%5B%2A%5D.mark_infos%5B%2A%5D.url%3Bdata%5B%2A%5D.author.follower_count%2Cbadge%5B%2A%5D.topics\u0026limit=5\u0026offset=0\u0026platform=desktop\u0026sort_by=default",
+    "totals": 449
+  }
+}

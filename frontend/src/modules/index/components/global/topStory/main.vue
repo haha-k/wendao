@@ -34,14 +34,13 @@ export default {
         .then(result => {
           let { data } = result;
           this.recommendList = data.data;
-          console.log(this.recommendList);
         })
         .catch(err => {
           console.log(err);
         });
     },
     handleClick(tab, event) {
-      console.log(tab, event);
+      //TODOconsole.log(tab, event);
     }
   },
   mounted() {

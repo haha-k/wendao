@@ -47,7 +47,7 @@ export default {
   align-items: center;
   padding: 28px 24px;
   box-sizing: border-box;
-  min-width: 235px;
+  min-width: 230px;
   height: 313px;
   border-radius: 4px;
   box-shadow: 0 1px 3px 0 rgba(26, 26, 26, 0.1);

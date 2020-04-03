@@ -112,9 +112,7 @@ export default {
       this.$router.push("/write");
     }
   },
-  mounted() {
-    // console.log(this.question);
-  },
+  mounted() {},
   watch: {
     question: {
       deep: true,

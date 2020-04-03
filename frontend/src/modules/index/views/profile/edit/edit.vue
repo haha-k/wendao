@@ -24,9 +24,7 @@
                 </div>
               </div>
             </div>
-
           </el-card>
-
         </div>
       </el-main>
     </el-container>
@@ -38,7 +36,7 @@ export default {
   name: "profile",
   data() {
     return {
-      profile: {},
+      profile: {}
     };
   },
   methods: {
@@ -47,7 +45,6 @@ export default {
         .then(result => {
           let { data } = result;
           this.profile = data;
-          console.log(this.profile);
         })
         .catch(err => {
           console.log(err);

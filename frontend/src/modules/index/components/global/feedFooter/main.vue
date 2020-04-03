@@ -79,14 +79,13 @@ export default {
       this.$emit("getCollpase", this.isCollapse);
     },
     handlerEnjoy() {
-      console.log("xxxxx");
-
       this.$message({
         message: "成功复制链接",
         type: "success"
       });
     },
     like() {
+      console.warn(this.id);
       if (this.statusText == "赞同") {
         if (this.is_down == true) {
           this.down();
@@ -120,23 +119,21 @@ export default {
     },
     handleScroll() {}
   },
-  mounted() {
-    console.warn(this.isAns, this.isCollapse);
-  },
+  mounted() {},
   components: {},
   watch: {
-    isCollapse: {
-      handler: (newVal, oldVal) => {
-        this.isCollapse = newVal;
-      }
-    },
-    show: {
-      handler: (newVal, oldVal) => {
-        if (this.show !== newVal) {
-          this.show = newVal;
-        }
-      }
-    }
+    // isCollapse: {
+    //   handler: (newVal, oldVal) => {
+    //     this.isCollapse = newVal;
+    //   }
+    // },
+    // show: {
+    //   handler: (newVal, oldVal) => {
+    //     if (this.show !== newVal) {
+    //       this.show = newVal;
+    //     }
+    //   }
+    // }
   },
   props: {
     item: Object,
@@ -147,7 +144,8 @@ export default {
     },
     show: {
       type: Boolean
-    }
+    },
+    id: Number
   }
 };
 </script>

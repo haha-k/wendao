@@ -7,7 +7,7 @@
       <div class="AnswerAuthor-user">
         <div class="avatar">
           <router-link :to="authorUrl">
-            <el-avatar v-if="avatarUrl" shape="square" :size="60" :src="avatarUrl"></el-avatar>
+            <el-avatar v-if="avatarUrl" shape="square" :size="60" :src="author.avatar_url"></el-avatar>
             <el-avatar v-else shape="square" :size="60" :src="squareUrl"></el-avatar>
           </router-link>
         </div>

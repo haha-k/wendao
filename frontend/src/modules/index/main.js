@@ -1,5 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 import router from "./router/index";
 import global from "./components";
 import store from "#/store";

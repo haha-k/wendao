@@ -1,7 +1,7 @@
 <template>
   <div class="explore-container">
     <el-container>
-      <el-header style="height:52px">
+      <el-header style="height:52px; overflow:hidden;">
         <Navbar :active="'explore'"></Navbar>
       </el-header>
       <el-main class="App-main" style="margin-top:62px">
@@ -70,7 +70,6 @@ export default {
     getColumn()
       .then(result => {
         this.columns = result.data.data;
-        console.log(this.columns);
       })
       .catch(err => {});
   },

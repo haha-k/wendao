@@ -20,11 +20,8 @@ export default {
   },
   methods: {
     handleClose(done) {
-      // console.log("))))");
-      // this.dialogAskVisible = !this.dialogAskVisible;
       this.dialogclose = false;
       this.$emit("listen", this.dialogclose);
-      // console.log(this.dialogclose);
       done();
     }
   },

@@ -5,6 +5,12 @@ export default [{
     },
     {
         name: "home",
+        path: '/home/index',
+        redirect: '/home',
+        component: () => import('@/views/home/Home.vue')
+    },
+    {
+        name: "home",
         path: '/home',
         component: () => import('@/views/home/Home.vue')
     },

@@ -16,17 +16,23 @@
       <el-table-column label="头像" width="50px">
         <template slot-scope="scope">
           <!-- <img :src="scope.row.image" class="el-avatar"> -->
-          <img src="" class="el-avatar" />
+          <img src class="el-avatar" />
         </template>
       </el-table-column>
-      <el-table-column  align="center" label="用户名" width="150px" sortable>
+      <el-table-column align="center" label="用户名" width="150px" sortable>
         <template slot-scope="scope">
           <span class="link-type">{{scope.row.username}}</span>
         </template>
       </el-table-column>
       <el-table-column align="center" prop="telephone" label="手机号码" width="100px"></el-table-column>
       <el-table-column align="center" prop="email" label="邮箱" width="150px"></el-table-column>
-      <el-table-column align="center" prop="gender" :formatter="genderFormat" label="性别" width="50px"></el-table-column>
+      <el-table-column
+        align="center"
+        prop="gender"
+        :formatter="genderFormat"
+        label="性别"
+        width="50px"
+      ></el-table-column>
       <el-table-column align="center" prop="birthdate" label="生日" width="110px"></el-table-column>
       <el-table-column align="center" prop="nickname" label="昵称" width="100px"></el-table-column>
       <el-table-column align="center" prop label="角色" width="70px"></el-table-column>
@@ -37,7 +43,7 @@
         </template>
       </el-table-column>
       <el-table-column align="center" prop="last_login" label="上次登录" width="140px"></el-table-column>
-      <el-table-column align="center" label="操作" >
+      <el-table-column align="center" label="操作">
         <template slot-scope="scope">
           <edit :data="scope.row"></edit>
           <!-- v-if="checkPermission(['admin'])" -->
@@ -72,19 +78,19 @@ import checkPermission from "#/utils/permission";
 import edit from "./modules/edit";
 import updatePass from "./modules/updatePass";
 // import users from "./mock/user";
-import { getUsers } from "#/api/user"
+import { getUsers } from "#/api/user";
 
 export default {
   name: "users",
   data() {
     return {
       list: {},
-      page:1,
+      page: 1,
       total: 0,
       filter: undefined,
       multipleSelection: [],
-      dialogVisible:false,
-      loading: false,
+      dialogVisible: false,
+      loading: false
     };
   },
   filters: {
@@ -94,12 +100,9 @@ export default {
       //   false:"danger"
       // };
       // return statusMap[status];
-      // console.log(status);
       return status ? "success" : "danger";
     },
-    genderFilter(gender){
-    }
-
+    genderFilter(gender) {}
   },
   methods: {
     sortChange() {},
@@ -107,13 +110,12 @@ export default {
       this.loading = true;
       this.getList(this.page);
     },
-    genderFormat(row, column, cellValue, index){
+    genderFormat(row, column, cellValue, index) {
       let gender = row.gender;
-      if(gender===null){
-        return '未知';
-      }
-      else{
-      return gender===1?'男':'女';
+      if (gender === null) {
+        return "未知";
+      } else {
+        return gender === 1 ? "男" : "女";
       }
     },
     getList(id) {
@@ -131,8 +133,8 @@ export default {
   },
   components: {
     eHeader: eHeader,
-    edit:edit,
-    updatePass:updatePass
+    edit: edit,
+    updatePass: updatePass
   }
 };
 </script>

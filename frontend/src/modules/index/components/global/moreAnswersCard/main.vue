@@ -1,25 +1,18 @@
 
-<template>
-<div class="moreAnswersCard">moreAnswersCard</div>
-</template>
+<template></template>
 <script>
 export default {
-  name: 'moreAnswersCard',
-  data(){
-    return{
-
-    }
+  name: "moreAnswersCard",
+  data() {
+    return {};
   },
-  methods:{
-
-  },
-  mounted(){
-
-  },
-  components: {
-
+  methods: {},
+  mounted() {},
+  components: {},
+  props: {
+    otherAnswer: Array
   }
-}
+};
 </script>
 <style lang="scss" scoped>
 .moreAnswersCard {

@@ -8,10 +8,12 @@
         <div class="question-page">
           <question-header :question="question" ref="qHeader"></question-header>
           <question-main
+            :isAll="aid === undefined"
             :isFixed="isFixed"
             :mainAnswer="mainAnswer"
             :otherAnswer="otherAnswer"
             :ac="answerCount"
+            :qid="qid"
           ></question-main>
         </div>
       </main>
@@ -46,7 +48,6 @@ export default {
         document.documentElement.scrollTop ||
         document.body.scrollTop;
       this.isFixed = scrollTop >= el.offsetHeight;
-      console.log(this.isFixed);
     },
     getQuestion(id) {
       getQuestionDetail(id)
@@ -54,7 +55,6 @@ export default {
           let { data } = result;
           this.question = data;
           this.answerCount = this.question.answer_count;
-          console.log(this.answerCount);
         })
         .catch(err => {
           console.log(err);
@@ -90,7 +90,7 @@ export default {
     "question-main": questionMain,
     Navbar: Navbar
   },
-  props: {}
+  props: ["qid", "aid"]
 };
 </script>
 <style lang="scss" scoped>

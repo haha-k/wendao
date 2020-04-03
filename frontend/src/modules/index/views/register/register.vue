@@ -76,7 +76,6 @@ export default {
         callback(new Error("用户名要2-20个字符哦"));
       } else if (this.check_username()) {
         callback(new Error(this.error_name_message));
-        console.log(this.check_username());
       } else {
         callback();
       }
