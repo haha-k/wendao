@@ -19,6 +19,8 @@ Vue.prototype.$axios = axios;
 
 Vue.config.productionTip = false;
 Vue.use(mavonEditor);
+// import infiniteScroll from "vue-infinite-scroll";
+// Vue.use(infiniteScroll);
 
 new Vue({
   router,
