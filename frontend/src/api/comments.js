@@ -8,7 +8,7 @@ export function getQuestionRootComment(qid) {
     // });
     return request({
         baseURL: '',
-        url: '/json/comments/QRcomments.json',
+        url: '/json/comments/rootcomments.json',
         method: "get",
     });
 }

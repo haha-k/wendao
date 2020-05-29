@@ -125,11 +125,14 @@ export default {
 
   .side-column {
     width: 296px;
+    margin-left: 10px;
 
     &.is-fixed {
       position: fixed;
       top: 62px;
-      transform: translateX(704px);
+      //TODO-完善点
+      right: 436px;
+      // transform: translateX(704px);
     }
   }
 
